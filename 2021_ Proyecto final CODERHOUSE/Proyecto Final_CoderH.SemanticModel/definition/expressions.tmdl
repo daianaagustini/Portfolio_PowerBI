@@ -1,0 +1,13 @@
+expression 'Tipo de diagnostico' =
+		let
+		    Origen = Excel.Workbook(File.Contents("C:\Users\agust\OneDrive\Data Analytics\Proyecto Final\Base de datos proyecto final - Oviedo Ardusso Agustini.xlsx"), null, true),
+		    #"Tipo de diagnostico_Sheet" = Origen{[Item="Tipo de diagnostico",Kind="Sheet"]}[Data],
+		    #"Tipo cambiado" = Table.TransformColumnTypes(#"Tipo de diagnostico_Sheet",{{"Column1", type text}, {"Column2", type text}}),
+		    #"Encabezados promovidos" = Table.PromoteHeaders(#"Tipo cambiado", [PromoteAllScalars=true]),
+		    #"Tipo cambiado1" = Table.TransformColumnTypes(#"Encabezados promovidos",{{"Codgio ", type text}, {"Tipo", type text}})
+		in
+		    #"Tipo cambiado1"
+	lineageTag: 08c3bd6a-9e44-45d0-b50e-b31056e6cea9
+
+	annotation PBI_ResultType = Table
+

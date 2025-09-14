@@ -1,0 +1,50 @@
+table Asegurados
+	lineageTag: ba016524-f227-4162-a858-1b38c5b62430
+
+	column Cuil
+		dataType: int64
+		formatString: 0
+		lineageTag: 053bda88-6ca9-4bba-8540-c93d666bcd28
+		summarizeBy: none
+		sourceColumn: Cuil
+
+		annotation SummarizationSetBy = Automatic
+
+	column Nombre
+		dataType: string
+		lineageTag: 98129523-b03b-4443-9479-c967d7ba7705
+		summarizeBy: none
+		sourceColumn: Nombre
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isText":true}
+
+	column '# Siniestros' = ```
+			
+			    VAR T= COUNTAX(RELATEDTABLE(Accidentes),Accidentes[Stro])
+			    VAR C= IF(T=BLANK(),0,T)
+			
+			    Return
+			    C
+			    // Cálculo de la cantidad de siniestros ocurridos por asegurado
+			```
+		formatString: 0
+		lineageTag: 7edf124d-8736-442d-b745-2d1842b5f28e
+		summarizeBy: none
+
+		annotation SummarizationSetBy = Automatic
+
+	partition Asegurados-d013d117-6a8a-45a6-8c62-83bd48aa799f = m
+		mode: import
+		source =
+				let
+				    Origen = Excel.Workbook(File.Contents("C:\Users\agust\OneDrive\Data Analytics\Proyecto Final\Base de datos proyecto final - Oviedo Ardusso Agustini.xlsx"), null, true),
+				    #"Asegurados _Sheet" = Origen{[Item="Asegurados ",Kind="Sheet"]}[Data],
+				    #"Encabezados promovidos" = Table.PromoteHeaders(#"Asegurados _Sheet", [PromoteAllScalars=true]),
+				    #"Tipo cambiado" = Table.TransformColumnTypes(#"Encabezados promovidos",{{"Cuil", Int64.Type}, {"Nombre", type text}})
+				in
+				    #"Tipo cambiado"
+
+	annotation PBI_ResultType = Table
+

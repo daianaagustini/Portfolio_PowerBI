@@ -1,0 +1,781 @@
+{
+  "config": "{\"version\":\"5.66\",\"themeCollection\":{\"baseTheme\":{\"name\":\"CY21SU04\",\"type\":2,\"version\":{\"visual\":\"1.8.56\",\"report\":\"2.0.56\",\"page\":\"1.3.56\"}},\"customTheme\":{\"name\":\"Bloom\",\"type\":2,\"version\":{\"visual\":\"1.8.56\",\"report\":\"2.0.56\",\"page\":\"1.3.56\"}}},\"activeSectionIndex\":1,\"defaultDrillFilterOtherVisuals\":true,\"linguisticSchemaSyncVersion\":2,\"settings\":{\"useNewFilterPaneExperience\":true,\"allowChangeFilterTypes\":true,\"useStylableVisualContainerHeader\":true,\"exportDataMode\":1,\"allowDataPointLassoSelect\":true,\"filterPaneHiddenInEditMode\":false,\"useEnhancedTooltips\":true},\"objects\":{\"section\":[{\"properties\":{\"verticalAlignment\":{\"expr\":{\"Literal\":{\"Value\":\"'Top'\"}}}}}],\"outspacePane\":[{\"properties\":{\"expanded\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]}}",
+  "layoutOptimization": 0,
+  "pods": [
+    {
+      "boundSection": "ReportSection4ac9d6e1e787fdd91679",
+      "config": "{}",
+      "name": "Pod"
+    }
+  ],
+  "resourcePackages": [
+    {
+      "resourcePackage": {
+        "disabled": false,
+        "items": [
+          {
+            "name": "Bloom",
+            "path": "BuiltInThemes/Bloom.json",
+            "type": 201
+          },
+          {
+            "name": "CY21SU04",
+            "path": "BaseThemes/CY21SU04.json",
+            "type": 202
+          }
+        ],
+        "name": "SharedResources",
+        "type": 2
+      }
+    },
+    {
+      "resourcePackage": {
+        "disabled": false,
+        "items": [
+          {
+            "name": "Segmento3040073690176799.jpg",
+            "path": "Segmento3040073690176799.jpg",
+            "type": 100
+          },
+          {
+            "name": "Segmento9295740149949432.jpg",
+            "path": "Segmento9295740149949432.jpg",
+            "type": 100
+          },
+          {
+            "name": "Seguridas_images01996111659359312.jpg",
+            "path": "Seguridas_images01996111659359312.jpg",
+            "type": 100
+          }
+        ],
+        "name": "RegisteredResources",
+        "type": 1
+      }
+    }
+  ],
+  "sections": [
+    {
+      "config": "{\"objects\":{\"outspacePane\":[{\"properties\":{\"width\":{\"expr\":{\"Literal\":{\"Value\":\"313L\"}}},\"backgroundColor\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":0,\"Percent\":0}}}}}}}],\"background\":[{\"properties\":{\"transparency\":{\"expr\":{\"Literal\":{\"Value\":\"40D\"}}},\"image\":{\"image\":{\"name\":{\"expr\":{\"Literal\":{\"Value\":\"'Segmento.jpg'\"}}},\"url\":{\"expr\":{\"ResourcePackageItem\":{\"PackageName\":\"RegisteredResources\",\"PackageType\":1,\"ItemName\":\"Segmento9295740149949432.jpg\"}}},\"scaling\":{\"expr\":{\"Literal\":{\"Value\":\"'Fit'\"}}}}}}}],\"outspace\":[{\"properties\":{\"image\":{\"image\":{\"name\":{\"expr\":{\"Literal\":{\"Value\":\"''\"}}},\"url\":{\"expr\":{\"Literal\":{\"Value\":\"''\"}}}}}}}]}}",
+      "displayName": "Costos",
+      "displayOption": 2,
+      "filters": "[]",
+      "height": 720.00,
+      "name": "ReportSection1c85d15e347241cbbace",
+      "ordinal": 4,
+      "visualContainers": [
+        {
+          "config": "{\"name\":\"08264e4e2231a0884129\",\"layouts\":[{\"id\":0,\"position\":{\"x\":562.0289264437479,\"y\":10.890730889174009,\"z\":9000,\"width\":234.621372965322,\"height\":66.12880396319886}}],\"singleVisual\":{\"visualType\":\"slicer\",\"projections\":{\"Values\":[{\"queryRef\":\"Agencias.Provincia\",\"active\":true}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"a\",\"Entity\":\"Agencias\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"a\"}},\"Property\":\"Provincia\"},\"Name\":\"Agencias.Provincia\"}]},\"drillFilterOtherVisuals\":true,\"objects\":{\"data\":[{\"properties\":{\"mode\":{\"expr\":{\"Literal\":{\"Value\":\"'Dropdown'\"}}}}}],\"general\":[{\"properties\":{}}]}}}",
+          "filters": "[]",
+          "height": 66.13,
+          "width": 234.62,
+          "x": 562.03,
+          "y": 10.89,
+          "z": 9000.00
+        },
+        {
+          "config": "{\"name\":\"19868f0a3d416fdc2303\",\"layouts\":[{\"id\":0,\"position\":{\"x\":318.3488132094943,\"y\":10.890730889174009,\"z\":8000,\"width\":234.621372965322,\"height\":66.12880396319886}}],\"singleVisual\":{\"visualType\":\"slicer\",\"projections\":{\"Values\":[{\"queryRef\":\"Agencias.Agencia\",\"active\":true}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"a\",\"Entity\":\"Agencias\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"a\"}},\"Property\":\"Agencia\"},\"Name\":\"Agencias.Agencia\"}]},\"drillFilterOtherVisuals\":true,\"objects\":{\"data\":[{\"properties\":{\"mode\":{\"expr\":{\"Literal\":{\"Value\":\"'Dropdown'\"}}}}}],\"general\":[{\"properties\":{}}]}}}",
+          "filters": "[]",
+          "height": 66.13,
+          "width": 234.62,
+          "x": 318.35,
+          "y": 10.89,
+          "z": 8000.00
+        },
+        {
+          "config": "{\"name\":\"3937fcc0c84e9870c50e\",\"layouts\":[{\"id\":0,\"position\":{\"x\":10.567595459236326,\"y\":237.77089783281733,\"z\":5000,\"width\":287.9669762641899,\"height\":375.14963880288957}}],\"singleVisual\":{\"visualType\":\"multiRowCard\",\"projections\":{\"Values\":[{\"queryRef\":\"Accidentes.Gravedad\"},{\"queryRef\":\"Sum(Costo_de_Accidentes.Prestaciones totales)\"},{\"queryRef\":\"Medidas.Prom de % de incapacidad\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"c\",\"Entity\":\"Costo_de_Accidentes\",\"Type\":0},{\"Name\":\"a\",\"Entity\":\"Accidentes\",\"Type\":0},{\"Name\":\"m\",\"Entity\":\"Medidas\",\"Type\":0}],\"Select\":[{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"Prestaciones totales\"}},\"Function\":1},\"Name\":\"Sum(Costo_de_Accidentes.Prestaciones totales)\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"a\"}},\"Property\":\"Gravedad\"},\"Name\":\"Accidentes.Gravedad\"},{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"m\"}},\"Property\":\"Prom % inc.\"},\"Name\":\"Medidas.Prom de % de incapacidad\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"Prestaciones totales\"}},\"Function\":0}}}]},\"columnProperties\":{\"Sum(Costo_de_Accidentes.Prestaciones totales)\":{\"displayName\":\"Prom. costo\"}},\"drillFilterOtherVisuals\":true,\"objects\":{\"categoryLabels\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}]},\"vcObjects\":{\"title\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"text\":{\"expr\":{\"Literal\":{\"Value\":\"'Costos promedio por Gravedad del siniestro'\"}}}}}],\"border\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"radius\":{\"expr\":{\"Literal\":{\"Value\":\"17D\"}}},\"color\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":0,\"Percent\":-0.3}}}}}}}]}}}",
+          "filters": "[]",
+          "height": 375.15,
+          "width": 287.97,
+          "x": 10.57,
+          "y": 237.77,
+          "z": 5000.00
+        },
+        {
+          "config": "{\"name\":\"4d5a9a8d0ec2a77c4672\",\"layouts\":[{\"id\":0,\"position\":{\"x\":3.50444900752909,\"y\":48.186173853524984,\"z\":12000,\"width\":305.7631759069131,\"height\":60.4517453798768}}],\"singleVisual\":{\"visualType\":\"textbox\",\"drillFilterOtherVisuals\":true,\"objects\":{\"general\":[{\"properties\":{\"paragraphs\":[{\"textRuns\":[{\"value\":\"SINIESTROS ART S.A.\",\"textStyle\":{\"fontWeight\":\"bold\",\"fontSize\":\"12pt\"}}],\"horizontalTextAlignment\":\"center\"},{\"textRuns\":[{\"value\":\"\"}]}]}}]}}}",
+          "filters": "[]",
+          "height": 60.45,
+          "width": 305.76,
+          "x": 3.50,
+          "y": 48.19,
+          "z": 12000.00
+        },
+        {
+          "config": "{\"name\":\"561c1e11b1315bb2dec3\",\"layouts\":[{\"id\":0,\"position\":{\"x\":976,\"y\":112,\"z\":4000,\"width\":272,\"height\":128}}],\"singleVisual\":{\"visualType\":\"card\",\"projections\":{\"Values\":[{\"queryRef\":\"Sum(Costo_de_Accidentes.Prestaciones totales)\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"c\",\"Entity\":\"Costo_de_Accidentes\",\"Type\":0}],\"Select\":[{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"Prestaciones totales\"}},\"Function\":0},\"Name\":\"Sum(Costo_de_Accidentes.Prestaciones totales)\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"Prestaciones totales\"}},\"Function\":0}}}]},\"columnProperties\":{\"Sum(Costo_de_Accidentes.Prestaciones totales)\":{\"displayName\":\"Prestaciones Totales\"}},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"objects\":{\"labels\":[{\"properties\":{\"labelDisplayUnits\":{\"expr\":{\"Literal\":{\"Value\":\"1000000D\"}}},\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"25D\"}}},\"labelPrecision\":{\"expr\":{\"Literal\":{\"Value\":\"0L\"}}}}}]},\"vcObjects\":{\"border\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"color\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":0,\"Percent\":-0.3}}}}},\"radius\":{\"expr\":{\"Literal\":{\"Value\":\"17D\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 128.00,
+          "width": 272.00,
+          "x": 976.00,
+          "y": 112.00,
+          "z": 4000.00
+        },
+        {
+          "config": "{\"name\":\"5ff2d3b82e9fb2cf4f4e\",\"layouts\":[{\"id\":0,\"position\":{\"x\":10.567595459236326,\"y\":138.69969040247676,\"z\":1000,\"width\":287.9669762641899,\"height\":67.36842105263158}}],\"singleVisual\":{\"visualType\":\"slicer\",\"projections\":{\"Values\":[{\"queryRef\":\"Calendario.Date.Variación.Jerarquía de fechas.Trimestre\",\"active\":true},{\"queryRef\":\"Calendario.Date.Variación.Jerarquía de fechas.Mes\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"c\",\"Entity\":\"Calendario\",\"Type\":0}],\"Select\":[{\"HierarchyLevel\":{\"Expression\":{\"Hierarchy\":{\"Expression\":{\"PropertyVariationSource\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Name\":\"Variación\",\"Property\":\"Date\"}},\"Hierarchy\":\"Jerarquía de fechas\"}},\"Level\":\"Trimestre\"},\"Name\":\"Calendario.Date.Variación.Jerarquía de fechas.Trimestre\"},{\"HierarchyLevel\":{\"Expression\":{\"Hierarchy\":{\"Expression\":{\"PropertyVariationSource\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Name\":\"Variación\",\"Property\":\"Date\"}},\"Hierarchy\":\"Jerarquía de fechas\"}},\"Level\":\"Mes\"},\"Name\":\"Calendario.Date.Variación.Jerarquía de fechas.Mes\"}]},\"expansionStates\":[{\"roles\":[\"Values\"],\"levels\":[{\"queryRefs\":[\"Calendario.Date.Variación.Jerarquía de fechas.Trimestre\"],\"isCollapsed\":true,\"identityKeys\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"LocalDateTable_c4de84f7-4f92-4ffc-9f2d-0f39053a27f3\"}},\"Property\":\"Trimestre\"}}],\"isPinned\":true},{\"queryRefs\":[\"Calendario.Date.Variación.Jerarquía de fechas.Mes\"],\"isCollapsed\":true,\"isPinned\":true}],\"root\":{\"identityValues\":null}}],\"drillFilterOtherVisuals\":true,\"objects\":{\"data\":[{\"properties\":{\"mode\":{\"expr\":{\"Literal\":{\"Value\":\"'Dropdown'\"}}}}}],\"general\":[{\"properties\":{}}],\"items\":[{\"properties\":{\"steppedLayoutIndentation\":{\"expr\":{\"Literal\":{\"Value\":\"15D\"}}}}}]}}}",
+          "filters": "[{\"name\":\"Filter458e81d95a02f74cd197\",\"expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"Calendario\"}},\"Property\":\"Date\"}},\"filter\":{\"Version\":2,\"From\":[{\"Name\":\"l\",\"Entity\":\"LocalDateTable_c4de84f7-4f92-4ffc-9f2d-0f39053a27f3\",\"Type\":0}],\"Where\":[{\"Condition\":{\"Not\":{\"Expression\":{\"In\":{\"Expressions\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"l\"}},\"Property\":\"Año\"}}],\"Values\":[[{\"Literal\":{\"Value\":\"null\"}}],[{\"Literal\":{\"Value\":\"2021L\"}}]]}}}}}]},\"type\":\"Categorical\",\"cachedDisplayNames\":[{\"id\":{\"scopeId\":{\"Comparison\":{\"ComparisonKind\":0,\"Left\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"LocalDateTable_c4de84f7-4f92-4ffc-9f2d-0f39053a27f3\"}},\"Property\":\"Año\"}},\"Right\":{\"Literal\":{\"Value\":\"null\"}}}}},\"displayName\":\"(En blanco)\"},{\"id\":{\"scopeId\":{\"Comparison\":{\"ComparisonKind\":0,\"Left\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"LocalDateTable_c4de84f7-4f92-4ffc-9f2d-0f39053a27f3\"}},\"Property\":\"Año\"}},\"Right\":{\"Literal\":{\"Value\":\"2021L\"}}}}},\"displayName\":\"2021\"}],\"howCreated\":1,\"objects\":{\"general\":[{\"properties\":{\"isInvertedSelectionMode\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}]},\"isHiddenInViewMode\":false}]",
+          "height": 67.37,
+          "width": 287.97,
+          "x": 10.57,
+          "y": 138.70,
+          "z": 1000.00
+        },
+        {
+          "config": "{\"name\":\"757da61dcb36dfc56b0d\",\"layouts\":[{\"id\":0,\"position\":{\"x\":807.7754962354552,\"y\":16.646132785763175,\"z\":10000,\"width\":160.32854209445586,\"height\":48.186173853524984}}],\"singleVisual\":{\"visualType\":\"actionButton\",\"drillFilterOtherVisuals\":true,\"objects\":{\"icon\":[{\"properties\":{\"shapeType\":{\"expr\":{\"Literal\":{\"Value\":\"'blank'\"}}},\"lineColor\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":0,\"Percent\":0}}}}},\"leftMargin\":{\"expr\":{\"Literal\":{\"Value\":\"0L\"}}},\"rightMargin\":{\"expr\":{\"Literal\":{\"Value\":\"0L\"}}},\"topMargin\":{\"expr\":{\"Literal\":{\"Value\":\"0L\"}}},\"bottomMargin\":{\"expr\":{\"Literal\":{\"Value\":\"0L\"}}}},\"selector\":{\"id\":\"default\"}}],\"text\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}},{\"properties\":{\"text\":{\"expr\":{\"Literal\":{\"Value\":\"'Volver a Glosario'\"}}},\"fontColor\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":4,\"Percent\":-0.5}}}}},\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"12D\"}}}},\"selector\":{\"id\":\"default\"}}],\"fill\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}},{\"properties\":{\"fillColor\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":3,\"Percent\":0.6}}}}}},\"selector\":{\"id\":\"default\"}}],\"outline\":[{\"properties\":{\"lineColor\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":3,\"Percent\":0.6}}}}}},\"selector\":{\"id\":\"default\"}}]},\"vcObjects\":{\"border\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"radius\":{\"expr\":{\"Literal\":{\"Value\":\"30D\"}}},\"color\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":0,\"Percent\":0}}}}}}}],\"background\":[{\"properties\":{\"color\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":0,\"Percent\":0}}}}},\"transparency\":{\"expr\":{\"Literal\":{\"Value\":\"0D\"}}}}}],\"visualLink\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"type\":{\"expr\":{\"Literal\":{\"Value\":\"'PageNavigation'\"}}},\"navigationSection\":{\"expr\":{\"Literal\":{\"Value\":\"'ReportSection65045781687b0e464aad'\"}}},\"tooltip\":{\"expr\":{\"Literal\":{\"Value\":\"'va a la pagina Glosario'\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 48.19,
+          "width": 160.33,
+          "x": 807.78,
+          "y": 16.65,
+          "z": 10000.00
+        },
+        {
+          "config": "{\"name\":\"88f22393369f63d8fe8d\",\"layouts\":[{\"id\":0,\"position\":{\"x\":1136,\"y\":16,\"z\":6000,\"width\":128,\"height\":48.00000000000001}}],\"singleVisual\":{\"visualType\":\"actionButton\",\"drillFilterOtherVisuals\":true,\"objects\":{\"icon\":[{\"properties\":{\"shapeType\":{\"expr\":{\"Literal\":{\"Value\":\"'blank'\"}}},\"lineColor\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":0,\"Percent\":0}}}}},\"leftMargin\":{\"expr\":{\"Literal\":{\"Value\":\"0L\"}}},\"rightMargin\":{\"expr\":{\"Literal\":{\"Value\":\"0L\"}}},\"topMargin\":{\"expr\":{\"Literal\":{\"Value\":\"0L\"}}},\"bottomMargin\":{\"expr\":{\"Literal\":{\"Value\":\"0L\"}}}},\"selector\":{\"id\":\"default\"}}],\"text\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}},{\"properties\":{\"text\":{\"expr\":{\"Literal\":{\"Value\":\"'Siguiente'\"}}},\"fontColor\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":4,\"Percent\":-0.5}}}}},\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"12D\"}}}},\"selector\":{\"id\":\"default\"}}],\"fill\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}},{\"properties\":{\"fillColor\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":3,\"Percent\":0.6}}}}}},\"selector\":{\"id\":\"default\"}}],\"outline\":[{\"properties\":{\"lineColor\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":3,\"Percent\":0.6}}}}}},\"selector\":{\"id\":\"default\"}}]},\"vcObjects\":{\"border\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"radius\":{\"expr\":{\"Literal\":{\"Value\":\"30D\"}}},\"color\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":0,\"Percent\":0}}}}}}}],\"background\":[{\"properties\":{\"color\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":3,\"Percent\":0.6}}}}},\"transparency\":{\"expr\":{\"Literal\":{\"Value\":\"0D\"}}}}}],\"visualLink\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"type\":{\"expr\":{\"Literal\":{\"Value\":\"'PageNavigation'\"}}},\"navigationSection\":{\"expr\":{\"Literal\":{\"Value\":\"'ReportSection9f6af8513a630f9f36b8'\"}}},\"tooltip\":{\"expr\":{\"Literal\":{\"Value\":\"'va a la pagina Siguiente'\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 48.00,
+          "width": 128.00,
+          "x": 1136.00,
+          "y": 16.00,
+          "z": 6000.00
+        },
+        {
+          "config": "{\"name\":\"a040efa2620fdf3347fc\",\"layouts\":[{\"id\":0,\"position\":{\"x\":7.885010266940452,\"y\":73.59342915811088,\"z\":13000,\"width\":300.50650239561946,\"height\":41.177275838466805}}],\"singleVisual\":{\"visualType\":\"image\",\"drillFilterOtherVisuals\":true,\"objects\":{\"general\":[{\"properties\":{\"imageUrl\":{\"expr\":{\"ResourcePackageItem\":{\"PackageName\":\"RegisteredResources\",\"PackageType\":1,\"ItemName\":\"Seguridas_images01996111659359312.jpg\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 41.18,
+          "width": 300.51,
+          "x": 7.89,
+          "y": 73.59,
+          "z": 13000.00
+        },
+        {
+          "config": "{\"name\":\"b3f3b137fc7ee8bce71e\",\"layouts\":[{\"id\":0,\"position\":{\"x\":368,\"y\":272,\"z\":3000,\"width\":880,\"height\":336}}],\"singleVisual\":{\"visualType\":\"lineChart\",\"projections\":{\"Y\":[{\"queryRef\":\"Sum(Costo_de_Accidentes.Prestaciones_Dinerarias)\"},{\"queryRef\":\"CountNonNull(Costo_de_Accidentes.Prestaciones_Medicas)\"}],\"Category\":[{\"queryRef\":\"Calendario.Date.Variación.Jerarquía de fechas.Año\",\"active\":true},{\"queryRef\":\"Calendario.Date.Variación.Jerarquía de fechas.Trimestre\"},{\"queryRef\":\"Calendario.Date.Variación.Jerarquía de fechas.Mes\"},{\"queryRef\":\"Calendario.Date.Variación.Jerarquía de fechas.Día\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"c\",\"Entity\":\"Costo_de_Accidentes\",\"Type\":0},{\"Name\":\"c1\",\"Entity\":\"Calendario\",\"Type\":0}],\"Select\":[{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"Prestaciones_Dinerarias\"}},\"Function\":0},\"Name\":\"Sum(Costo_de_Accidentes.Prestaciones_Dinerarias)\"},{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"Prestaciones_Medicas\"}},\"Function\":0},\"Name\":\"CountNonNull(Costo_de_Accidentes.Prestaciones_Medicas)\"},{\"HierarchyLevel\":{\"Expression\":{\"Hierarchy\":{\"Expression\":{\"PropertyVariationSource\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c1\"}},\"Name\":\"Variación\",\"Property\":\"Date\"}},\"Hierarchy\":\"Jerarquía de fechas\"}},\"Level\":\"Año\"},\"Name\":\"Calendario.Date.Variación.Jerarquía de fechas.Año\"},{\"HierarchyLevel\":{\"Expression\":{\"Hierarchy\":{\"Expression\":{\"PropertyVariationSource\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c1\"}},\"Name\":\"Variación\",\"Property\":\"Date\"}},\"Hierarchy\":\"Jerarquía de fechas\"}},\"Level\":\"Trimestre\"},\"Name\":\"Calendario.Date.Variación.Jerarquía de fechas.Trimestre\"},{\"HierarchyLevel\":{\"Expression\":{\"Hierarchy\":{\"Expression\":{\"PropertyVariationSource\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c1\"}},\"Name\":\"Variación\",\"Property\":\"Date\"}},\"Hierarchy\":\"Jerarquía de fechas\"}},\"Level\":\"Mes\"},\"Name\":\"Calendario.Date.Variación.Jerarquía de fechas.Mes\"},{\"HierarchyLevel\":{\"Expression\":{\"Hierarchy\":{\"Expression\":{\"PropertyVariationSource\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c1\"}},\"Name\":\"Variación\",\"Property\":\"Date\"}},\"Hierarchy\":\"Jerarquía de fechas\"}},\"Level\":\"Día\"},\"Name\":\"Calendario.Date.Variación.Jerarquía de fechas.Día\"}]},\"columnProperties\":{\"Sum(Costo_de_Accidentes.Prestaciones_Dinerarias)\":{\"displayName\":\"Prestaciones Dinerarias\"},\"CountNonNull(Costo_de_Accidentes.Prestaciones_Medicas)\":{\"displayName\":\"Prestaciones Medicas\"}},\"drillFilterOtherVisuals\":true,\"objects\":{\"labels\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"labelDisplayUnits\":{\"expr\":{\"Literal\":{\"Value\":\"1000000D\"}}},\"labelPrecision\":{\"expr\":{\"Literal\":{\"Value\":\"0L\"}}}}}]},\"vcObjects\":{\"title\":[{\"properties\":{\"text\":{\"expr\":{\"Literal\":{\"Value\":\"'Prestaciones Dinerarias y Medicas'\"}}}}}],\"border\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"radius\":{\"expr\":{\"Literal\":{\"Value\":\"30D\"}}},\"color\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":0,\"Percent\":-0.1}}}}}}}]}}}",
+          "filters": "[]",
+          "height": 336.00,
+          "width": 880.00,
+          "x": 368.00,
+          "y": 272.00,
+          "z": 3000.00
+        },
+        {
+          "config": "{\"name\":\"b64a07735b154af0f5b1\",\"layouts\":[{\"id\":0,\"position\":{\"x\":368,\"y\":112,\"z\":0,\"width\":272,\"height\":128}}],\"singleVisual\":{\"visualType\":\"card\",\"projections\":{\"Values\":[{\"queryRef\":\"CountNonNull(Costo_de_Accidentes.Prestaciones_Dinerarias)\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"c\",\"Entity\":\"Costo_de_Accidentes\",\"Type\":0}],\"Select\":[{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"Prestaciones_Dinerarias\"}},\"Function\":0},\"Name\":\"CountNonNull(Costo_de_Accidentes.Prestaciones_Dinerarias)\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"Prestaciones_Dinerarias\"}},\"Function\":0}}}]},\"columnProperties\":{\"CountNonNull(Costo_de_Accidentes.Prestaciones_Dinerarias)\":{\"displayName\":\"Total de Prestaciones Dinerarias\"}},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"objects\":{\"labels\":[{\"properties\":{\"labelDisplayUnits\":{\"expr\":{\"Literal\":{\"Value\":\"1000000D\"}}},\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"25D\"}}},\"labelPrecision\":{\"expr\":{\"Literal\":{\"Value\":\"0L\"}}}}}]},\"vcObjects\":{\"border\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"color\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":0,\"Percent\":-0.3}}}}},\"radius\":{\"expr\":{\"Literal\":{\"Value\":\"17D\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 128.00,
+          "width": 272.00,
+          "x": 368.00,
+          "y": 112.00,
+          "z": 0.00
+        },
+        {
+          "config": "{\"name\":\"bb6bcd31d9df56cd0000\",\"layouts\":[{\"id\":0,\"position\":{\"x\":672,\"y\":112,\"z\":2000,\"width\":272,\"height\":128}}],\"singleVisual\":{\"visualType\":\"card\",\"projections\":{\"Values\":[{\"queryRef\":\"CountNonNull(Costo_de_Accidentes.Prestaciones_Medicas)\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"c\",\"Entity\":\"Costo_de_Accidentes\",\"Type\":0}],\"Select\":[{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"Prestaciones_Medicas\"}},\"Function\":0},\"Name\":\"CountNonNull(Costo_de_Accidentes.Prestaciones_Medicas)\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"Prestaciones_Medicas\"}},\"Function\":0}}}]},\"columnProperties\":{\"CountNonNull(Costo_de_Accidentes.Prestaciones_Medicas)\":{\"displayName\":\"Total de Prestaciones Médicas\"}},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"objects\":{\"labels\":[{\"properties\":{\"labelDisplayUnits\":{\"expr\":{\"Literal\":{\"Value\":\"1000000D\"}}},\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"25D\"}}},\"labelPrecision\":{\"expr\":{\"Literal\":{\"Value\":\"0L\"}}}}}]},\"vcObjects\":{\"border\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"color\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":0,\"Percent\":-0.3}}}}},\"radius\":{\"expr\":{\"Literal\":{\"Value\":\"17D\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 128.00,
+          "width": 272.00,
+          "x": 672.00,
+          "y": 112.00,
+          "z": 2000.00
+        },
+        {
+          "config": "{\"name\":\"dd8f7cb6367f85630187\",\"layouts\":[{\"id\":0,\"position\":{\"x\":0,\"y\":5.256673511293635,\"z\":11000,\"width\":317.1526351813826,\"height\":48.186173853524984}}],\"singleVisual\":{\"visualType\":\"textbox\",\"drillFilterOtherVisuals\":true,\"objects\":{\"general\":[{\"properties\":{\"paragraphs\":[{\"textRuns\":[{\"value\":\"Costos de Prestaciones\",\"textStyle\":{\"fontWeight\":\"bold\",\"fontSize\":\"18pt\",\"color\":\"#12239e\"}}],\"horizontalTextAlignment\":\"center\"}]}}]}}}",
+          "filters": "[]",
+          "height": 48.19,
+          "width": 317.15,
+          "x": 0.00,
+          "y": 5.26,
+          "z": 11000.00
+        },
+        {
+          "config": "{\"name\":\"f3c2154bfbca018b46fe\",\"layouts\":[{\"id\":0,\"position\":{\"x\":992,\"y\":16,\"z\":7000,\"width\":128,\"height\":48.00000000000001}}],\"singleVisual\":{\"visualType\":\"actionButton\",\"drillFilterOtherVisuals\":true,\"objects\":{\"icon\":[{\"properties\":{\"shapeType\":{\"expr\":{\"Literal\":{\"Value\":\"'blank'\"}}},\"lineColor\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":0,\"Percent\":0}}}}},\"leftMargin\":{\"expr\":{\"Literal\":{\"Value\":\"0L\"}}},\"rightMargin\":{\"expr\":{\"Literal\":{\"Value\":\"0L\"}}},\"topMargin\":{\"expr\":{\"Literal\":{\"Value\":\"0L\"}}},\"bottomMargin\":{\"expr\":{\"Literal\":{\"Value\":\"0L\"}}}},\"selector\":{\"id\":\"default\"}}],\"text\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}},{\"properties\":{\"text\":{\"expr\":{\"Literal\":{\"Value\":\"'Anterior'\"}}},\"fontColor\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":4,\"Percent\":-0.5}}}}},\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"12D\"}}}},\"selector\":{\"id\":\"default\"}}],\"fill\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}},{\"properties\":{\"fillColor\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":3,\"Percent\":0.6}}}}}},\"selector\":{\"id\":\"default\"}}],\"outline\":[{\"properties\":{\"lineColor\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":3,\"Percent\":0.6}}}}}},\"selector\":{\"id\":\"default\"}}]},\"vcObjects\":{\"border\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"radius\":{\"expr\":{\"Literal\":{\"Value\":\"30D\"}}},\"color\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":0,\"Percent\":0}}}}}}}],\"background\":[{\"properties\":{\"color\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":3,\"Percent\":0.6}}}}},\"transparency\":{\"expr\":{\"Literal\":{\"Value\":\"0D\"}}}}}],\"visualLink\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"type\":{\"expr\":{\"Literal\":{\"Value\":\"'PageNavigation'\"}}},\"navigationSection\":{\"expr\":{\"Literal\":{\"Value\":\"'ReportSection4ac9d6e1e787fdd91679'\"}}},\"tooltip\":{\"expr\":{\"Literal\":{\"Value\":\"'va a la pagina Siguiente'\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 48.00,
+          "width": 128.00,
+          "x": 992.00,
+          "y": 16.00,
+          "z": 7000.00
+        }
+      ],
+      "width": 1280.00
+    },
+    {
+      "config": "{\"objects\":{\"outspacePane\":[{\"properties\":{\"backgroundColor\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":0,\"Percent\":0}}}}}}}],\"outspace\":[{\"properties\":{\"image\":{\"image\":{\"name\":{\"expr\":{\"Literal\":{\"Value\":\"''\"}}},\"url\":{\"expr\":{\"Literal\":{\"Value\":\"''\"}}}}}}}]},\"visibility\":1,\"type\":1}",
+      "displayName": "Tooltip",
+      "displayOption": 3,
+      "filters": "[]",
+      "height": 100.00,
+      "name": "ReportSection3d714c16a8522f8a8ea7",
+      "ordinal": 6,
+      "visualContainers": [
+        {
+          "config": "{\"name\":\"f6eac22b9a94e034cbf9\",\"layouts\":[{\"id\":0,\"position\":{\"x\":0,\"y\":0,\"z\":0,\"width\":320,\"height\":100}}],\"singleVisual\":{\"visualType\":\"card\",\"projections\":{\"Values\":[{\"queryRef\":\"Medidas.Tooltip Diag\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"m\",\"Entity\":\"Medidas\",\"Type\":0}],\"Select\":[{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"m\"}},\"Property\":\"Tooltip Diag\"},\"Name\":\"Medidas.Tooltip Diag\"}]},\"drillFilterOtherVisuals\":true,\"objects\":{\"labels\":[{\"properties\":{\"color\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":0,\"Percent\":-0.5}}}}},\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"10D\"}}},\"labelDisplayUnits\":{\"expr\":{\"Literal\":{\"Value\":\"1D\"}}},\"labelPrecision\":{\"expr\":{\"Literal\":{\"Value\":\"0L\"}}}}}],\"categoryLabels\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 100.00,
+          "width": 320.00,
+          "x": 0.00,
+          "y": 0.00,
+          "z": 0.00
+        }
+      ],
+      "width": 320.00
+    },
+    {
+      "config": "{\"objects\":{\"background\":[{\"properties\":{\"color\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":0,\"Percent\":0}}}}},\"transparency\":{\"expr\":{\"Literal\":{\"Value\":\"100D\"}}}}}],\"outspacePane\":[{\"properties\":{\"width\":{\"expr\":{\"Literal\":{\"Value\":\"226L\"}}},\"backgroundColor\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":0,\"Percent\":0}}}}}}}],\"outspace\":[{\"properties\":{\"image\":{\"image\":{\"name\":{\"expr\":{\"Literal\":{\"Value\":\"''\"}}},\"url\":{\"expr\":{\"Literal\":{\"Value\":\"''\"}}}}}}}]}}",
+      "displayName": "Portada",
+      "displayOption": 1,
+      "filters": "[]",
+      "height": 720.00,
+      "name": "ReportSection470ee5fc0a948dc8b760",
+      "visualContainers": [
+        {
+          "config": "{\"name\":\"4be188eef0618f6787de\",\"layouts\":[{\"id\":0,\"position\":{\"x\":548.6559802712701,\"y\":551.3193588162762,\"z\":2000,\"width\":246.806411837238,\"height\":109.19852034525277}}],\"singleVisual\":{\"visualType\":\"actionButton\",\"drillFilterOtherVisuals\":true,\"objects\":{\"icon\":[{\"properties\":{\"shapeType\":{\"expr\":{\"Literal\":{\"Value\":\"'blank'\"}}},\"lineColor\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":0,\"Percent\":0}}}}},\"leftMargin\":{\"expr\":{\"Literal\":{\"Value\":\"0L\"}}},\"rightMargin\":{\"expr\":{\"Literal\":{\"Value\":\"0L\"}}},\"topMargin\":{\"expr\":{\"Literal\":{\"Value\":\"0L\"}}},\"bottomMargin\":{\"expr\":{\"Literal\":{\"Value\":\"0L\"}}}},\"selector\":{\"id\":\"default\"}}],\"text\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}},{\"properties\":{\"text\":{\"expr\":{\"Literal\":{\"Value\":\"'Glosario'\"}}},\"fontColor\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":4,\"Percent\":-0.5}}}}},\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"27D\"}}}},\"selector\":{\"id\":\"default\"}}],\"fill\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}},{\"properties\":{\"fillColor\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":4,\"Percent\":0}}}}}},\"selector\":{\"id\":\"default\"}}],\"outline\":[{\"properties\":{\"lineColor\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":3,\"Percent\":0.6}}}}}},\"selector\":{\"id\":\"default\"}}]},\"vcObjects\":{\"border\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"radius\":{\"expr\":{\"Literal\":{\"Value\":\"30D\"}}},\"color\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":0,\"Percent\":0}}}}}}}],\"background\":[{\"properties\":{\"color\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":3,\"Percent\":0.6}}}}},\"transparency\":{\"expr\":{\"Literal\":{\"Value\":\"0D\"}}}}}],\"visualLink\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"type\":{\"expr\":{\"Literal\":{\"Value\":\"'PageNavigation'\"}}},\"navigationSection\":{\"expr\":{\"Literal\":{\"Value\":\"'ReportSection65045781687b0e464aad'\"}}},\"tooltip\":{\"expr\":{\"Literal\":{\"Value\":\"'va al Glosario'\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 109.20,
+          "width": 246.81,
+          "x": 548.66,
+          "y": 551.32,
+          "z": 2000.00
+        },
+        {
+          "config": "{\"name\":\"65d34fc2efa5a0c091ce\",\"layouts\":[{\"id\":0,\"position\":{\"x\":1104.4143033292232,\"y\":519.3588162762022,\"z\":4000,\"width\":173.11960542540075,\"height\":197.09001233045623}}],\"singleVisual\":{\"visualType\":\"textbox\",\"drillFilterOtherVisuals\":true,\"objects\":{\"general\":[{\"properties\":{\"paragraphs\":[{\"textRuns\":[{\"value\":\"Integrantes:\",\"textStyle\":{\"fontWeight\":\"bold\"}}]},{\"textRuns\":[{\"value\":\"-Daiana Agustini\"}]},{\"textRuns\":[{\"value\":\"-Diego Oviedo\"}]},{\"textRuns\":[{\"value\":\"-Facundo Ardusso\"}]},{\"textRuns\":[{\"value\":\"\"}]},{\"textRuns\":[{\"value\":\"Tutora:\",\"textStyle\":{\"fontWeight\":\"bold\"}}]},{\"textRuns\":[{\"value\":\"- Lourdes Ibañez\"}]},{\"textRuns\":[{\"value\":\"\"}]},{\"textRuns\":[{\"value\":\"Profesor:\",\"textStyle\":{\"fontWeight\":\"bold\"}}]},{\"textRuns\":[{\"value\":\"-Nahuel Rodriguez Araujo\"}]}]}}]}}}",
+          "filters": "[]",
+          "height": 197.09,
+          "width": 173.12,
+          "x": 1104.41,
+          "y": 519.36,
+          "z": 4000.00
+        },
+        {
+          "config": "{\"name\":\"b4a5e99f11d32b7ac553\",\"layouts\":[{\"id\":0,\"position\":{\"x\":372.8729963008631,\"y\":360.4438964241677,\"z\":3000,\"width\":598.3723797780518,\"height\":150.03699136868065}}],\"singleVisual\":{\"visualType\":\"card\",\"projections\":{\"Values\":[{\"queryRef\":\"Medidas.Última hora de actualización\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"m\",\"Entity\":\"Medidas\",\"Type\":0}],\"Select\":[{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"m\"}},\"Property\":\"Última hora de actualización\"},\"Name\":\"Medidas.Última hora de actualización\"}],\"OrderBy\":[{\"Direction\":1,\"Expression\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"m\"}},\"Property\":\"Última hora de actualización\"}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"objects\":{\"labels\":[{\"properties\":{\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"25D\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 150.04,
+          "width": 598.37,
+          "x": 372.87,
+          "y": 360.44,
+          "z": 3000.00
+        },
+        {
+          "config": "{\"name\":\"c2f4488a7a12ad9f3d01\",\"layouts\":[{\"id\":0,\"position\":{\"x\":522.0221948212084,\"y\":144.7102342786683,\"z\":1000,\"width\":300.0739827373613,\"height\":148.26140567200986}}],\"singleVisual\":{\"visualType\":\"image\",\"drillFilterOtherVisuals\":true,\"objects\":{\"general\":[{\"properties\":{\"imageUrl\":{\"expr\":{\"ResourcePackageItem\":{\"PackageName\":\"RegisteredResources\",\"PackageType\":1,\"ItemName\":\"Seguridas_images01996111659359312.jpg\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 148.26,
+          "width": 300.07,
+          "x": 522.02,
+          "y": 144.71,
+          "z": 1000.00
+        },
+        {
+          "config": "{\"name\":\"e3ae1bfaec50c4b8ec0f\",\"layouts\":[{\"id\":0,\"position\":{\"x\":372.8729963008631,\"y\":292.9716399506782,\"z\":0,\"width\":598.3723797780518,\"height\":83.45252774352652}}],\"singleVisual\":{\"visualType\":\"textbox\",\"drillFilterOtherVisuals\":true,\"objects\":{\"general\":[{\"properties\":{\"paragraphs\":[{\"textRuns\":[{\"value\":\"SINIESTROS ART S. A.\",\"textStyle\":{\"fontWeight\":\"bold\",\"fontSize\":\"36pt\"}}],\"horizontalTextAlignment\":\"center\"}]}}]}}}",
+          "filters": "[]",
+          "height": 83.45,
+          "width": 598.37,
+          "x": 372.87,
+          "y": 292.97,
+          "z": 0.00
+        }
+      ],
+      "width": 1280.00
+    },
+    {
+      "config": "{\"objects\":{\"outspacePane\":[{\"properties\":{\"width\":{\"expr\":{\"Literal\":{\"Value\":\"182L\"}}},\"backgroundColor\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":0,\"Percent\":0}}}}}}}],\"background\":[{\"properties\":{\"transparency\":{\"expr\":{\"Literal\":{\"Value\":\"40D\"}}},\"image\":{\"image\":{\"name\":{\"expr\":{\"Literal\":{\"Value\":\"'Segmento.jpg'\"}}},\"url\":{\"expr\":{\"ResourcePackageItem\":{\"PackageName\":\"RegisteredResources\",\"PackageType\":1,\"ItemName\":\"Segmento9295740149949432.jpg\"}}},\"scaling\":{\"expr\":{\"Literal\":{\"Value\":\"'Fit'\"}}}}}}}],\"outspace\":[{\"properties\":{\"image\":{\"image\":{\"name\":{\"expr\":{\"Literal\":{\"Value\":\"''\"}}},\"url\":{\"expr\":{\"Literal\":{\"Value\":\"''\"}}}}}}}]}}",
+      "displayName": "Detalle",
+      "displayOption": 2,
+      "filters": "[]",
+      "height": 720.00,
+      "name": "ReportSection4ac9d6e1e787fdd91679",
+      "ordinal": 3,
+      "visualContainers": [
+        {
+          "config": "{\"name\":\"0b8d92f5669a71404e1e\",\"layouts\":[{\"id\":0,\"position\":{\"x\":7.885010266940452,\"y\":73.59342915811088,\"z\":14000,\"width\":300.50650239561946,\"height\":41.177275838466805}}],\"singleVisual\":{\"visualType\":\"image\",\"drillFilterOtherVisuals\":true,\"objects\":{\"general\":[{\"properties\":{\"imageUrl\":{\"expr\":{\"ResourcePackageItem\":{\"PackageName\":\"RegisteredResources\",\"PackageType\":1,\"ItemName\":\"Seguridas_images01996111659359312.jpg\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 41.18,
+          "width": 300.51,
+          "x": 7.89,
+          "y": 73.59,
+          "z": 14000.00
+        },
+        {
+          "config": "{\"name\":\"39c64c0ef79938bc5c97\",\"layouts\":[{\"id\":0,\"position\":{\"x\":336,\"y\":336,\"z\":6000,\"width\":352,\"height\":288}}],\"singleVisual\":{\"visualType\":\"tableEx\",\"projections\":{\"Values\":[{\"queryRef\":\"Calendario.Date.Variación.Jerarquía de fechas.Mes\"},{\"queryRef\":\"Medidas.Año anterior\"},{\"queryRef\":\"Medidas.# Siniestros\"},{\"queryRef\":\"Accidentes.Comparación\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"m\",\"Entity\":\"Medidas\",\"Type\":0},{\"Name\":\"c\",\"Entity\":\"Calendario\",\"Type\":0}],\"Select\":[{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"m\"}},\"Property\":\"Siniestros\"},\"Name\":\"Medidas.# Siniestros\"},{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"m\"}},\"Property\":\"Variación interanual\"},\"Name\":\"Accidentes.Comparación\"},{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"m\"}},\"Property\":\"Año anterior\"},\"Name\":\"Medidas.Año anterior\"},{\"HierarchyLevel\":{\"Expression\":{\"Hierarchy\":{\"Expression\":{\"PropertyVariationSource\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Name\":\"Variación\",\"Property\":\"Date\"}},\"Hierarchy\":\"Jerarquía de fechas\"}},\"Level\":\"Mes\"},\"Name\":\"Calendario.Date.Variación.Jerarquía de fechas.Mes\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"m\"}},\"Property\":\"Siniestros\"}}}]},\"columnProperties\":{\"Medidas.# Siniestros\":{\"displayName\":\"Siniestros\"}},\"drillFilterOtherVisuals\":true,\"objects\":{\"values\":[{\"properties\":{\"fontColor\":{\"solid\":{\"color\":{\"expr\":{\"Conditional\":{\"Cases\":[{\"Condition\":{\"And\":{\"Left\":{\"Comparison\":{\"ComparisonKind\":2,\"Left\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"Medidas\"}},\"Property\":\"Variación interanual\"}},\"Right\":{\"Literal\":{\"Value\":\"-10000D\"}}}},\"Right\":{\"Comparison\":{\"ComparisonKind\":3,\"Left\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"Medidas\"}},\"Property\":\"Variación interanual\"}},\"Right\":{\"Literal\":{\"Value\":\"0D\"}}}}}},\"Value\":{\"Literal\":{\"Value\":\"'#118DFF'\"}}},{\"Condition\":{\"And\":{\"Left\":{\"Comparison\":{\"ComparisonKind\":2,\"Left\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"Medidas\"}},\"Property\":\"Variación interanual\"}},\"Right\":{\"Literal\":{\"Value\":\"0D\"}}}},\"Right\":{\"Comparison\":{\"ComparisonKind\":3,\"Left\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"Medidas\"}},\"Property\":\"Variación interanual\"}},\"Right\":{\"Literal\":{\"Value\":\"10000D\"}}}}}},\"Value\":{\"Literal\":{\"Value\":\"'#D64550'\"}}}]}}}}}},\"selector\":{\"data\":[{\"dataViewWildcard\":{\"matchingOption\":1}}],\"metadata\":\"Accidentes.Comparación\"}}],\"columnWidth\":[{\"properties\":{\"value\":{\"expr\":{\"Literal\":{\"Value\":\"61.61387639030505D\"}}}},\"selector\":{\"metadata\":\"Medidas.Año anterior\"}},{\"properties\":{\"value\":{\"expr\":{\"Literal\":{\"Value\":\"71.20462546343502D\"}}}},\"selector\":{\"metadata\":\"Medidas.# Siniestros\"}},{\"properties\":{\"value\":{\"expr\":{\"Literal\":{\"Value\":\"75.55052805867112D\"}}}},\"selector\":{\"metadata\":\"Accidentes.Comparación\"}}]},\"vcObjects\":{\"border\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"radius\":{\"expr\":{\"Literal\":{\"Value\":\"30D\"}}},\"color\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":0,\"Percent\":-0.1}}}}}}}],\"title\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"text\":{\"expr\":{\"Literal\":{\"Value\":\"'Variación interanual de siniestralidad'\"}}}}}]}}}",
+          "filters": "[{\"name\":\"Filter33c08f8c931219817803\",\"expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"Calendario\"}},\"Property\":\"Date\"}},\"filter\":{\"Version\":2,\"From\":[{\"Name\":\"l\",\"Entity\":\"LocalDateTable_c4de84f7-4f92-4ffc-9f2d-0f39053a27f3\",\"Type\":0}],\"Where\":[{\"Condition\":{\"Not\":{\"Expression\":{\"In\":{\"Expressions\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"l\"}},\"Property\":\"Mes\"}}],\"Values\":[[{\"Literal\":{\"Value\":\"null\"}}]]}}}}}]},\"type\":\"Categorical\",\"cachedDisplayNames\":[{\"id\":{\"scopeId\":{\"Comparison\":{\"ComparisonKind\":0,\"Left\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"LocalDateTable_c4de84f7-4f92-4ffc-9f2d-0f39053a27f3\"}},\"Property\":\"Mes\"}},\"Right\":{\"Literal\":{\"Value\":\"null\"}}}}},\"displayName\":\"(En blanco)\"}],\"howCreated\":1,\"objects\":{\"general\":[{\"properties\":{\"isInvertedSelectionMode\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}]},\"isHiddenInViewMode\":false}]",
+          "height": 288.00,
+          "width": 352.00,
+          "x": 336.00,
+          "y": 336.00,
+          "z": 6000.00
+        },
+        {
+          "config": "{\"name\":\"40e50092c10416eb2b4e\",\"layouts\":[{\"id\":0,\"position\":{\"x\":815.6605065023956,\"y\":15.770020533880905,\"z\":11000,\"width\":160.32854209445586,\"height\":48.186173853524984}}],\"singleVisual\":{\"visualType\":\"actionButton\",\"drillFilterOtherVisuals\":true,\"objects\":{\"icon\":[{\"properties\":{\"shapeType\":{\"expr\":{\"Literal\":{\"Value\":\"'blank'\"}}},\"lineColor\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":0,\"Percent\":0}}}}},\"leftMargin\":{\"expr\":{\"Literal\":{\"Value\":\"0L\"}}},\"rightMargin\":{\"expr\":{\"Literal\":{\"Value\":\"0L\"}}},\"topMargin\":{\"expr\":{\"Literal\":{\"Value\":\"0L\"}}},\"bottomMargin\":{\"expr\":{\"Literal\":{\"Value\":\"0L\"}}}},\"selector\":{\"id\":\"default\"}}],\"text\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}},{\"properties\":{\"text\":{\"expr\":{\"Literal\":{\"Value\":\"'Volver a Glosario'\"}}},\"fontColor\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":4,\"Percent\":-0.5}}}}},\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"12D\"}}}},\"selector\":{\"id\":\"default\"}}],\"fill\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}},{\"properties\":{\"fillColor\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":3,\"Percent\":0.6}}}}}},\"selector\":{\"id\":\"default\"}}],\"outline\":[{\"properties\":{\"lineColor\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":3,\"Percent\":0.6}}}}}},\"selector\":{\"id\":\"default\"}}]},\"vcObjects\":{\"border\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"radius\":{\"expr\":{\"Literal\":{\"Value\":\"30D\"}}},\"color\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":0,\"Percent\":0}}}}}}}],\"background\":[{\"properties\":{\"color\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":0,\"Percent\":0}}}}},\"transparency\":{\"expr\":{\"Literal\":{\"Value\":\"0D\"}}}}}],\"visualLink\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"type\":{\"expr\":{\"Literal\":{\"Value\":\"'PageNavigation'\"}}},\"navigationSection\":{\"expr\":{\"Literal\":{\"Value\":\"'ReportSection65045781687b0e464aad'\"}}},\"tooltip\":{\"expr\":{\"Literal\":{\"Value\":\"'va a la pagina Glosario'\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 48.19,
+          "width": 160.33,
+          "x": 815.66,
+          "y": 15.77,
+          "z": 11000.00
+        },
+        {
+          "config": "{\"name\":\"5da483c45fb3896c0773\",\"layouts\":[{\"id\":0,\"position\":{\"x\":8.974583698510079,\"y\":314.11042944785277,\"z\":4000,\"width\":288.3085013146363,\"height\":68.43120070113936}}],\"singleVisual\":{\"visualType\":\"slicer\",\"projections\":{\"Values\":[{\"queryRef\":\"Cod_Diagnostico.Tipo de diagnostico.Tipo\",\"active\":true}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"c\",\"Entity\":\"Cod_Diagnostico\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"Tipo de diagnostico.Tipo\"},\"Name\":\"Cod_Diagnostico.Tipo de diagnostico.Tipo\"}]},\"columnProperties\":{\"Cod_Diagnostico.Tipo de diagnostico.Tipo\":{\"displayName\":\"Tipo de siniestro\"}},\"drillFilterOtherVisuals\":true,\"objects\":{\"data\":[{\"properties\":{\"mode\":{\"expr\":{\"Literal\":{\"Value\":\"'Dropdown'\"}}}}}],\"general\":[{\"properties\":{\"orientation\":{\"expr\":{\"Literal\":{\"Value\":\"1D\"}}}}}]},\"vcObjects\":{\"background\":[{\"properties\":{\"transparency\":{\"expr\":{\"Literal\":{\"Value\":\"0D\"}}},\"color\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":0,\"Percent\":0}}}}}}}]}}}",
+          "filters": "[]",
+          "height": 68.43,
+          "width": 288.31,
+          "x": 8.97,
+          "y": 314.11,
+          "z": 4000.00
+        },
+        {
+          "config": "{\"name\":\"5ff2d3b82e9fb2cf4f4e\",\"layouts\":[{\"id\":0,\"position\":{\"x\":8.974583698510079,\"y\":159.2988606485539,\"z\":0,\"width\":288.3085013146363,\"height\":69.55302366345312}}],\"singleVisual\":{\"visualType\":\"slicer\",\"projections\":{\"Values\":[{\"queryRef\":\"Calendario.Date.Variación.Jerarquía de fechas.Año\",\"active\":true},{\"queryRef\":\"Calendario.Date.Variación.Jerarquía de fechas.Trimestre\"},{\"queryRef\":\"Calendario.Date.Variación.Jerarquía de fechas.Mes\"},{\"queryRef\":\"Calendario.Date.Variación.Jerarquía de fechas.Día\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"c\",\"Entity\":\"Calendario\",\"Type\":0}],\"Select\":[{\"HierarchyLevel\":{\"Expression\":{\"Hierarchy\":{\"Expression\":{\"PropertyVariationSource\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Name\":\"Variación\",\"Property\":\"Date\"}},\"Hierarchy\":\"Jerarquía de fechas\"}},\"Level\":\"Año\"},\"Name\":\"Calendario.Date.Variación.Jerarquía de fechas.Año\"},{\"HierarchyLevel\":{\"Expression\":{\"Hierarchy\":{\"Expression\":{\"PropertyVariationSource\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Name\":\"Variación\",\"Property\":\"Date\"}},\"Hierarchy\":\"Jerarquía de fechas\"}},\"Level\":\"Trimestre\"},\"Name\":\"Calendario.Date.Variación.Jerarquía de fechas.Trimestre\"},{\"HierarchyLevel\":{\"Expression\":{\"Hierarchy\":{\"Expression\":{\"PropertyVariationSource\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Name\":\"Variación\",\"Property\":\"Date\"}},\"Hierarchy\":\"Jerarquía de fechas\"}},\"Level\":\"Mes\"},\"Name\":\"Calendario.Date.Variación.Jerarquía de fechas.Mes\"},{\"HierarchyLevel\":{\"Expression\":{\"Hierarchy\":{\"Expression\":{\"PropertyVariationSource\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Name\":\"Variación\",\"Property\":\"Date\"}},\"Hierarchy\":\"Jerarquía de fechas\"}},\"Level\":\"Día\"},\"Name\":\"Calendario.Date.Variación.Jerarquía de fechas.Día\"}]},\"drillFilterOtherVisuals\":true,\"objects\":{\"data\":[{\"properties\":{\"mode\":{\"expr\":{\"Literal\":{\"Value\":\"'Dropdown'\"}}}}}],\"general\":[{\"properties\":{}}]}}}",
+          "filters": "[{\"name\":\"Filter458e81d95a02f74cd197\",\"expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"Calendario\"}},\"Property\":\"Date\"}},\"filter\":{\"Version\":2,\"From\":[{\"Name\":\"l\",\"Entity\":\"LocalDateTable_c4de84f7-4f92-4ffc-9f2d-0f39053a27f3\",\"Type\":0}],\"Where\":[{\"Condition\":{\"Not\":{\"Expression\":{\"In\":{\"Expressions\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"l\"}},\"Property\":\"Año\"}}],\"Values\":[[{\"Literal\":{\"Value\":\"null\"}}],[{\"Literal\":{\"Value\":\"2021L\"}}]]}}}}}]},\"type\":\"Categorical\",\"cachedDisplayNames\":[{\"id\":{\"scopeId\":{\"Comparison\":{\"ComparisonKind\":0,\"Left\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"LocalDateTable_c4de84f7-4f92-4ffc-9f2d-0f39053a27f3\"}},\"Property\":\"Año\"}},\"Right\":{\"Literal\":{\"Value\":\"null\"}}}}},\"displayName\":\"(En blanco)\"},{\"id\":{\"scopeId\":{\"Comparison\":{\"ComparisonKind\":0,\"Left\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"LocalDateTable_c4de84f7-4f92-4ffc-9f2d-0f39053a27f3\"}},\"Property\":\"Año\"}},\"Right\":{\"Literal\":{\"Value\":\"2021L\"}}}}},\"displayName\":\"2021\"}],\"howCreated\":1,\"objects\":{\"general\":[{\"properties\":{\"isInvertedSelectionMode\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}]},\"isHiddenInViewMode\":false}]",
+          "height": 69.55,
+          "width": 288.31,
+          "x": 8.97,
+          "y": 159.30,
+          "z": 0.00
+        },
+        {
+          "config": "{\"name\":\"704db78490cf053d86a2\",\"layouts\":[{\"id\":0,\"position\":{\"x\":7.852760736196319,\"y\":236.70464504820333,\"z\":5000,\"width\":289.43032427695005,\"height\":68.43120070113936}}],\"singleVisual\":{\"visualType\":\"slicer\",\"projections\":{\"Values\":[{\"queryRef\":\"Accidentes.Gravedad\",\"active\":true}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"a\",\"Entity\":\"Accidentes\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"a\"}},\"Property\":\"Gravedad\"},\"Name\":\"Accidentes.Gravedad\"}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"objects\":{\"data\":[{\"properties\":{\"mode\":{\"expr\":{\"Literal\":{\"Value\":\"'Dropdown'\"}}}}}],\"general\":[{\"properties\":{}}]}}}",
+          "filters": "[{\"name\":\"Filter458e81d95a02f74cd197\",\"expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"Calendario\"}},\"Property\":\"Date\"}},\"filter\":{\"Version\":2,\"From\":[{\"Name\":\"l\",\"Entity\":\"LocalDateTable_c4de84f7-4f92-4ffc-9f2d-0f39053a27f3\",\"Type\":0}],\"Where\":[{\"Condition\":{\"Not\":{\"Expression\":{\"In\":{\"Expressions\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"l\"}},\"Property\":\"Año\"}}],\"Values\":[[{\"Literal\":{\"Value\":\"null\"}}],[{\"Literal\":{\"Value\":\"2021L\"}}]]}}}}}]},\"type\":\"Categorical\",\"cachedDisplayNames\":[{\"id\":{\"scopeId\":{\"Comparison\":{\"ComparisonKind\":0,\"Left\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"LocalDateTable_c4de84f7-4f92-4ffc-9f2d-0f39053a27f3\"}},\"Property\":\"Año\"}},\"Right\":{\"Literal\":{\"Value\":\"null\"}}}}},\"displayName\":\"(En blanco)\"},{\"id\":{\"scopeId\":{\"Comparison\":{\"ComparisonKind\":0,\"Left\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"LocalDateTable_c4de84f7-4f92-4ffc-9f2d-0f39053a27f3\"}},\"Property\":\"Año\"}},\"Right\":{\"Literal\":{\"Value\":\"2021L\"}}}}},\"displayName\":\"2021\"}],\"howCreated\":1,\"objects\":{\"general\":[{\"properties\":{\"isInvertedSelectionMode\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}]},\"isHiddenInViewMode\":false}]",
+          "height": 68.43,
+          "width": 289.43,
+          "x": 7.85,
+          "y": 236.70,
+          "z": 5000.00
+        },
+        {
+          "config": "{\"name\":\"824a5d7c3ed0e2dea352\",\"layouts\":[{\"id\":0,\"position\":{\"x\":318.86765746638355,\"y\":9.05874026893135,\"z\":7000,\"width\":234.621372965322,\"height\":66.12880396319886}}],\"singleVisual\":{\"visualType\":\"slicer\",\"projections\":{\"Values\":[{\"queryRef\":\"Agencias.Agencia\",\"active\":true}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"a\",\"Entity\":\"Agencias\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"a\"}},\"Property\":\"Agencia\"},\"Name\":\"Agencias.Agencia\"}]},\"drillFilterOtherVisuals\":true,\"objects\":{\"data\":[{\"properties\":{\"mode\":{\"expr\":{\"Literal\":{\"Value\":\"'Dropdown'\"}}}}}],\"general\":[{\"properties\":{}}]}}}",
+          "filters": "[]",
+          "height": 66.13,
+          "width": 234.62,
+          "x": 318.87,
+          "y": 9.06,
+          "z": 7000.00
+        },
+        {
+          "config": "{\"name\":\"9732517a08da3277a8c7\",\"layouts\":[{\"id\":0,\"position\":{\"x\":3.50444900752909,\"y\":48.186173853524984,\"z\":13000,\"width\":305.7631759069131,\"height\":60.4517453798768}}],\"singleVisual\":{\"visualType\":\"textbox\",\"drillFilterOtherVisuals\":true,\"objects\":{\"general\":[{\"properties\":{\"paragraphs\":[{\"textRuns\":[{\"value\":\"SINIESTROS ART S.A.\",\"textStyle\":{\"fontWeight\":\"bold\",\"fontSize\":\"12pt\"}}],\"horizontalTextAlignment\":\"center\"},{\"textRuns\":[{\"value\":\"\"}]}]}}]}}}",
+          "filters": "[]",
+          "height": 60.45,
+          "width": 305.76,
+          "x": 3.50,
+          "y": 48.19,
+          "z": 13000.00
+        },
+        {
+          "config": "{\"name\":\"9765f4f274532cb2fed6\",\"layouts\":[{\"id\":0,\"position\":{\"x\":1136,\"y\":16,\"z\":9000,\"width\":128,\"height\":48.00000000000001}}],\"singleVisual\":{\"visualType\":\"actionButton\",\"drillFilterOtherVisuals\":true,\"objects\":{\"icon\":[{\"properties\":{\"shapeType\":{\"expr\":{\"Literal\":{\"Value\":\"'blank'\"}}},\"lineColor\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":0,\"Percent\":0}}}}},\"leftMargin\":{\"expr\":{\"Literal\":{\"Value\":\"0L\"}}},\"rightMargin\":{\"expr\":{\"Literal\":{\"Value\":\"0L\"}}},\"topMargin\":{\"expr\":{\"Literal\":{\"Value\":\"0L\"}}},\"bottomMargin\":{\"expr\":{\"Literal\":{\"Value\":\"0L\"}}}},\"selector\":{\"id\":\"default\"}}],\"text\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}},{\"properties\":{\"text\":{\"expr\":{\"Literal\":{\"Value\":\"'Siguiente'\"}}},\"fontColor\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":4,\"Percent\":-0.5}}}}},\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"12D\"}}}},\"selector\":{\"id\":\"default\"}}],\"fill\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}},{\"properties\":{\"fillColor\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":3,\"Percent\":0.6}}}}}},\"selector\":{\"id\":\"default\"}}],\"outline\":[{\"properties\":{\"lineColor\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":3,\"Percent\":0.6}}}}}},\"selector\":{\"id\":\"default\"}}]},\"vcObjects\":{\"border\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"radius\":{\"expr\":{\"Literal\":{\"Value\":\"30D\"}}},\"color\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":0,\"Percent\":0}}}}}}}],\"background\":[{\"properties\":{\"color\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":3,\"Percent\":0.6}}}}},\"transparency\":{\"expr\":{\"Literal\":{\"Value\":\"0D\"}}}}}],\"visualLink\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"type\":{\"expr\":{\"Literal\":{\"Value\":\"'PageNavigation'\"}}},\"navigationSection\":{\"expr\":{\"Literal\":{\"Value\":\"'ReportSection1c85d15e347241cbbace'\"}}},\"tooltip\":{\"expr\":{\"Literal\":{\"Value\":\"'va a la pagina Siguiente'\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 48.00,
+          "width": 128.00,
+          "x": 1136.00,
+          "y": 16.00,
+          "z": 9000.00
+        },
+        {
+          "config": "{\"name\":\"caa5f9bfe67c5ba62871\",\"layouts\":[{\"id\":0,\"position\":{\"x\":8.974583698510079,\"y\":387.0289219982472,\"z\":2000,\"width\":288.3085013146363,\"height\":236.70464504820333}}],\"singleVisual\":{\"visualType\":\"multiRowCard\",\"projections\":{\"Values\":[{\"queryRef\":\"Accidentes.Tipo_Sin\"},{\"queryRef\":\"Avg(Accidentes.Dias transcurrido entre ocurrencia y denuncia)\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"a\",\"Entity\":\"Accidentes\",\"Type\":0}],\"Select\":[{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"a\"}},\"Property\":\"Dias transcurrido entre ocurrencia y denuncia\"}},\"Function\":1},\"Name\":\"Avg(Accidentes.Dias transcurrido entre ocurrencia y denuncia)\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"a\"}},\"Property\":\"Tipo_Sin\"},\"Name\":\"Accidentes.Tipo_Sin\"}],\"OrderBy\":[{\"Direction\":1,\"Expression\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"a\"}},\"Property\":\"Dias transcurrido entre ocurrencia y denuncia\"}},\"Function\":1}}}]},\"drillFilterOtherVisuals\":true,\"objects\":{\"categoryLabels\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]},\"vcObjects\":{\"border\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"color\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":0,\"Percent\":-0.3}}}}},\"radius\":{\"expr\":{\"Literal\":{\"Value\":\"17D\"}}}}}],\"title\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"text\":{\"expr\":{\"Literal\":{\"Value\":\"'Promedio de dias transcurridos entre  la ocurrencia y la denuncia del siniestro'\"}}}}}],\"background\":[{\"properties\":{\"transparency\":{\"expr\":{\"Literal\":{\"Value\":\"0D\"}}}}}]}}}",
+          "filters": "[{\"expression\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"Accidentes\"}},\"Property\":\"Dias transcurrido entre ocurrencia y denuncia\"}},\"Function\":1}},\"filter\":{\"Version\":2,\"From\":[{\"Name\":\"a\",\"Entity\":\"Accidentes\",\"Type\":0}],\"Where\":[{\"Condition\":{\"Not\":{\"Expression\":{\"Comparison\":{\"ComparisonKind\":0,\"Left\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"a\"}},\"Property\":\"Dias transcurrido entre ocurrencia y denuncia\"}},\"Function\":1}},\"Right\":{\"Literal\":{\"Value\":\"null\"}}}}}}}]},\"type\":\"Advanced\",\"howCreated\":0,\"isHiddenInViewMode\":false},{\"expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"Accidentes\"}},\"Property\":\"Lugar\"}},\"filter\":{\"Version\":2,\"From\":[{\"Name\":\"subquery\",\"Expression\":{\"Subquery\":{\"Query\":{\"Version\":2,\"From\":[{\"Name\":\"a\",\"Entity\":\"Accidentes\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"a\"}},\"Property\":\"Lugar\"},\"Name\":\"field\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"a\"}},\"Property\":\"Dias transcurrido entre ocurrencia y denuncia\"}},\"Function\":0}}}],\"Top\":5}}},\"Type\":2},{\"Name\":\"a\",\"Entity\":\"Accidentes\",\"Type\":0}],\"Where\":[{\"Condition\":{\"In\":{\"Expressions\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"a\"}},\"Property\":\"Lugar\"}}],\"Table\":{\"SourceRef\":{\"Source\":\"subquery\"}}}}}]},\"type\":\"TopN\",\"howCreated\":1,\"isHiddenInViewMode\":false}]",
+          "height": 236.70,
+          "width": 288.31,
+          "x": 8.97,
+          "y": 387.03,
+          "z": 2000.00
+        },
+        {
+          "config": "{\"name\":\"cdf4700e7de67d2c832d\",\"layouts\":[{\"id\":0,\"position\":{\"x\":562.5477707006369,\"y\":9.05874026893135,\"z\":8000,\"width\":234.621372965322,\"height\":66.12880396319886}}],\"singleVisual\":{\"visualType\":\"slicer\",\"projections\":{\"Values\":[{\"queryRef\":\"Agencias.Provincia\",\"active\":true}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"a\",\"Entity\":\"Agencias\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"a\"}},\"Property\":\"Provincia\"},\"Name\":\"Agencias.Provincia\"}]},\"drillFilterOtherVisuals\":true,\"objects\":{\"data\":[{\"properties\":{\"mode\":{\"expr\":{\"Literal\":{\"Value\":\"'Dropdown'\"}}}}}],\"general\":[{\"properties\":{}}]}}}",
+          "filters": "[]",
+          "height": 66.13,
+          "width": 234.62,
+          "x": 562.55,
+          "y": 9.06,
+          "z": 8000.00
+        },
+        {
+          "config": "{\"name\":\"d2e2b3910f3b61080bc4\",\"layouts\":[{\"id\":0,\"position\":{\"x\":704,\"y\":336,\"z\":3000,\"width\":544,\"height\":288}}],\"singleVisual\":{\"visualType\":\"clusteredBarChart\",\"projections\":{\"Category\":[{\"queryRef\":\"Accidentes.Naturaleza\",\"active\":true}],\"Y\":[{\"queryRef\":\"Medidas.# Siniestros\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"m\",\"Entity\":\"Medidas\",\"Type\":0},{\"Name\":\"a\",\"Entity\":\"Accidentes\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"a\"}},\"Property\":\"Naturaleza\"},\"Name\":\"Accidentes.Naturaleza\"},{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"m\"}},\"Property\":\"Siniestros\"},\"Name\":\"Medidas.# Siniestros\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"m\"}},\"Property\":\"Siniestros\"}}}]},\"columnProperties\":{\"Medidas.# Siniestros\":{\"displayName\":\"Cantidad de siniestros\"}},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"objects\":{\"labels\":[{\"properties\":{\"labelDisplayUnits\":{\"expr\":{\"Literal\":{\"Value\":\"1D\"}}},\"labelPosition\":{\"expr\":{\"Literal\":{\"Value\":\"'OutsideEnd'\"}}},\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}],\"categoryAxis\":[{\"properties\":{\"concatenateLabels\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}]},\"vcObjects\":{\"border\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"radius\":{\"expr\":{\"Literal\":{\"Value\":\"17D\"}}},\"color\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":0,\"Percent\":-0.3}}}}}}}]}}}",
+          "filters": "[{\"expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"Accidentes\"}},\"Property\":\"Naturaleza\"}},\"filter\":{\"Version\":2,\"From\":[{\"Name\":\"subquery\",\"Expression\":{\"Subquery\":{\"Query\":{\"Version\":2,\"From\":[{\"Name\":\"a\",\"Entity\":\"Accidentes\",\"Type\":0},{\"Name\":\"m\",\"Entity\":\"Medidas\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"a\"}},\"Property\":\"Naturaleza\"},\"Name\":\"field\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"m\"}},\"Property\":\"Siniestros\"}}}],\"Top\":10}}},\"Type\":2},{\"Name\":\"a\",\"Entity\":\"Accidentes\",\"Type\":0}],\"Where\":[{\"Condition\":{\"In\":{\"Expressions\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"a\"}},\"Property\":\"Naturaleza\"}}],\"Table\":{\"SourceRef\":{\"Source\":\"subquery\"}}}}}]},\"type\":\"TopN\",\"howCreated\":0,\"isHiddenInViewMode\":false},{\"name\":\"Filter8423a51bd44cbcfd9d88\",\"expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"Accidentes\"}},\"Property\":\"Naturaleza\"}},\"filter\":{\"Version\":2,\"From\":[{\"Name\":\"a\",\"Entity\":\"Accidentes\",\"Type\":0}],\"Where\":[{\"Condition\":{\"Not\":{\"Expression\":{\"In\":{\"Expressions\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"a\"}},\"Property\":\"Naturaleza\"}}],\"Values\":[[{\"Literal\":{\"Value\":\"null\"}}]]}}}}}]},\"type\":\"Categorical\",\"howCreated\":1,\"objects\":{\"general\":[{\"properties\":{\"isInvertedSelectionMode\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}]}}]",
+          "height": 288.00,
+          "width": 544.00,
+          "x": 704.00,
+          "y": 336.00,
+          "z": 3000.00
+        },
+        {
+          "config": "{\"name\":\"e3ab27f2fe63372289cb\",\"layouts\":[{\"id\":0,\"position\":{\"x\":982.7863777089783,\"y\":15.851393188854487,\"z\":10000,\"width\":134.73684210526315,\"height\":43.591331269349844}}],\"singleVisual\":{\"visualType\":\"actionButton\",\"drillFilterOtherVisuals\":true,\"objects\":{\"icon\":[{\"properties\":{\"shapeType\":{\"expr\":{\"Literal\":{\"Value\":\"'blank'\"}}},\"lineColor\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":0,\"Percent\":0}}}}},\"leftMargin\":{\"expr\":{\"Literal\":{\"Value\":\"0L\"}}},\"rightMargin\":{\"expr\":{\"Literal\":{\"Value\":\"0L\"}}},\"topMargin\":{\"expr\":{\"Literal\":{\"Value\":\"0L\"}}},\"bottomMargin\":{\"expr\":{\"Literal\":{\"Value\":\"0L\"}}}},\"selector\":{\"id\":\"default\"}}],\"text\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}},{\"properties\":{\"text\":{\"expr\":{\"Literal\":{\"Value\":\"'Anterior'\"}}},\"fontColor\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":4,\"Percent\":-0.5}}}}},\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"12D\"}}}},\"selector\":{\"id\":\"default\"}}],\"fill\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}},{\"properties\":{\"fillColor\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":3,\"Percent\":0.6}}}}}},\"selector\":{\"id\":\"default\"}}],\"outline\":[{\"properties\":{\"lineColor\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":3,\"Percent\":0.6}}}}}},\"selector\":{\"id\":\"default\"}}]},\"vcObjects\":{\"border\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"radius\":{\"expr\":{\"Literal\":{\"Value\":\"30D\"}}},\"color\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":0,\"Percent\":0}}}}}}}],\"background\":[{\"properties\":{\"color\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":3,\"Percent\":0.6}}}}},\"transparency\":{\"expr\":{\"Literal\":{\"Value\":\"0D\"}}}}}],\"visualLink\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"type\":{\"expr\":{\"Literal\":{\"Value\":\"'PageNavigation'\"}}},\"navigationSection\":{\"expr\":{\"Literal\":{\"Value\":\"'ReportSection6f37b03170968b516a89'\"}}},\"tooltip\":{\"expr\":{\"Literal\":{\"Value\":\"'va a la pagina Siguiente'\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 43.59,
+          "width": 134.74,
+          "x": 982.79,
+          "y": 15.85,
+          "z": 10000.00
+        },
+        {
+          "config": "{\"name\":\"e90ea81e3b9a598e242d\",\"layouts\":[{\"id\":0,\"position\":{\"x\":336,\"y\":96.00000000000001,\"z\":1000,\"width\":912,\"height\":224}}],\"singleVisual\":{\"visualType\":\"barChart\",\"projections\":{\"Category\":[{\"queryRef\":\"Cod_Diagnostico.Diagnostico\",\"active\":true}],\"Y\":[{\"queryRef\":\"Medidas.# Siniestros\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"m\",\"Entity\":\"Medidas\",\"Type\":0},{\"Name\":\"c\",\"Entity\":\"Cod_Diagnostico\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"Diagnostico\"},\"Name\":\"Cod_Diagnostico.Diagnostico\"},{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"m\"}},\"Property\":\"Siniestros\"},\"Name\":\"Medidas.# Siniestros\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"m\"}},\"Property\":\"Siniestros\"}}}]},\"drillFilterOtherVisuals\":true,\"filterSortOrder\":3,\"objects\":{\"labels\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"labelDisplayUnits\":{\"expr\":{\"Literal\":{\"Value\":\"1D\"}}}}}],\"dataPoint\":[{\"properties\":{\"fill\":{\"solid\":{\"color\":{\"expr\":{\"Literal\":{\"Value\":\"'#88C44F'\"}}}}}}}],\"categoryAxis\":[{\"properties\":{\"concatenateLabels\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}]},\"vcObjects\":{\"title\":[{\"properties\":{\"text\":{\"expr\":{\"Literal\":{\"Value\":\"'Diagnósticos más frecuentes'\"}}}}}],\"border\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"color\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":0,\"Percent\":-0.3}}}}},\"radius\":{\"expr\":{\"Literal\":{\"Value\":\"17D\"}}}}}],\"visualTooltip\":[{\"properties\":{\"type\":{\"expr\":{\"Literal\":{\"Value\":\"'Canvas'\"}}},\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"section\":{\"expr\":{\"Literal\":{\"Value\":\"'ReportSection3d714c16a8522f8a8ea7'\"}}}}}]}}}",
+          "filters": "[{\"name\":\"Filter2fe32a89a9dfbd09e0f3\",\"expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"Cod_Diagnostico\"}},\"Property\":\"Cod_Diag\"}},\"filter\":{\"Version\":2,\"From\":[{\"Name\":\"subquery\",\"Expression\":{\"Subquery\":{\"Query\":{\"Version\":2,\"From\":[{\"Name\":\"c\",\"Entity\":\"Cod_Diagnostico\",\"Type\":0},{\"Name\":\"m\",\"Entity\":\"Medidas\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"Cod_Diag\"},\"Name\":\"field\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"m\"}},\"Property\":\"Siniestros\"}}}],\"Top\":10}}},\"Type\":2},{\"Name\":\"c\",\"Entity\":\"Cod_Diagnostico\",\"Type\":0}],\"Where\":[{\"Condition\":{\"In\":{\"Expressions\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"Cod_Diag\"}}],\"Table\":{\"SourceRef\":{\"Source\":\"subquery\"}}}}}]},\"type\":\"TopN\",\"howCreated\":1,\"isHiddenInViewMode\":false,\"ordinal\":2}]",
+          "height": 224.00,
+          "width": 912.00,
+          "x": 336.00,
+          "y": 96.00,
+          "z": 1000.00
+        },
+        {
+          "config": "{\"name\":\"fe0ad498a63bbf375c82\",\"layouts\":[{\"id\":0,\"position\":{\"x\":0,\"y\":5.256673511293635,\"z\":12000,\"width\":317.1526351813826,\"height\":48.186173853524984}}],\"singleVisual\":{\"visualType\":\"textbox\",\"drillFilterOtherVisuals\":true,\"objects\":{\"general\":[{\"properties\":{\"paragraphs\":[{\"textRuns\":[{\"value\":\"Detalle de Siniestralidad\",\"textStyle\":{\"fontWeight\":\"bold\",\"fontSize\":\"18pt\",\"color\":\"#12239e\"}}],\"horizontalTextAlignment\":\"center\"}]}}]}}}",
+          "filters": "[]",
+          "height": 48.19,
+          "width": 317.15,
+          "x": 0.00,
+          "y": 5.26,
+          "z": 12000.00
+        }
+      ],
+      "width": 1280.00
+    },
+    {
+      "config": "{\"objects\":{\"outspace\":[{\"properties\":{\"image\":{\"image\":{\"name\":{\"expr\":{\"Literal\":{\"Value\":\"''\"}}},\"url\":{\"expr\":{\"Literal\":{\"Value\":\"''\"}}}}}}}],\"outspacePane\":[{\"properties\":{\"backgroundColor\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":0,\"Percent\":0}}}}}}}]}}",
+      "displayName": "Glosario",
+      "displayOption": 1,
+      "filters": "[]",
+      "height": 720.00,
+      "name": "ReportSection65045781687b0e464aad",
+      "ordinal": 1,
+      "visualContainers": [
+        {
+          "config": "{\"name\":\"4ab00a3a19a38947a48c\",\"layouts\":[{\"id\":0,\"position\":{\"x\":921.5289765721332,\"y\":589.4944512946979,\"z\":2000,\"width\":246.806411837238,\"height\":108.31072749691738}}],\"singleVisual\":{\"visualType\":\"actionButton\",\"drillFilterOtherVisuals\":true,\"objects\":{\"icon\":[{\"properties\":{\"shapeType\":{\"expr\":{\"Literal\":{\"Value\":\"'blank'\"}}},\"lineColor\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":0,\"Percent\":0}}}}},\"leftMargin\":{\"expr\":{\"Literal\":{\"Value\":\"0L\"}}},\"rightMargin\":{\"expr\":{\"Literal\":{\"Value\":\"0L\"}}},\"topMargin\":{\"expr\":{\"Literal\":{\"Value\":\"0L\"}}},\"bottomMargin\":{\"expr\":{\"Literal\":{\"Value\":\"0L\"}}}},\"selector\":{\"id\":\"default\"}}],\"text\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}},{\"properties\":{\"text\":{\"expr\":{\"Literal\":{\"Value\":\"'Proyectado'\"}}},\"fontColor\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":4,\"Percent\":-0.5}}}}},\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"27D\"}}}},\"selector\":{\"id\":\"default\"}}],\"fill\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}},{\"properties\":{\"fillColor\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":4,\"Percent\":0}}}}}},\"selector\":{\"id\":\"default\"}}],\"outline\":[{\"properties\":{\"lineColor\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":3,\"Percent\":0.6}}}}}},\"selector\":{\"id\":\"default\"}}]},\"vcObjects\":{\"border\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"radius\":{\"expr\":{\"Literal\":{\"Value\":\"30D\"}}},\"color\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":0,\"Percent\":0}}}}}}}],\"background\":[{\"properties\":{\"color\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":3,\"Percent\":0.6}}}}},\"transparency\":{\"expr\":{\"Literal\":{\"Value\":\"0D\"}}}}}],\"visualLink\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"type\":{\"expr\":{\"Literal\":{\"Value\":\"'PageNavigation'\"}}},\"navigationSection\":{\"expr\":{\"Literal\":{\"Value\":\"'ReportSection9f6af8513a630f9f36b8'\"}}},\"tooltip\":{\"expr\":{\"Literal\":{\"Value\":\"'va a la pagina ProyectadoGeneral'\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 108.31,
+          "width": 246.81,
+          "x": 921.53,
+          "y": 589.49,
+          "z": 2000.00
+        },
+        {
+          "config": "{\"name\":\"5f6b5509564233e2c52f\",\"layouts\":[{\"id\":0,\"position\":{\"x\":921.5289765721332,\"y\":205.96794081381012,\"z\":4000,\"width\":246.806411837238,\"height\":109.19852034525277}}],\"singleVisual\":{\"visualType\":\"actionButton\",\"drillFilterOtherVisuals\":true,\"objects\":{\"icon\":[{\"properties\":{\"shapeType\":{\"expr\":{\"Literal\":{\"Value\":\"'blank'\"}}},\"lineColor\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":0,\"Percent\":0}}}}},\"leftMargin\":{\"expr\":{\"Literal\":{\"Value\":\"0L\"}}},\"rightMargin\":{\"expr\":{\"Literal\":{\"Value\":\"0L\"}}},\"topMargin\":{\"expr\":{\"Literal\":{\"Value\":\"0L\"}}},\"bottomMargin\":{\"expr\":{\"Literal\":{\"Value\":\"0L\"}}}},\"selector\":{\"id\":\"default\"}}],\"text\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}},{\"properties\":{\"text\":{\"expr\":{\"Literal\":{\"Value\":\"'General'\"}}},\"fontColor\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":4,\"Percent\":-0.5}}}}},\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"27D\"}}}},\"selector\":{\"id\":\"default\"}}],\"fill\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}},{\"properties\":{\"fillColor\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":4,\"Percent\":0}}}}}},\"selector\":{\"id\":\"default\"}}],\"outline\":[{\"properties\":{\"lineColor\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":3,\"Percent\":0.6}}}}}},\"selector\":{\"id\":\"default\"}}]},\"vcObjects\":{\"border\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"radius\":{\"expr\":{\"Literal\":{\"Value\":\"30D\"}}},\"color\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":0,\"Percent\":0}}}}}}}],\"background\":[{\"properties\":{\"color\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":3,\"Percent\":0.6}}}}},\"transparency\":{\"expr\":{\"Literal\":{\"Value\":\"0D\"}}}}}],\"visualLink\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"type\":{\"expr\":{\"Literal\":{\"Value\":\"'PageNavigation'\"}}},\"navigationSection\":{\"expr\":{\"Literal\":{\"Value\":\"'ReportSection6f37b03170968b516a89'\"}}},\"tooltip\":{\"expr\":{\"Literal\":{\"Value\":\"'va a la pagina General'\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 109.20,
+          "width": 246.81,
+          "x": 921.53,
+          "y": 205.97,
+          "z": 4000.00
+        },
+        {
+          "config": "{\"name\":\"6f19c2b8725ad752ab75\",\"layouts\":[{\"id\":0,\"position\":{\"x\":921.5289765721332,\"y\":462.54007398273734,\"z\":1000,\"width\":246.806411837238,\"height\":108.31072749691738}}],\"singleVisual\":{\"visualType\":\"actionButton\",\"drillFilterOtherVisuals\":true,\"objects\":{\"icon\":[{\"properties\":{\"shapeType\":{\"expr\":{\"Literal\":{\"Value\":\"'blank'\"}}},\"lineColor\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":0,\"Percent\":0}}}}},\"leftMargin\":{\"expr\":{\"Literal\":{\"Value\":\"0L\"}}},\"rightMargin\":{\"expr\":{\"Literal\":{\"Value\":\"0L\"}}},\"topMargin\":{\"expr\":{\"Literal\":{\"Value\":\"0L\"}}},\"bottomMargin\":{\"expr\":{\"Literal\":{\"Value\":\"0L\"}}}},\"selector\":{\"id\":\"default\"}}],\"text\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}},{\"properties\":{\"text\":{\"expr\":{\"Literal\":{\"Value\":\"'Costos'\"}}},\"fontColor\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":4,\"Percent\":-0.5}}}}},\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"27D\"}}}},\"selector\":{\"id\":\"default\"}}],\"fill\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}},{\"properties\":{\"fillColor\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":4,\"Percent\":0}}}}}},\"selector\":{\"id\":\"default\"}}],\"outline\":[{\"properties\":{\"lineColor\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":3,\"Percent\":0.6}}}}}},\"selector\":{\"id\":\"default\"}}]},\"vcObjects\":{\"border\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"radius\":{\"expr\":{\"Literal\":{\"Value\":\"30D\"}}},\"color\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":0,\"Percent\":0}}}}}}}],\"background\":[{\"properties\":{\"color\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":3,\"Percent\":0.6}}}}},\"transparency\":{\"expr\":{\"Literal\":{\"Value\":\"0D\"}}}}}],\"visualLink\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"type\":{\"expr\":{\"Literal\":{\"Value\":\"'PageNavigation'\"}}},\"navigationSection\":{\"expr\":{\"Literal\":{\"Value\":\"'ReportSection1c85d15e347241cbbace'\"}}},\"tooltip\":{\"expr\":{\"Literal\":{\"Value\":\"'va a la pagina Costos'\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 108.31,
+          "width": 246.81,
+          "x": 921.53,
+          "y": 462.54,
+          "z": 1000.00
+        },
+        {
+          "config": "{\"name\":\"c022eb266ccd460580d2\",\"layouts\":[{\"id\":0,\"position\":{\"x\":3.5511713933415536,\"y\":39.06288532675709,\"z\":8500,\"width\":313.3908754623921,\"height\":55.043156596794084}}],\"singleVisual\":{\"visualType\":\"textbox\",\"drillFilterOtherVisuals\":true,\"objects\":{\"general\":[{\"properties\":{\"paragraphs\":[{\"textRuns\":[{\"value\":\"SINIESTROS ART S.A.\",\"textStyle\":{\"fontWeight\":\"bold\",\"fontSize\":\"12pt\"}}],\"horizontalTextAlignment\":\"center\"},{\"textRuns\":[{\"value\":\"\"}]}]}}]}}}",
+          "filters": "[]",
+          "height": 55.04,
+          "width": 313.39,
+          "x": 3.55,
+          "y": 39.06,
+          "z": 8500.00
+        },
+        {
+          "config": "{\"name\":\"c27731b9fedbae74e378\",\"layouts\":[{\"id\":0,\"position\":{\"x\":0,\"y\":5.256673511293635,\"z\":8000,\"width\":317.1526351813826,\"height\":48.186173853524984}}],\"singleVisual\":{\"visualType\":\"textbox\",\"drillFilterOtherVisuals\":true,\"objects\":{\"general\":[{\"properties\":{\"paragraphs\":[{\"textRuns\":[{\"value\":\"Glosario\",\"textStyle\":{\"fontWeight\":\"bold\",\"fontSize\":\"18pt\",\"color\":\"#12239e\"}}],\"horizontalTextAlignment\":\"center\"}]}}]}}}",
+          "filters": "[]",
+          "height": 48.19,
+          "width": 317.15,
+          "x": 0.00,
+          "y": 5.26,
+          "z": 8000.00
+        },
+        {
+          "config": "{\"name\":\"d2266ce05c7c1326637d\",\"layouts\":[{\"id\":0,\"position\":{\"x\":921.5289765721332,\"y\":26.63378545006165,\"z\":5000,\"width\":246.806411837238,\"height\":109.19852034525277}}],\"singleVisual\":{\"visualType\":\"actionButton\",\"drillFilterOtherVisuals\":true,\"objects\":{\"icon\":[{\"properties\":{\"shapeType\":{\"expr\":{\"Literal\":{\"Value\":\"'blank'\"}}},\"lineColor\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":0,\"Percent\":0}}}}},\"leftMargin\":{\"expr\":{\"Literal\":{\"Value\":\"0L\"}}},\"rightMargin\":{\"expr\":{\"Literal\":{\"Value\":\"0L\"}}},\"topMargin\":{\"expr\":{\"Literal\":{\"Value\":\"0L\"}}},\"bottomMargin\":{\"expr\":{\"Literal\":{\"Value\":\"0L\"}}}},\"selector\":{\"id\":\"default\"}}],\"text\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}},{\"properties\":{\"text\":{\"expr\":{\"Literal\":{\"Value\":\"'Portada'\"}}},\"fontColor\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":4,\"Percent\":-0.5}}}}},\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"27D\"}}}},\"selector\":{\"id\":\"default\"}}],\"fill\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}},{\"properties\":{\"fillColor\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":4,\"Percent\":0}}}}}},\"selector\":{\"id\":\"default\"}}],\"outline\":[{\"properties\":{\"lineColor\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":3,\"Percent\":0.6}}}}}},\"selector\":{\"id\":\"default\"}}]},\"vcObjects\":{\"border\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"radius\":{\"expr\":{\"Literal\":{\"Value\":\"30D\"}}},\"color\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":0,\"Percent\":0}}}}}}}],\"background\":[{\"properties\":{\"color\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":3,\"Percent\":0.6}}}}},\"transparency\":{\"expr\":{\"Literal\":{\"Value\":\"0D\"}}}}}],\"visualLink\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"type\":{\"expr\":{\"Literal\":{\"Value\":\"'PageNavigation'\"}}},\"navigationSection\":{\"expr\":{\"Literal\":{\"Value\":\"'ReportSection470ee5fc0a948dc8b760'\"}}},\"tooltip\":{\"expr\":{\"Literal\":{\"Value\":\"'va a la Portada'\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 109.20,
+          "width": 246.81,
+          "x": 921.53,
+          "y": 26.63,
+          "z": 5000.00
+        },
+        {
+          "config": "{\"name\":\"e57d0871d7dd66627095\",\"layouts\":[{\"id\":0,\"position\":{\"x\":921.5289765721332,\"y\":335.5856966707768,\"z\":3000,\"width\":246.806411837238,\"height\":108.31072749691738}}],\"singleVisual\":{\"visualType\":\"actionButton\",\"drillFilterOtherVisuals\":true,\"objects\":{\"icon\":[{\"properties\":{\"shapeType\":{\"expr\":{\"Literal\":{\"Value\":\"'blank'\"}}},\"lineColor\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":0,\"Percent\":0}}}}},\"leftMargin\":{\"expr\":{\"Literal\":{\"Value\":\"0L\"}}},\"rightMargin\":{\"expr\":{\"Literal\":{\"Value\":\"0L\"}}},\"topMargin\":{\"expr\":{\"Literal\":{\"Value\":\"0L\"}}},\"bottomMargin\":{\"expr\":{\"Literal\":{\"Value\":\"0L\"}}}},\"selector\":{\"id\":\"default\"}}],\"text\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}},{\"properties\":{\"text\":{\"expr\":{\"Literal\":{\"Value\":\"'Detalle'\"}}},\"fontColor\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":4,\"Percent\":-0.5}}}}},\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"27D\"}}}},\"selector\":{\"id\":\"default\"}}],\"fill\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}},{\"properties\":{\"fillColor\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":4,\"Percent\":0}}}}}},\"selector\":{\"id\":\"default\"}}],\"outline\":[{\"properties\":{\"lineColor\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":3,\"Percent\":0.6}}}}}},\"selector\":{\"id\":\"default\"}}]},\"vcObjects\":{\"border\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"radius\":{\"expr\":{\"Literal\":{\"Value\":\"30D\"}}},\"color\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":0,\"Percent\":0}}}}}}}],\"background\":[{\"properties\":{\"color\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":3,\"Percent\":0.6}}}}},\"transparency\":{\"expr\":{\"Literal\":{\"Value\":\"0D\"}}}}}],\"visualLink\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"type\":{\"expr\":{\"Literal\":{\"Value\":\"'PageNavigation'\"}}},\"navigationSection\":{\"expr\":{\"Literal\":{\"Value\":\"'ReportSection4ac9d6e1e787fdd91679'\"}}},\"tooltip\":{\"expr\":{\"Literal\":{\"Value\":\"'va a la pagina Detalle'\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 108.31,
+          "width": 246.81,
+          "x": 921.53,
+          "y": 335.59,
+          "z": 3000.00
+        },
+        {
+          "config": "{\"name\":\"e88a37fd49161de6a7da\",\"layouts\":[{\"id\":0,\"position\":{\"x\":8.877928483353884,\"y\":147.37361282367448,\"z\":0,\"width\":631.2207151664612,\"height\":572.6263871763256}}],\"singleVisual\":{\"visualType\":\"textbox\",\"drillFilterOtherVisuals\":true,\"objects\":{\"general\":[{\"properties\":{\"paragraphs\":[{\"textRuns\":[{\"value\":\"\"}]},{\"textRuns\":[{\"value\":\"OBJETIVO\",\"textStyle\":{\"fontWeight\":\"bold\"}}]},{\"textRuns\":[{\"value\":\"El objetivo del tablero es poder analizar la frecuencia y la intensidad de la siniestralidad, relacionando la misma con los costos de las prestaciones médica y las prestaciones dinerarias, a su vez efectuando una distribución de la información por Agencias, proyectando escenarios futuros para la toma de decisiones.\",\"textStyle\":{\"fontSize\":\"12pt\"}}]},{\"textRuns\":[{\"value\":\"\"}]},{\"textRuns\":[{\"value\":\"Con la información presentada se podrá determinar:\",\"textStyle\":{\"fontSize\":\"12pt\"}}]},{\"textRuns\":[{\"value\":\"-\",\"textStyle\":{\"fontSize\":\"12pt\",\"color\":\"black\"}},{\"value\":\"Evaluar la Frecuencia Siniestral de la totalidad de la cartera a fin de determinar si existe\",\"textStyle\":{\"fontSize\":\"12pt\"}}]},{\"textRuns\":[{\"value\":\"-\",\"textStyle\":{\"fontSize\":\"12pt\",\"color\":\"black\"}},{\"value\":\"Fluctuación que amerite reforzar alguna de las Agencias.\",\"textStyle\":{\"fontSize\":\"12pt\"}}]},{\"textRuns\":[{\"value\":\"-\",\"textStyle\":{\"fontSize\":\"12pt\",\"color\":\"black\"}},{\"value\":\"Necesidad de refuerzo y suficiencia de las agencias.\",\"textStyle\":{\"fontSize\":\"12pt\"}}]},{\"textRuns\":[{\"value\":\"-\",\"textStyle\":{\"fontSize\":\"12pt\",\"color\":\"black\"}},{\"value\":\"Oportunidades de negocio, por zona y actividad.\",\"textStyle\":{\"fontSize\":\"12pt\"}}]},{\"textRuns\":[{\"value\":\"-\",\"textStyle\":{\"fontSize\":\"12pt\",\"color\":\"black\"}},{\"value\":\"Posibilidades de reducciones de tarifa.\",\"textStyle\":{\"fontSize\":\"12pt\"}}]},{\"textRuns\":[{\"value\":\"-\",\"textStyle\":{\"fontSize\":\"12pt\",\"color\":\"black\"}},{\"value\":\"Necesidades de Ajustes de Tarifa.\",\"textStyle\":{\"fontSize\":\"12pt\"}}]},{\"textRuns\":[{\"value\":\"-\",\"textStyle\":{\"fontSize\":\"12pt\",\"color\":\"black\"}},{\"value\":\"Conocer cuáles son los diagnósticos y Naturaleza de Lesión más frecuentes, para determinar la aplicación de Medidas de Higiene y Seguridad que tiendan a disminuir los costos.\",\"textStyle\":{\"fontSize\":\"12pt\"}}]},{\"textRuns\":[{\"value\":\"-\",\"textStyle\":{\"fontSize\":\"12pt\",\"color\":\"black\"}},{\"value\":\"Conocer el costo de los casos con Incapacidades en relación a su % de incapacidad, a fin de preparar un programa de rehabilitación para minimizar a su mínima expresión las secuelas incapacitantes.\",\"textStyle\":{\"fontSize\":\"12pt\"}}]}]}}]}}}",
+          "filters": "[]",
+          "height": 572.63,
+          "width": 631.22,
+          "x": 8.88,
+          "y": 147.37,
+          "z": 0.00
+        },
+        {
+          "config": "{\"name\":\"e94b12baa0e0a137772a\",\"layouts\":[{\"id\":0,\"position\":{\"x\":7.885010266940452,\"y\":73.59342915811088,\"z\":9000,\"width\":300.50650239561946,\"height\":41.177275838466805}}],\"singleVisual\":{\"visualType\":\"image\",\"drillFilterOtherVisuals\":true,\"objects\":{\"general\":[{\"properties\":{\"imageUrl\":{\"expr\":{\"ResourcePackageItem\":{\"PackageName\":\"RegisteredResources\",\"PackageType\":1,\"ItemName\":\"Seguridas_images01996111659359312.jpg\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 41.18,
+          "width": 300.51,
+          "x": 7.89,
+          "y": 73.59,
+          "z": 9000.00
+        }
+      ],
+      "width": 1280.00
+    },
+    {
+      "config": "{\"relationships\":[{\"source\":\"121a22379b04f195b623\",\"target\":\"b7adb3e90c93639450ac\",\"type\":3},{\"source\":\"e30be6b528b756487cb8\",\"target\":\"b7adb3e90c93639450ac\",\"type\":3},{\"source\":\"e30be6b528b756487cb8\",\"target\":\"249fac66e0751bdda893\",\"type\":1}],\"objects\":{\"outspacePane\":[{\"properties\":{\"width\":{\"expr\":{\"Literal\":{\"Value\":\"313L\"}}},\"backgroundColor\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":0,\"Percent\":0}}}}}}}],\"background\":[{\"properties\":{\"transparency\":{\"expr\":{\"Literal\":{\"Value\":\"40D\"}}},\"image\":{\"image\":{\"name\":{\"expr\":{\"Literal\":{\"Value\":\"'Segmento.jpg'\"}}},\"url\":{\"expr\":{\"ResourcePackageItem\":{\"PackageName\":\"RegisteredResources\",\"PackageType\":1,\"ItemName\":\"Segmento9295740149949432.jpg\"}}},\"scaling\":{\"expr\":{\"Literal\":{\"Value\":\"'Fit'\"}}}}}}}],\"outspace\":[{\"properties\":{\"image\":{\"image\":{\"name\":{\"expr\":{\"Literal\":{\"Value\":\"''\"}}},\"url\":{\"expr\":{\"Literal\":{\"Value\":\"''\"}}}}}}}]}}",
+      "displayName": "General",
+      "displayOption": 2,
+      "filters": "[]",
+      "height": 720.00,
+      "name": "ReportSection6f37b03170968b516a89",
+      "ordinal": 2,
+      "visualContainers": [
+        {
+          "config": "{\"name\":\"121a22379b04f195b623\",\"layouts\":[{\"id\":0,\"position\":{\"x\":561.5879534565366,\"y\":7.00889801505818,\"z\":9000,\"width\":234.798083504449,\"height\":66.5845311430527}}],\"singleVisual\":{\"visualType\":\"slicer\",\"projections\":{\"Values\":[{\"queryRef\":\"Agencias.Provincia\",\"active\":true}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"a\",\"Entity\":\"Agencias\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"a\"}},\"Property\":\"Provincia\"},\"Name\":\"Agencias.Provincia\"}]},\"drillFilterOtherVisuals\":true,\"objects\":{\"data\":[{\"properties\":{\"mode\":{\"expr\":{\"Literal\":{\"Value\":\"'Dropdown'\"}}}}}],\"general\":[{\"properties\":{}}]}}}",
+          "filters": "[]",
+          "height": 66.58,
+          "width": 234.80,
+          "x": 561.59,
+          "y": 7.01,
+          "z": 9000.00
+        },
+        {
+          "config": "{\"name\":\"156e832de39c40791e43\",\"layouts\":[{\"id\":0,\"position\":{\"x\":342.99634591961023,\"y\":95.10353227771012,\"z\":6000,\"width\":219.82947624847748,\"height\":88.86723507917175}}],\"singleVisual\":{\"visualType\":\"card\",\"projections\":{\"Values\":[{\"queryRef\":\"CountNonNull(Costo_de_Accidentes.Prestaciones_Dinerarias)\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"c\",\"Entity\":\"Costo_de_Accidentes\",\"Type\":0}],\"Select\":[{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"Prestaciones_Dinerarias\"}},\"Function\":1},\"Name\":\"CountNonNull(Costo_de_Accidentes.Prestaciones_Dinerarias)\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"Prestaciones_Dinerarias\"}},\"Function\":1}}}]},\"columnProperties\":{\"CountNonNull(Costo_de_Accidentes.Prestaciones_Dinerarias)\":{\"displayName\":\"Promedio de P. D.\"}},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"objects\":{\"labels\":[{\"properties\":{\"labelDisplayUnits\":{\"expr\":{\"Literal\":{\"Value\":\"1D\"}}},\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"25D\"}}},\"labelPrecision\":{\"expr\":{\"Literal\":{\"Value\":\"0L\"}}}}}]},\"vcObjects\":{\"border\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"color\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":0,\"Percent\":-0.3}}}}},\"radius\":{\"expr\":{\"Literal\":{\"Value\":\"17D\"}}}}}]}}}",
+          "filters": "[{\"name\":\"Filter9db6d9fdb5119f2ca131\",\"expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"Cod_Diagnostico\"}},\"Property\":\"Tipo de diagnostico.Tipo\"}},\"filter\":{\"Version\":2,\"From\":[{\"Name\":\"c\",\"Entity\":\"Cod_Diagnostico\",\"Type\":0}],\"Where\":[{\"Condition\":{\"In\":{\"Expressions\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"Tipo de diagnostico.Tipo\"}}],\"Values\":[[{\"Literal\":{\"Value\":\"'Accidente'\"}}]]}}}]},\"type\":\"Categorical\",\"howCreated\":1,\"objects\":{}}]",
+          "height": 88.87,
+          "width": 219.83,
+          "x": 343.00,
+          "y": 95.10,
+          "z": 6000.00
+        },
+        {
+          "config": "{\"name\":\"249fac66e0751bdda893\",\"layouts\":[{\"id\":0,\"position\":{\"x\":339.8781973203411,\"y\":204.23873325213157,\"z\":1000,\"width\":456.8087697929355,\"height\":414.7137637028015}}],\"singleVisual\":{\"visualType\":\"areaChart\",\"projections\":{\"Y\":[{\"queryRef\":\"Medidas.# Siniestros\"}],\"Tooltips\":[{\"queryRef\":\"Divide(Medidas.# Siniestros, ScopedEval(Medidas.# Siniestros, []))\"}],\"Category\":[{\"queryRef\":\"Calendario.Date.Variación.Jerarquía de fechas.Año\",\"active\":true},{\"queryRef\":\"Calendario.Date.Variación.Jerarquía de fechas.Mes\",\"active\":true}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"m\",\"Entity\":\"Medidas\",\"Type\":0},{\"Name\":\"c\",\"Entity\":\"Calendario\",\"Type\":0}],\"Select\":[{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"m\"}},\"Property\":\"Siniestros\"},\"Name\":\"Medidas.# Siniestros\"},{\"Arithmetic\":{\"Left\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"m\"}},\"Property\":\"Siniestros\"}},\"Right\":{\"ScopedEval\":{\"Expression\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"m\"}},\"Property\":\"Siniestros\"}},\"Scope\":[]}},\"Operator\":3},\"Name\":\"Divide(Medidas.# Siniestros, ScopedEval(Medidas.# Siniestros, []))\"},{\"HierarchyLevel\":{\"Expression\":{\"Hierarchy\":{\"Expression\":{\"PropertyVariationSource\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Name\":\"Variación\",\"Property\":\"Date\"}},\"Hierarchy\":\"Jerarquía de fechas\"}},\"Level\":\"Año\"},\"Name\":\"Calendario.Date.Variación.Jerarquía de fechas.Año\"},{\"HierarchyLevel\":{\"Expression\":{\"Hierarchy\":{\"Expression\":{\"PropertyVariationSource\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Name\":\"Variación\",\"Property\":\"Date\"}},\"Hierarchy\":\"Jerarquía de fechas\"}},\"Level\":\"Mes\"},\"Name\":\"Calendario.Date.Variación.Jerarquía de fechas.Mes\"}]},\"drillFilterOtherVisuals\":true,\"objects\":{\"labels\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}],\"dataPoint\":[{\"properties\":{\"fill\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":2,\"Percent\":0}}}}}}}]},\"vcObjects\":{\"title\":[{\"properties\":{\"text\":{\"expr\":{\"Literal\":{\"Value\":\"'Cantidad de siniestros por mes'\"}}}}}],\"border\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"radius\":{\"expr\":{\"Literal\":{\"Value\":\"17D\"}}},\"color\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":0,\"Percent\":-0.3}}}}}}}]}}}",
+          "filters": "[{\"expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"Accidentes\"}},\"Property\":\"Forma\"}},\"filter\":{\"Version\":2,\"From\":[{\"Name\":\"subquery\",\"Expression\":{\"Subquery\":{\"Query\":{\"Version\":2,\"From\":[{\"Name\":\"a\",\"Entity\":\"Accidentes\",\"Type\":0},{\"Name\":\"m\",\"Entity\":\"Medidas\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"a\"}},\"Property\":\"Forma\"},\"Name\":\"field\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"m\"}},\"Property\":\"Siniestros\"}}}],\"Top\":10}}},\"Type\":2},{\"Name\":\"a\",\"Entity\":\"Accidentes\",\"Type\":0}],\"Where\":[{\"Condition\":{\"In\":{\"Expressions\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"a\"}},\"Property\":\"Forma\"}}],\"Table\":{\"SourceRef\":{\"Source\":\"subquery\"}}}}}]},\"type\":\"TopN\",\"howCreated\":1,\"isHiddenInViewMode\":false}]",
+          "height": 414.71,
+          "width": 456.81,
+          "x": 339.88,
+          "y": 204.24,
+          "z": 1000.00
+        },
+        {
+          "config": "{\"name\":\"3cee2ec605f75f936908\",\"layouts\":[{\"id\":0,\"position\":{\"x\":577.2874756651526,\"y\":94.69175859831279,\"z\":7000,\"width\":219.2861778066191,\"height\":88.87735236859183}}],\"singleVisual\":{\"visualType\":\"card\",\"projections\":{\"Values\":[{\"queryRef\":\"CountNonNull(Costo_de_Accidentes.Prestaciones_Medicas)\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"c\",\"Entity\":\"Costo_de_Accidentes\",\"Type\":0}],\"Select\":[{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"Prestaciones_Medicas\"}},\"Function\":1},\"Name\":\"CountNonNull(Costo_de_Accidentes.Prestaciones_Medicas)\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"Prestaciones_Medicas\"}},\"Function\":1}}}]},\"columnProperties\":{\"CountNonNull(Costo_de_Accidentes.Prestaciones_Medicas)\":{\"displayName\":\"Promedio de P. M.\"}},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"objects\":{\"labels\":[{\"properties\":{\"labelDisplayUnits\":{\"expr\":{\"Literal\":{\"Value\":\"1D\"}}},\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"25D\"}}},\"labelPrecision\":{\"expr\":{\"Literal\":{\"Value\":\"0L\"}}}}}]},\"vcObjects\":{\"border\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"color\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":0,\"Percent\":-0.3}}}}},\"radius\":{\"expr\":{\"Literal\":{\"Value\":\"17D\"}}}}}]}}}",
+          "filters": "[{\"name\":\"Filter9db6d9fdb5119f2ca131\",\"expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"Cod_Diagnostico\"}},\"Property\":\"Tipo de diagnostico.Tipo\"}},\"filter\":{\"Version\":2,\"From\":[{\"Name\":\"c\",\"Entity\":\"Cod_Diagnostico\",\"Type\":0}],\"Where\":[{\"Condition\":{\"In\":{\"Expressions\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"Tipo de diagnostico.Tipo\"}}],\"Values\":[[{\"Literal\":{\"Value\":\"'Accidente'\"}}]]}}}]},\"type\":\"Categorical\",\"howCreated\":1,\"objects\":{}}]",
+          "height": 88.88,
+          "width": 219.29,
+          "x": 577.29,
+          "y": 94.69,
+          "z": 7000.00
+        },
+        {
+          "config": "{\"name\":\"700cc5a340d696edb98a\",\"layouts\":[{\"id\":0,\"position\":{\"x\":23.55828220858896,\"y\":369.079754601227,\"z\":4000,\"width\":268.1156879929886,\"height\":250.16652059596845}}],\"singleVisual\":{\"visualType\":\"kpi\",\"projections\":{\"Indicator\":[{\"queryRef\":\"Medidas.Siniestros/Asegurados\"}],\"Goal\":[{\"queryRef\":\"Medidas.Objetivo\"}],\"TrendLine\":[{\"queryRef\":\"Calendario.Date.Variación.Jerarquía de fechas.Año\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"m\",\"Entity\":\"Medidas\",\"Type\":0},{\"Name\":\"c\",\"Entity\":\"Calendario\",\"Type\":0}],\"Select\":[{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"m\"}},\"Property\":\"Índice Siniestralidad\"},\"Name\":\"Medidas.Siniestros/Asegurados\"},{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"m\"}},\"Property\":\"Objetivo\"},\"Name\":\"Medidas.Objetivo\"},{\"HierarchyLevel\":{\"Expression\":{\"Hierarchy\":{\"Expression\":{\"PropertyVariationSource\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Name\":\"Variación\",\"Property\":\"Date\"}},\"Hierarchy\":\"Jerarquía de fechas\"}},\"Level\":\"Año\"},\"Name\":\"Calendario.Date.Variación.Jerarquía de fechas.Año\"}]},\"columnProperties\":{\"Medidas.Siniestros/Asegurados\":{\"displayName\":\"Índice Siniestralidad\"}},\"drillFilterOtherVisuals\":true,\"objects\":{\"status\":[{\"properties\":{\"direction\":{\"expr\":{\"Literal\":{\"Value\":\"'Negative'\"}}}}}]},\"vcObjects\":{\"title\":[{\"properties\":{\"text\":{\"expr\":{\"Literal\":{\"Value\":\"'Índice de siniestralidad anual'\"}}}}}],\"border\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"radius\":{\"expr\":{\"Literal\":{\"Value\":\"17D\"}}},\"color\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":0,\"Percent\":-0.3}}}}}}}]}}}",
+          "filters": "[]",
+          "height": 250.17,
+          "width": 268.12,
+          "x": 23.56,
+          "y": 369.08,
+          "z": 4000.00
+        },
+        {
+          "config": "{\"name\":\"a091d7d77f2e87744285\",\"layouts\":[{\"id\":0,\"position\":{\"x\":3.50444900752909,\"y\":48.186173853524984,\"z\":2000,\"width\":305.7631759069131,\"height\":60.4517453798768}}],\"singleVisual\":{\"visualType\":\"textbox\",\"drillFilterOtherVisuals\":true,\"objects\":{\"general\":[{\"properties\":{\"paragraphs\":[{\"textRuns\":[{\"value\":\"SINIESTROS ART S.A.\",\"textStyle\":{\"fontWeight\":\"bold\",\"fontSize\":\"12pt\"}}],\"horizontalTextAlignment\":\"center\"},{\"textRuns\":[{\"value\":\"\"}]}]}}]}}}",
+          "filters": "[]",
+          "height": 60.45,
+          "width": 305.76,
+          "x": 3.50,
+          "y": 48.19,
+          "z": 2000.00
+        },
+        {
+          "config": "{\"name\":\"a8fa1c47c09449f5ec0e\",\"layouts\":[{\"id\":0,\"position\":{\"x\":1038.3434835566384,\"y\":95.10353227771012,\"z\":5000,\"width\":221.38855054811208,\"height\":88.86723507917175}}],\"singleVisual\":{\"visualType\":\"card\",\"projections\":{\"Values\":[{\"queryRef\":\"Medidas.Prom % inc.\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"m\",\"Entity\":\"Medidas\",\"Type\":0}],\"Select\":[{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"m\"}},\"Property\":\"Prom % inc.\"},\"Name\":\"Medidas.Prom % inc.\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"m\"}},\"Property\":\"Prom % inc.\"}}}]},\"columnProperties\":{\"Medidas.Prom % inc.\":{\"displayName\":\"Promedio % inc.\"}},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"objects\":{\"labels\":[{\"properties\":{\"labelDisplayUnits\":{\"expr\":{\"Literal\":{\"Value\":\"1D\"}}},\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"25D\"}}},\"labelPrecision\":{\"expr\":{\"Literal\":{\"Value\":\"0L\"}}}}}]},\"vcObjects\":{\"border\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"color\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":0,\"Percent\":-0.3}}}}},\"radius\":{\"expr\":{\"Literal\":{\"Value\":\"17D\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 88.87,
+          "width": 221.39,
+          "x": 1038.34,
+          "y": 95.10,
+          "z": 5000.00
+        },
+        {
+          "config": "{\"name\":\"b64a07735b154af0f5b1\",\"layouts\":[{\"id\":0,\"position\":{\"x\":23.55828220858896,\"y\":154.81156879929887,\"z\":0,\"width\":266.99386503067484,\"height\":98.72042068361087}}],\"singleVisual\":{\"visualType\":\"card\",\"projections\":{\"Values\":[{\"queryRef\":\"Medidas.# Asegurados\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"m\",\"Entity\":\"Medidas\",\"Type\":0}],\"Select\":[{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"m\"}},\"Property\":\"Asegurados\"},\"Name\":\"Medidas.# Asegurados\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"m\"}},\"Property\":\"Asegurados\"}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"objects\":{\"labels\":[{\"properties\":{\"labelDisplayUnits\":{\"expr\":{\"Literal\":{\"Value\":\"1D\"}}},\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"29D\"}}}}}],\"categoryLabels\":[{\"properties\":{\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"12D\"}}}}}]},\"vcObjects\":{\"border\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"color\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":0,\"Percent\":-0.3}}}}},\"radius\":{\"expr\":{\"Literal\":{\"Value\":\"17D\"}}}}}],\"title\":[{\"properties\":{\"titleWrap\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}],\"background\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"transparency\":{\"expr\":{\"Literal\":{\"Value\":\"3D\"}}}}}],\"visualHeader\":[{\"properties\":{\"transparency\":{\"expr\":{\"Literal\":{\"Value\":\"3D\"}}},\"foreground\":{\"solid\":{\"color\":{\"expr\":{\"Literal\":{\"Value\":\"'#8250C4'\"}}}}}}}]}}}",
+          "filters": "[]",
+          "height": 98.72,
+          "width": 266.99,
+          "x": 23.56,
+          "y": 154.81,
+          "z": 0.00
+        },
+        {
+          "config": "{\"name\":\"b7adb3e90c93639450ac\",\"layouts\":[{\"id\":0,\"position\":{\"x\":807.6004872107187,\"y\":204.23873325213157,\"z\":14000,\"width\":456.8087697929355,\"height\":414.7137637028015}}],\"singleVisual\":{\"visualType\":\"columnChart\",\"projections\":{\"Y\":[{\"queryRef\":\"Medidas.Siniestros\"}],\"Tooltips\":[{\"queryRef\":\"Divide(Medidas.Siniestros, ScopedEval(Medidas.Siniestros, []))\"}],\"Category\":[{\"queryRef\":\"Agencias.Agencia\",\"active\":true}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"m\",\"Entity\":\"Medidas\",\"Type\":0},{\"Name\":\"a1\",\"Entity\":\"Agencias\",\"Type\":0}],\"Select\":[{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"m\"}},\"Property\":\"Siniestros\"},\"Name\":\"Medidas.Siniestros\"},{\"Arithmetic\":{\"Left\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"m\"}},\"Property\":\"Siniestros\"}},\"Right\":{\"ScopedEval\":{\"Expression\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"m\"}},\"Property\":\"Siniestros\"}},\"Scope\":[]}},\"Operator\":3},\"Name\":\"Divide(Medidas.Siniestros, ScopedEval(Medidas.Siniestros, []))\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"a1\"}},\"Property\":\"Agencia\"},\"Name\":\"Agencias.Agencia\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"m\"}},\"Property\":\"Siniestros\"}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"objects\":{\"labels\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"labelDisplayUnits\":{\"expr\":{\"Literal\":{\"Value\":\"1D\"}}}}}],\"dataPoint\":[{\"properties\":{\"fill\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":2,\"Percent\":0}}}}}}}]},\"vcObjects\":{\"title\":[{\"properties\":{\"text\":{\"expr\":{\"Literal\":{\"Value\":\"'Distribución de siniestros por agencia'\"}}}}}],\"border\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"radius\":{\"expr\":{\"Literal\":{\"Value\":\"17D\"}}},\"color\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":0,\"Percent\":-0.3}}}}}}}]}}}",
+          "filters": "[{\"expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"Accidentes\"}},\"Property\":\"Forma\"}},\"filter\":{\"Version\":2,\"From\":[{\"Name\":\"subquery\",\"Expression\":{\"Subquery\":{\"Query\":{\"Version\":2,\"From\":[{\"Name\":\"a\",\"Entity\":\"Accidentes\",\"Type\":0},{\"Name\":\"m\",\"Entity\":\"Medidas\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"a\"}},\"Property\":\"Forma\"},\"Name\":\"field\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"m\"}},\"Property\":\"Siniestros\"}}}],\"Top\":10}}},\"Type\":2},{\"Name\":\"a\",\"Entity\":\"Accidentes\",\"Type\":0}],\"Where\":[{\"Condition\":{\"In\":{\"Expressions\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"a\"}},\"Property\":\"Forma\"}}],\"Table\":{\"SourceRef\":{\"Source\":\"subquery\"}}}}}]},\"type\":\"TopN\",\"howCreated\":1,\"isHiddenInViewMode\":false}]",
+          "height": 414.71,
+          "width": 456.81,
+          "x": 807.60,
+          "y": 204.24,
+          "z": 14000.00
+        },
+        {
+          "config": "{\"name\":\"bb6bcd31d9df56cd0000\",\"layouts\":[{\"id\":0,\"position\":{\"x\":21.314636283961438,\"y\":261.3847502191061,\"z\":3000,\"width\":268.1156879929886,\"height\":98.72042068361087}}],\"singleVisual\":{\"visualType\":\"card\",\"projections\":{\"Values\":[{\"queryRef\":\"Medidas.# Siniestros\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"m\",\"Entity\":\"Medidas\",\"Type\":0}],\"Select\":[{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"m\"}},\"Property\":\"Siniestros\"},\"Name\":\"Medidas.# Siniestros\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"m\"}},\"Property\":\"Siniestros\"}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"objects\":{\"labels\":[{\"properties\":{\"labelDisplayUnits\":{\"expr\":{\"Literal\":{\"Value\":\"1D\"}}},\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"29D\"}}}}}],\"categoryLabels\":[{\"properties\":{\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"12D\"}}}}}]},\"vcObjects\":{\"border\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"color\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":0,\"Percent\":-0.3}}}}},\"radius\":{\"expr\":{\"Literal\":{\"Value\":\"17D\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 98.72,
+          "width": 268.12,
+          "x": 21.31,
+          "y": 261.38,
+          "z": 3000.00
+        },
+        {
+          "config": "{\"name\":\"c4c0ece07a818bb4add9\",\"layouts\":[{\"id\":0,\"position\":{\"x\":7.885010266940452,\"y\":73.59342915811088,\"z\":12000,\"width\":300.50650239561946,\"height\":41.177275838466805}}],\"singleVisual\":{\"visualType\":\"image\",\"drillFilterOtherVisuals\":true,\"objects\":{\"general\":[{\"properties\":{\"imageUrl\":{\"expr\":{\"ResourcePackageItem\":{\"PackageName\":\"RegisteredResources\",\"PackageType\":1,\"ItemName\":\"Seguridas_images01996111659359312.jpg\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 41.18,
+          "width": 300.51,
+          "x": 7.89,
+          "y": 73.59,
+          "z": 12000.00
+        },
+        {
+          "config": "{\"name\":\"ce27af497dda2557587b\",\"layouts\":[{\"id\":0,\"position\":{\"x\":807.6004872107187,\"y\":95.10353227771012,\"z\":13000,\"width\":219.82947624847748,\"height\":88.86723507917175}}],\"singleVisual\":{\"visualType\":\"card\",\"projections\":{\"Values\":[{\"queryRef\":\"CountNonNull(Accidentes.Edad)\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"a\",\"Entity\":\"Accidentes\",\"Type\":0}],\"Select\":[{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"a\"}},\"Property\":\"Edad\"}},\"Function\":1},\"Name\":\"CountNonNull(Accidentes.Edad)\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"a\"}},\"Property\":\"Edad\"}},\"Function\":1}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"objects\":{\"labels\":[{\"properties\":{\"labelDisplayUnits\":{\"expr\":{\"Literal\":{\"Value\":\"1D\"}}},\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"25D\"}}},\"labelPrecision\":{\"expr\":{\"Literal\":{\"Value\":\"0L\"}}}}}]},\"vcObjects\":{\"border\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"color\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":0,\"Percent\":-0.3}}}}},\"radius\":{\"expr\":{\"Literal\":{\"Value\":\"17D\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 88.87,
+          "width": 219.83,
+          "x": 807.60,
+          "y": 95.10,
+          "z": 13000.00
+        },
+        {
+          "config": "{\"name\":\"e30be6b528b756487cb8\",\"layouts\":[{\"id\":0,\"position\":{\"x\":318.86765746638355,\"y\":9.05874026893135,\"z\":8000,\"width\":234.621372965322,\"height\":66.12880396319886}}],\"singleVisual\":{\"visualType\":\"slicer\",\"projections\":{\"Values\":[{\"queryRef\":\"Agencias.Agencia\",\"active\":true}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"a\",\"Entity\":\"Agencias\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"a\"}},\"Property\":\"Agencia\"},\"Name\":\"Agencias.Agencia\"}]},\"drillFilterOtherVisuals\":true,\"objects\":{\"data\":[{\"properties\":{\"mode\":{\"expr\":{\"Literal\":{\"Value\":\"'Dropdown'\"}}}}}],\"general\":[{\"properties\":{}}]}}}",
+          "filters": "[]",
+          "height": 66.13,
+          "width": 234.62,
+          "x": 318.87,
+          "y": 9.06,
+          "z": 8000.00
+        },
+        {
+          "config": "{\"name\":\"ec98384b9c6e2f618a98\",\"layouts\":[{\"id\":0,\"position\":{\"x\":1126.7698658410732,\"y\":19.81424148606811,\"z\":11000,\"width\":133.4158926728586,\"height\":43.591331269349844}}],\"singleVisual\":{\"visualType\":\"actionButton\",\"drillFilterOtherVisuals\":true,\"objects\":{\"icon\":[{\"properties\":{\"shapeType\":{\"expr\":{\"Literal\":{\"Value\":\"'blank'\"}}},\"lineColor\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":0,\"Percent\":0}}}}},\"leftMargin\":{\"expr\":{\"Literal\":{\"Value\":\"0L\"}}},\"rightMargin\":{\"expr\":{\"Literal\":{\"Value\":\"0L\"}}},\"topMargin\":{\"expr\":{\"Literal\":{\"Value\":\"0L\"}}},\"bottomMargin\":{\"expr\":{\"Literal\":{\"Value\":\"0L\"}}}},\"selector\":{\"id\":\"default\"}}],\"text\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}},{\"properties\":{\"text\":{\"expr\":{\"Literal\":{\"Value\":\"'Siguiente'\"}}},\"fontColor\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":4,\"Percent\":-0.5}}}}},\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"12D\"}}}},\"selector\":{\"id\":\"default\"}}],\"fill\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}},{\"properties\":{\"fillColor\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":3,\"Percent\":0.6}}}}}},\"selector\":{\"id\":\"default\"}}],\"outline\":[{\"properties\":{\"lineColor\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":3,\"Percent\":0.6}}}}}},\"selector\":{\"id\":\"default\"}}]},\"vcObjects\":{\"border\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"radius\":{\"expr\":{\"Literal\":{\"Value\":\"30D\"}}},\"color\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":0,\"Percent\":0}}}}}}}],\"background\":[{\"properties\":{\"color\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":3,\"Percent\":0.6}}}}},\"transparency\":{\"expr\":{\"Literal\":{\"Value\":\"0D\"}}}}}],\"visualLink\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"type\":{\"expr\":{\"Literal\":{\"Value\":\"'PageNavigation'\"}}},\"navigationSection\":{\"expr\":{\"Literal\":{\"Value\":\"'ReportSection4ac9d6e1e787fdd91679'\"}}},\"tooltip\":{\"expr\":{\"Literal\":{\"Value\":\"'va a la pagina Siguiente'\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 43.59,
+          "width": 133.42,
+          "x": 1126.77,
+          "y": 19.81,
+          "z": 11000.00
+        },
+        {
+          "config": "{\"name\":\"f7dfd7dda5784a1c0477\",\"layouts\":[{\"id\":0,\"position\":{\"x\":816,\"y\":16,\"z\":10000,\"width\":160,\"height\":48.00000000000001}}],\"singleVisual\":{\"visualType\":\"actionButton\",\"drillFilterOtherVisuals\":true,\"objects\":{\"icon\":[{\"properties\":{\"shapeType\":{\"expr\":{\"Literal\":{\"Value\":\"'blank'\"}}},\"lineColor\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":0,\"Percent\":0}}}}},\"leftMargin\":{\"expr\":{\"Literal\":{\"Value\":\"0L\"}}},\"rightMargin\":{\"expr\":{\"Literal\":{\"Value\":\"0L\"}}},\"topMargin\":{\"expr\":{\"Literal\":{\"Value\":\"0L\"}}},\"bottomMargin\":{\"expr\":{\"Literal\":{\"Value\":\"0L\"}}}},\"selector\":{\"id\":\"default\"}}],\"text\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}},{\"properties\":{\"text\":{\"expr\":{\"Literal\":{\"Value\":\"'Volver a Glosario'\"}}},\"fontColor\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":4,\"Percent\":-0.5}}}}},\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"12D\"}}}},\"selector\":{\"id\":\"default\"}}],\"fill\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}},{\"properties\":{\"fillColor\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":3,\"Percent\":0.6}}}}}},\"selector\":{\"id\":\"default\"}}],\"outline\":[{\"properties\":{\"lineColor\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":3,\"Percent\":0.6}}}}}},\"selector\":{\"id\":\"default\"}}]},\"vcObjects\":{\"border\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"radius\":{\"expr\":{\"Literal\":{\"Value\":\"30D\"}}},\"color\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":0,\"Percent\":0}}}}}}}],\"background\":[{\"properties\":{\"color\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":0,\"Percent\":0}}}}},\"transparency\":{\"expr\":{\"Literal\":{\"Value\":\"0D\"}}}}}],\"visualLink\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"type\":{\"expr\":{\"Literal\":{\"Value\":\"'PageNavigation'\"}}},\"navigationSection\":{\"expr\":{\"Literal\":{\"Value\":\"'ReportSection65045781687b0e464aad'\"}}},\"tooltip\":{\"expr\":{\"Literal\":{\"Value\":\"'va a la pagina Glosario'\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 48.00,
+          "width": 160.00,
+          "x": 816.00,
+          "y": 16.00,
+          "z": 10000.00
+        },
+        {
+          "config": "{\"name\":\"fb1087d558dc8b7b492d\",\"layouts\":[{\"id\":0,\"position\":{\"x\":0,\"y\":5.256673511293635,\"z\":15000,\"width\":317.1526351813826,\"height\":48.186173853524984}}],\"singleVisual\":{\"visualType\":\"textbox\",\"drillFilterOtherVisuals\":true,\"objects\":{\"general\":[{\"properties\":{\"paragraphs\":[{\"textRuns\":[{\"value\":\"Resumen de Siniestralidad\",\"textStyle\":{\"fontWeight\":\"bold\",\"fontSize\":\"18pt\",\"color\":\"#12239e\"}}],\"horizontalTextAlignment\":\"center\"}]}}]}}}",
+          "filters": "[]",
+          "height": 48.19,
+          "width": 317.15,
+          "x": 0.00,
+          "y": 5.26,
+          "z": 15000.00
+        }
+      ],
+      "width": 1280.00
+    },
+    {
+      "config": "{\"objects\":{\"outspace\":[{\"properties\":{\"image\":{\"image\":{\"name\":{\"expr\":{\"Literal\":{\"Value\":\"''\"}}},\"url\":{\"expr\":{\"Literal\":{\"Value\":\"''\"}}}}}}}],\"background\":[{\"properties\":{\"image\":{\"image\":{\"name\":{\"expr\":{\"Literal\":{\"Value\":\"'Segmento.jpg'\"}}},\"url\":{\"expr\":{\"ResourcePackageItem\":{\"PackageName\":\"RegisteredResources\",\"PackageType\":1,\"ItemName\":\"Segmento3040073690176799.jpg\"}}},\"scaling\":{\"expr\":{\"Literal\":{\"Value\":\"'Normal'\"}}}}},\"transparency\":{\"expr\":{\"Literal\":{\"Value\":\"40D\"}}}}}],\"outspacePane\":[{\"properties\":{\"backgroundColor\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":0,\"Percent\":0}}}}}}}]}}",
+      "displayName": "Proyectado",
+      "displayOption": 1,
+      "filters": "[]",
+      "height": 720.00,
+      "name": "ReportSection9f6af8513a630f9f36b8",
+      "ordinal": 5,
+      "visualContainers": [
+        {
+          "config": "{\"name\":\"0e9d5773492b8210d6fd\",\"layouts\":[{\"id\":0,\"position\":{\"x\":816,\"y\":16,\"z\":7000,\"width\":160,\"height\":48.00000000000001}}],\"singleVisual\":{\"visualType\":\"actionButton\",\"drillFilterOtherVisuals\":true,\"objects\":{\"icon\":[{\"properties\":{\"shapeType\":{\"expr\":{\"Literal\":{\"Value\":\"'blank'\"}}},\"lineColor\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":0,\"Percent\":0}}}}},\"leftMargin\":{\"expr\":{\"Literal\":{\"Value\":\"0L\"}}},\"rightMargin\":{\"expr\":{\"Literal\":{\"Value\":\"0L\"}}},\"topMargin\":{\"expr\":{\"Literal\":{\"Value\":\"0L\"}}},\"bottomMargin\":{\"expr\":{\"Literal\":{\"Value\":\"0L\"}}}},\"selector\":{\"id\":\"default\"}}],\"text\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}},{\"properties\":{\"text\":{\"expr\":{\"Literal\":{\"Value\":\"'Volver a Glosario'\"}}},\"fontColor\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":4,\"Percent\":-0.5}}}}},\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"12D\"}}}},\"selector\":{\"id\":\"default\"}}],\"fill\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}},{\"properties\":{\"fillColor\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":3,\"Percent\":0.6}}}}}},\"selector\":{\"id\":\"default\"}}],\"outline\":[{\"properties\":{\"lineColor\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":3,\"Percent\":0.6}}}}}},\"selector\":{\"id\":\"default\"}}]},\"vcObjects\":{\"border\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"radius\":{\"expr\":{\"Literal\":{\"Value\":\"30D\"}}},\"color\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":0,\"Percent\":0}}}}}}}],\"background\":[{\"properties\":{\"color\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":0,\"Percent\":0}}}}},\"transparency\":{\"expr\":{\"Literal\":{\"Value\":\"0D\"}}}}}],\"visualLink\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"type\":{\"expr\":{\"Literal\":{\"Value\":\"'PageNavigation'\"}}},\"navigationSection\":{\"expr\":{\"Literal\":{\"Value\":\"'ReportSection65045781687b0e464aad'\"}}},\"tooltip\":{\"expr\":{\"Literal\":{\"Value\":\"'va a la pagina Glosario'\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 48.00,
+          "width": 160.00,
+          "x": 816.00,
+          "y": 16.00,
+          "z": 7000.00
+        },
+        {
+          "config": "{\"name\":\"749fab236e32dd2b5cd7\",\"layouts\":[{\"id\":0,\"position\":{\"x\":746.6666666666667,\"y\":91.95402298850576,\"z\":3000,\"width\":272.18390804597703,\"height\":126.89655172413794}}],\"singleVisual\":{\"visualType\":\"card\",\"projections\":{\"Values\":[{\"queryRef\":\"Medidas.Siniestros proyectados\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"m\",\"Entity\":\"Medidas\",\"Type\":0}],\"Select\":[{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"m\"}},\"Property\":\"Siniestros proyectados\"},\"Name\":\"Medidas.Siniestros proyectados\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"m\"}},\"Property\":\"Siniestros proyectados\"}}}]},\"columnProperties\":{\"Medidas.Siniestros proyectados\":{\"displayName\":\"Siniestros anuales proyectados\"}},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"objects\":{\"labels\":[{\"properties\":{\"labelDisplayUnits\":{\"expr\":{\"Literal\":{\"Value\":\"1D\"}}},\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"29D\"}}},\"labelPrecision\":{\"expr\":{\"Literal\":{\"Value\":\"0L\"}}}}}],\"categoryLabels\":[{\"properties\":{\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"12D\"}}}}}]},\"vcObjects\":{\"border\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"color\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":0,\"Percent\":-0.3}}}}},\"radius\":{\"expr\":{\"Literal\":{\"Value\":\"17D\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 126.90,
+          "width": 272.18,
+          "x": 746.67,
+          "y": 91.95,
+          "z": 3000.00
+        },
+        {
+          "config": "{\"name\":\"784a77c8c70f89d06c9e\",\"layouts\":[{\"id\":0,\"position\":{\"x\":1089.6988906497622,\"y\":18.256735340729,\"z\":2000,\"width\":134.6434231378764,\"height\":43.359746434231376}}],\"singleVisual\":{\"visualType\":\"actionButton\",\"drillFilterOtherVisuals\":true,\"objects\":{\"icon\":[{\"properties\":{\"shapeType\":{\"expr\":{\"Literal\":{\"Value\":\"'blank'\"}}},\"lineColor\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":0,\"Percent\":0}}}}},\"leftMargin\":{\"expr\":{\"Literal\":{\"Value\":\"0L\"}}},\"rightMargin\":{\"expr\":{\"Literal\":{\"Value\":\"0L\"}}},\"topMargin\":{\"expr\":{\"Literal\":{\"Value\":\"0L\"}}},\"bottomMargin\":{\"expr\":{\"Literal\":{\"Value\":\"0L\"}}}},\"selector\":{\"id\":\"default\"}}],\"text\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}},{\"properties\":{\"text\":{\"expr\":{\"Literal\":{\"Value\":\"'Anterior'\"}}},\"fontColor\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":4,\"Percent\":-0.5}}}}},\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"12D\"}}}},\"selector\":{\"id\":\"default\"}}],\"fill\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}},{\"properties\":{\"fillColor\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":3,\"Percent\":0.6}}}}}},\"selector\":{\"id\":\"default\"}}],\"outline\":[{\"properties\":{\"lineColor\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":3,\"Percent\":0.6}}}}}},\"selector\":{\"id\":\"default\"}}]},\"vcObjects\":{\"border\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"radius\":{\"expr\":{\"Literal\":{\"Value\":\"30D\"}}},\"color\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":0,\"Percent\":0}}}}}}}],\"background\":[{\"properties\":{\"color\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":3,\"Percent\":0.6}}}}},\"transparency\":{\"expr\":{\"Literal\":{\"Value\":\"0D\"}}}}}],\"visualLink\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"type\":{\"expr\":{\"Literal\":{\"Value\":\"'PageNavigation'\"}}},\"navigationSection\":{\"expr\":{\"Literal\":{\"Value\":\"'ReportSection1c85d15e347241cbbace'\"}}},\"tooltip\":{\"expr\":{\"Literal\":{\"Value\":\"'va a la pagina Siguiente'\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 43.36,
+          "width": 134.64,
+          "x": 1089.70,
+          "y": 18.26,
+          "z": 2000.00
+        },
+        {
+          "config": "{\"name\":\"8206d8c7488885e3bc45\",\"layouts\":[{\"id\":0,\"position\":{\"x\":10.980392156862745,\"y\":219.60784313725492,\"z\":1000,\"width\":285.4901960784314,\"height\":106.66666666666667}}],\"singleVisual\":{\"visualType\":\"slicer\",\"projections\":{\"Values\":[{\"queryRef\":\"Parámetro %.Parámetro\",\"active\":true}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"p\",\"Entity\":\"Parámetro Stros\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"p\"}},\"Property\":\"Parámetro\"},\"Name\":\"Parámetro %.Parámetro\"}]},\"drillFilterOtherVisuals\":true,\"objects\":{\"data\":[{\"properties\":{\"numericStart\":{\"expr\":{\"Literal\":{\"Value\":\"-1.3877787807814457e-16D\"}}},\"mode\":{\"expr\":{\"Literal\":{\"Value\":\"'Single'\"}}}}}],\"general\":[{\"properties\":{\"filter\":{\"filter\":{\"Version\":2,\"From\":[{\"Name\":\"p\",\"Entity\":\"Parámetro Stros\",\"Type\":0}],\"Where\":[{\"Condition\":{\"Comparison\":{\"ComparisonKind\":0,\"Left\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"p\"}},\"Property\":\"Parámetro\"}},\"Right\":{\"Literal\":{\"Value\":\"-1.3877787807814457e-16D\"}}}}}]}}}}],\"header\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]},\"vcObjects\":{\"background\":[{\"properties\":{\"transparency\":{\"expr\":{\"Literal\":{\"Value\":\"0D\"}}},\"color\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":0,\"Percent\":0}}}}},\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}],\"title\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"text\":{\"expr\":{\"Literal\":{\"Value\":\"'Variación de Siniestros'\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 106.67,
+          "width": 285.49,
+          "x": 10.98,
+          "y": 219.61,
+          "z": 1000.00
+        },
+        {
+          "config": "{\"name\":\"847412c587de17d0bfad\",\"layouts\":[{\"id\":0,\"position\":{\"x\":0,\"y\":5.256673511293635,\"z\":8000,\"width\":317.1526351813826,\"height\":48.186173853524984}}],\"singleVisual\":{\"visualType\":\"textbox\",\"drillFilterOtherVisuals\":true,\"objects\":{\"general\":[{\"properties\":{\"paragraphs\":[{\"textRuns\":[{\"value\":\"Proyecciones\",\"textStyle\":{\"fontWeight\":\"bold\",\"fontSize\":\"18pt\",\"color\":\"#12239e\"}}],\"horizontalTextAlignment\":\"center\"}]}}]}}}",
+          "filters": "[]",
+          "height": 48.19,
+          "width": 317.15,
+          "x": 0.00,
+          "y": 5.26,
+          "z": 8000.00
+        },
+        {
+          "config": "{\"name\":\"9517369fd8f94133afe2\",\"layouts\":[{\"id\":0,\"position\":{\"x\":7.885010266940452,\"y\":73.59342915811088,\"z\":10000,\"width\":300.50650239561946,\"height\":41.177275838466805}}],\"singleVisual\":{\"visualType\":\"image\",\"drillFilterOtherVisuals\":true,\"objects\":{\"general\":[{\"properties\":{\"imageUrl\":{\"expr\":{\"ResourcePackageItem\":{\"PackageName\":\"RegisteredResources\",\"PackageType\":1,\"ItemName\":\"Seguridas_images01996111659359312.jpg\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 41.18,
+          "width": 300.51,
+          "x": 7.89,
+          "y": 73.59,
+          "z": 10000.00
+        },
+        {
+          "config": "{\"name\":\"98f5f9dad179762aaec3\",\"layouts\":[{\"id\":0,\"position\":{\"x\":9.195402298850576,\"y\":360.45977011494256,\"z\":5000,\"width\":286.89655172413796,\"height\":115.86206896551725}}],\"singleVisual\":{\"visualType\":\"slicer\",\"projections\":{\"Values\":[{\"queryRef\":\"Parámetro Asegurados.Parámetro Asegurados\",\"active\":true}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"p\",\"Entity\":\"Parámetro Asegurados\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"p\"}},\"Property\":\"Parámetro Asegurados\"},\"Name\":\"Parámetro Asegurados.Parámetro Asegurados\"}]},\"drillFilterOtherVisuals\":true,\"objects\":{\"data\":[{\"properties\":{\"numericStart\":{\"expr\":{\"Literal\":{\"Value\":\"-1.3877787807814457e-16D\"}}}}}],\"general\":[{\"properties\":{\"filter\":{\"filter\":{\"Version\":2,\"From\":[{\"Name\":\"p\",\"Entity\":\"Parámetro Asegurados\",\"Type\":0}],\"Where\":[{\"Condition\":{\"Comparison\":{\"ComparisonKind\":0,\"Left\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"p\"}},\"Property\":\"Parámetro Asegurados\"}},\"Right\":{\"Literal\":{\"Value\":\"-1.3877787807814457e-16D\"}}}}}]}}}}],\"header\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]},\"vcObjects\":{\"title\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"text\":{\"expr\":{\"Literal\":{\"Value\":\"'Variación de asegurados'\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 115.86,
+          "width": 286.90,
+          "x": 9.20,
+          "y": 360.46,
+          "z": 5000.00
+        },
+        {
+          "config": "{\"name\":\"b3f56d91b0de751ef6ed\",\"layouts\":[{\"id\":0,\"position\":{\"x\":3.50444900752909,\"y\":48.186173853524984,\"z\":9000,\"width\":305.7631759069131,\"height\":60.4517453798768}}],\"singleVisual\":{\"visualType\":\"textbox\",\"drillFilterOtherVisuals\":true,\"objects\":{\"general\":[{\"properties\":{\"paragraphs\":[{\"textRuns\":[{\"value\":\"SINIESTROS ART S.A.\",\"textStyle\":{\"fontWeight\":\"bold\",\"fontSize\":\"12pt\"}}],\"horizontalTextAlignment\":\"center\"},{\"textRuns\":[{\"value\":\"\"}]}]}}]}}}",
+          "filters": "[]",
+          "height": 60.45,
+          "width": 305.76,
+          "x": 3.50,
+          "y": 48.19,
+          "z": 9000.00
+        },
+        {
+          "config": "{\"name\":\"de7aeed62044a7691bac\",\"layouts\":[{\"id\":0,\"position\":{\"x\":343.9080459770115,\"y\":228.04597701149427,\"z\":4000,\"width\":700.6896551724138,\"height\":399.080459770115}}],\"singleVisual\":{\"visualType\":\"lineClusteredColumnComboChart\",\"projections\":{\"Category\":[{\"queryRef\":\"Siniestralidad anual.Año\",\"active\":true}],\"Y\":[{\"queryRef\":\"Sum(Siniestralidad anual.P.M. promedio)\"},{\"queryRef\":\"Sum(Siniestralidad anual.P.D. promedio)\"}],\"Y2\":[{\"queryRef\":\"Sum(Siniestralidad anual.Índice de siniestralidad anual)\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"s\",\"Entity\":\"Siniestralidad anual\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"s\"}},\"Property\":\"Año\"},\"Name\":\"Siniestralidad anual.Año\"},{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"s\"}},\"Property\":\"P.M. promedio\"}},\"Function\":0},\"Name\":\"Sum(Siniestralidad anual.P.M. promedio)\"},{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"s\"}},\"Property\":\"P.D. promedio\"}},\"Function\":0},\"Name\":\"Sum(Siniestralidad anual.P.D. promedio)\"},{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"s\"}},\"Property\":\"Índice de siniestralidad anual\"}},\"Function\":0},\"Name\":\"Sum(Siniestralidad anual.Índice de siniestralidad anual)\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"s\"}},\"Property\":\"P.M. promedio\"}},\"Function\":0}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"objects\":{\"labels\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"labelDisplayUnits\":{\"expr\":{\"Literal\":{\"Value\":\"1D\"}}},\"labelPrecision\":{\"expr\":{\"Literal\":{\"Value\":\"0L\"}}}}}]},\"vcObjects\":{\"title\":[{\"properties\":{\"text\":{\"expr\":{\"Literal\":{\"Value\":\"'Evolución del índice, PM y PD de los últimos años'\"}}}}}],\"border\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"color\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":0,\"Percent\":-0.2}}}}},\"radius\":{\"expr\":{\"Literal\":{\"Value\":\"30D\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 399.08,
+          "width": 700.69,
+          "x": 343.91,
+          "y": 228.05,
+          "z": 4000.00
+        },
+        {
+          "config": "{\"name\":\"e037fe5fe961a8e955dd\",\"layouts\":[{\"id\":0,\"position\":{\"x\":367.816091954023,\"y\":93.79310344827587,\"z\":6000,\"width\":272.18390804597703,\"height\":126.89655172413794}}],\"singleVisual\":{\"visualType\":\"card\",\"projections\":{\"Values\":[{\"queryRef\":\"Parámetro Stros.Asegurados proyectados\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"m\",\"Entity\":\"Medidas\",\"Type\":0}],\"Select\":[{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"m\"}},\"Property\":\"Asegurados proyectados\"},\"Name\":\"Parámetro Stros.Asegurados proyectados\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"m\"}},\"Property\":\"Asegurados proyectados\"}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"objects\":{\"labels\":[{\"properties\":{\"labelDisplayUnits\":{\"expr\":{\"Literal\":{\"Value\":\"1D\"}}},\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"29D\"}}},\"labelPrecision\":{\"expr\":{\"Literal\":{\"Value\":\"0L\"}}}}}],\"categoryLabels\":[{\"properties\":{\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"12D\"}}}}}]},\"vcObjects\":{\"border\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"color\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":0,\"Percent\":-0.3}}}}},\"radius\":{\"expr\":{\"Literal\":{\"Value\":\"17D\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 126.90,
+          "width": 272.18,
+          "x": 367.82,
+          "y": 93.79,
+          "z": 6000.00
+        },
+        {
+          "config": "{\"name\":\"e464ab2722f8e9b34078\",\"layouts\":[{\"id\":0,\"position\":{\"x\":1061.1494252873565,\"y\":316.3218390804598,\"z\":0,\"width\":204.13793103448276,\"height\":180.22988505747128}}],\"singleVisual\":{\"visualType\":\"card\",\"projections\":{\"Values\":[{\"queryRef\":\"Medidas.Índice Siniestralidad proyectado\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"m\",\"Entity\":\"Medidas\",\"Type\":0}],\"Select\":[{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"m\"}},\"Property\":\"Índice Siniestralidad proyectado\"},\"Name\":\"Medidas.Índice Siniestralidad proyectado\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"m\"}},\"Property\":\"Índice Siniestralidad proyectado\"}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"objects\":{\"labels\":[{\"properties\":{}}],\"wordWrap\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}],\"categoryLabels\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]},\"vcObjects\":{\"border\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"color\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":0,\"Percent\":-0.2}}}}},\"radius\":{\"expr\":{\"Literal\":{\"Value\":\"30D\"}}}}}],\"background\":[{\"properties\":{\"color\":{\"solid\":{\"color\":{\"expr\":{\"FillRule\":{\"Input\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"Medidas\"}},\"Property\":\"Índice Siniestralidad proyectado\"}},\"FillRule\":{\"linearGradient2\":{\"min\":{\"color\":{\"Literal\":{\"Value\":\"'minColor'\"}},\"value\":{\"Literal\":{\"Value\":\"0D\"}}},\"max\":{\"color\":{\"Literal\":{\"Value\":\"'maxColor'\"}},\"value\":{\"Literal\":{\"Value\":\"100D\"}}},\"nullColoringStrategy\":{\"strategy\":{\"Literal\":{\"Value\":\"'asZero'\"}}}}}}}}}}}}],\"title\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"text\":{\"expr\":{\"Literal\":{\"Value\":\"'Índice proyectado'\"}}},\"heading\":{\"expr\":{\"Literal\":{\"Value\":\"'Normal'\"}}},\"alignment\":{\"expr\":{\"Literal\":{\"Value\":\"'center'\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 180.23,
+          "width": 204.14,
+          "x": 1061.15,
+          "y": 316.32,
+          "z": 0.00
+        }
+      ],
+      "width": 1280.00
+    }
+  ],
+  "theme": "Bloom"
+}

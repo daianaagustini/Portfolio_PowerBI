@@ -1,0 +1,5493 @@
+cultureInfo es-ES
+
+	linguisticMetadata =
+			{
+			  "Version": "3.1.0",
+			  "Language": "en-US",
+			  "Entities": {
+			    "accidente": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Accidentes"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "accidente": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "accidente.ciiu_f_150": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Accidentes",
+			          "ConceptualProperty": "CIIU_F150"
+			        }
+			      },
+			      "State": "Generated",
+			      "Visibility": {
+			        "Value": "Hidden"
+			      },
+			      "Terms": [
+			        {
+			          "ciiu f 150": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "CIIU_F150": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        }
+			      ]
+			    },
+			    "accidente.stro": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Accidentes",
+			          "ConceptualProperty": "Stro"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "stro": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "accidente.fec_denun": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Accidentes",
+			          "ConceptualProperty": "Fec_Denun"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "fec denun": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "Fec_Denun": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "date": {
+			            "State": "Generated",
+			            "Weight": 0.7
+			          }
+			        }
+			      ],
+			      "SemanticType": "Time"
+			    },
+			    "accidente.fec_denun.variación.jerarquía_de_fecha": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Accidentes",
+			          "VariationSource": "Fec_Denun",
+			          "VariationSet": "Variación",
+			          "Hierarchy": "Jerarquía de fechas"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "jerarquía de fecha": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "accidente.fec_denun.variación.jerarquía_de_fecha.año": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Accidentes",
+			          "VariationSource": "Fec_Denun",
+			          "VariationSet": "Variación",
+			          "Hierarchy": "Jerarquía de fechas",
+			          "HierarchyLevel": "Año"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "año": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "fec denun año": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "accidente.fec_denun.variación.jerarquía_de_fecha.trimestre": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Accidentes",
+			          "VariationSource": "Fec_Denun",
+			          "VariationSet": "Variación",
+			          "Hierarchy": "Jerarquía de fechas",
+			          "HierarchyLevel": "Trimestre"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "trimestre": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "fec denun trimestre": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "accidente.fec_denun.variación.jerarquía_de_fecha.me": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Accidentes",
+			          "VariationSource": "Fec_Denun",
+			          "VariationSet": "Variación",
+			          "Hierarchy": "Jerarquía de fechas",
+			          "HierarchyLevel": "Mes"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "me": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "fec denun me": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "accidente.fec_denun.variación.jerarquía_de_fecha.día": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Accidentes",
+			          "VariationSource": "Fec_Denun",
+			          "VariationSet": "Variación",
+			          "Hierarchy": "Jerarquía de fechas",
+			          "HierarchyLevel": "Día"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "día": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "fec denun día": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "accidente.ocurrencia": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Accidentes",
+			          "ConceptualProperty": "Ocurrencia"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "ocurrencia": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "date": {
+			            "State": "Generated",
+			            "Weight": 0.7
+			          }
+			        }
+			      ],
+			      "SemanticType": "Time"
+			    },
+			    "accidente.alta_medica": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Accidentes",
+			          "ConceptualProperty": "Alta_Medica"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "alta medica": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "Alta_Medica": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "date": {
+			            "State": "Generated",
+			            "Weight": 0.7
+			          }
+			        }
+			      ],
+			      "SemanticType": "Time"
+			    },
+			    "accidente.alta_medica.variación.jerarquía_de_fecha": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Accidentes",
+			          "VariationSource": "Alta_Medica",
+			          "VariationSet": "Variación",
+			          "Hierarchy": "Jerarquía de fechas"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "jerarquía de fecha": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "accidente.alta_medica.variación.jerarquía_de_fecha.año": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Accidentes",
+			          "VariationSource": "Alta_Medica",
+			          "VariationSet": "Variación",
+			          "Hierarchy": "Jerarquía de fechas",
+			          "HierarchyLevel": "Año"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "año": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "alta medica año": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "accidente.alta_medica.variación.jerarquía_de_fecha.trimestre": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Accidentes",
+			          "VariationSource": "Alta_Medica",
+			          "VariationSet": "Variación",
+			          "Hierarchy": "Jerarquía de fechas",
+			          "HierarchyLevel": "Trimestre"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "trimestre": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "alta medica trimestre": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "accidente.alta_medica.variación.jerarquía_de_fecha.me": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Accidentes",
+			          "VariationSource": "Alta_Medica",
+			          "VariationSet": "Variación",
+			          "Hierarchy": "Jerarquía de fechas",
+			          "HierarchyLevel": "Mes"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "me": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "alta medica me": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "accidente.alta_medica.variación.jerarquía_de_fecha.día": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Accidentes",
+			          "VariationSource": "Alta_Medica",
+			          "VariationSet": "Variación",
+			          "Hierarchy": "Jerarquía de fechas",
+			          "HierarchyLevel": "Día"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "día": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "alta medica día": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "accidente.forma": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Accidentes",
+			          "ConceptualProperty": "Forma"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "forma": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "accidente.lugar": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Accidentes",
+			          "ConceptualProperty": "Lugar"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "lugar": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "accidente.naturaleza": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Accidentes",
+			          "ConceptualProperty": "Naturaleza"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "naturaleza": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "accidente.agente": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Accidentes",
+			          "ConceptualProperty": "Agente"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "agente": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "accidente.gravedad": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Accidentes",
+			          "ConceptualProperty": "Gravedad"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "gravedad": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "accidente.tipo_sin": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Accidentes",
+			          "ConceptualProperty": "Tipo_Sin"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "tipo sin": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "Tipo_Sin": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "tipo wickedness": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "OfficeThesaurus"
+			            },
+			            "Weight": 0.5
+			          }
+			        },
+			        {
+			          "tipo iniquity": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "OfficeThesaurus"
+			            },
+			            "Weight": 0.5
+			          }
+			        },
+			        {
+			          "tipo depravity": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "OfficeThesaurus"
+			            },
+			            "Weight": 0.5
+			          }
+			        },
+			        {
+			          "tipo immorality": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "OfficeThesaurus"
+			            },
+			            "Weight": 0.5
+			          }
+			        },
+			        {
+			          "tipo debauchery": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "OfficeThesaurus"
+			            },
+			            "Weight": 0.5
+			          }
+			        },
+			        {
+			          "tipo turpitude": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "OfficeThesaurus"
+			            },
+			            "Weight": 0.5
+			          }
+			        },
+			        {
+			          "tipo evil": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "OfficeThesaurus"
+			            },
+			            "Weight": 0.485
+			          }
+			        },
+			        {
+			          "tipo peccadillo": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "OfficeThesaurus"
+			            },
+			            "Weight": 0.475
+			          }
+			        },
+			        {
+			          "tipo offence": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "OfficeThesaurus"
+			            },
+			            "Weight": 0.475
+			          }
+			        },
+			        {
+			          "tipo offense": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "OfficeThesaurus"
+			            },
+			            "Weight": 0.475
+			          }
+			        }
+			      ]
+			    },
+			    "accidente.v___Inc_inc": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Accidentes",
+			          "ConceptualProperty": "% _Inc"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "% _inc": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "percentage _inc": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "OfficeThesaurus"
+			            },
+			            "Weight": 0.609
+			          }
+			        },
+			        {
+			          "pct _inc": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "OfficeThesaurus"
+			            },
+			            "Weight": 0.591
+			          }
+			        }
+			      ]
+			    },
+			    "accidente.edad": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Accidentes",
+			          "ConceptualProperty": "Edad"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "edad": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "accidente.cod_diag": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Accidentes",
+			          "ConceptualProperty": "Cod_Diag"
+			        }
+			      },
+			      "State": "Generated",
+			      "Visibility": {
+			        "Value": "Hidden"
+			      },
+			      "Terms": [
+			        {
+			          "cod diag": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "Cod_Diag": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        }
+			      ]
+			    },
+			    "accidente.estado_de_alta_medica": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Accidentes",
+			          "ConceptualProperty": "Estado de alta medica"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "estado de alta medica": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "accidente.dias_transcurrido_entre_ocurrencia_y_denuncia": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Accidentes",
+			          "ConceptualProperty": "Dias transcurrido entre ocurrencia y denuncia"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "dias transcurrido entre ocurrencia y denuncia": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "asegurado": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Asegurados"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "asegurado": {
+			            "State": "Generated",
+			            "Weight": 0.87
+			          }
+			        }
+			      ]
+			    },
+			    "asegurado.cuil": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Asegurados",
+			          "ConceptualProperty": "Cuil"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "cuil": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "asegurado.nombre": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Asegurados",
+			          "ConceptualProperty": "Nombre"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "nombre": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "asegurado.siniestro": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Asegurados",
+			          "ConceptualProperty": "# Siniestros"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "# siniestro": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "no siniestro": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "OfficeThesaurus"
+			            },
+			            "Weight": 0.582
+			          }
+			        },
+			        {
+			          "num siniestro": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "OfficeThesaurus"
+			            },
+			            "Weight": 0.582
+			          }
+			        },
+			        {
+			          "number siniestro": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "OfficeThesaurus"
+			            },
+			            "Weight": 0.582
+			          }
+			        }
+			      ]
+			    },
+			    "ciiu_f150": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "CIIU F150"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "ciiu f150": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "ciiu_f150.codigo_CIIU_F150": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "CIIU F150",
+			          "ConceptualProperty": "Codigo_CIIU_F150"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "codigo CIIU F150": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "Codigo_CIIU_F150": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        }
+			      ]
+			    },
+			    "ciiu_f150.descripcion_CIIU_F150": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "CIIU F150",
+			          "ConceptualProperty": "Descripcion_CIIU_F150"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "descripcion CIIU F150": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "Descripcion_CIIU_F150": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        }
+			      ]
+			    },
+			    "cod_diagnostico": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Cod_Diagnostico"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "cod diagnostico": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "Cod_Diagnostico": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        }
+			      ]
+			    },
+			    "cod_diagnostico.cod_diag": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Cod_Diagnostico",
+			          "ConceptualProperty": "Cod_Diag"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "cod diag": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "Cod_Diag": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        }
+			      ]
+			    },
+			    "cod_diagnostico.diagnostico": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Cod_Diagnostico",
+			          "ConceptualProperty": "Diagnostico"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "diagnostico": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "cod_diagnostico.tipo_de_diagnostico_tipo": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Cod_Diagnostico",
+			          "ConceptualProperty": "Tipo de diagnostico.Tipo"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "tipo de diagnostico.tipo": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "Tipo de siniestro": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "costo_de_accidente": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Costo_de_Accidentes"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "costo de accidente": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "Costo_de_Accidentes": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        }
+			      ]
+			    },
+			    "costo_de_accidente.stro": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Costo_de_Accidentes",
+			          "ConceptualProperty": "Stro"
+			        }
+			      },
+			      "State": "Generated",
+			      "Visibility": {
+			        "Value": "Hidden"
+			      },
+			      "Terms": [
+			        {
+			          "stro": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "costo_de_accidente.prestaciones_medica": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Costo_de_Accidentes",
+			          "ConceptualProperty": "Prestaciones_Medicas"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "prestaciones medica": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "prestacione medica": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.78
+			          }
+			        },
+			        {
+			          "Prestaciones_Medicas": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        }
+			      ]
+			    },
+			    "costo_de_accidente.prestaciones_dineraria": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Costo_de_Accidentes",
+			          "ConceptualProperty": "Prestaciones_Dinerarias"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "prestaciones dineraria": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "prestacione dineraria": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.78
+			          }
+			        },
+			        {
+			          "Prestaciones_Dinerarias": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        }
+			      ]
+			    },
+			    "costo_de_accidente.fecha_de_liquidacion": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Costo_de_Accidentes",
+			          "ConceptualProperty": "Fecha de Liquidacion"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "fecha de liquidacion": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "date": {
+			            "State": "Generated",
+			            "Weight": 0.7
+			          }
+			        }
+			      ],
+			      "SemanticType": "Time"
+			    },
+			    "costo_de_accidente.prestaciones_totale": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Costo_de_Accidentes",
+			          "ConceptualProperty": "Prestaciones totales"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "prestaciones totale": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "prestacione totale": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.78
+			          }
+			        }
+			      ]
+			    },
+			    "calendario": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Calendario"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "calendario": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "calendario.date": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Calendario",
+			          "ConceptualProperty": "Date"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "date": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "moment": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "OfficeThesaurus"
+			            },
+			            "Weight": 0.736
+			          }
+			        },
+			        {
+			          "period": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "OfficeThesaurus"
+			            },
+			            "Weight": 0.714
+			          }
+			        }
+			      ],
+			      "SemanticType": "Time"
+			    },
+			    "calendario.date.variación.jerarquía_de_fecha": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Calendario",
+			          "VariationSource": "Date",
+			          "VariationSet": "Variación",
+			          "Hierarchy": "Jerarquía de fechas"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "jerarquía de fecha": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "calendario.date.variación.jerarquía_de_fecha.año": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Calendario",
+			          "VariationSource": "Date",
+			          "VariationSet": "Variación",
+			          "Hierarchy": "Jerarquía de fechas",
+			          "HierarchyLevel": "Año"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "año": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "date año": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "moment año": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "OfficeThesaurus"
+			            },
+			            "Weight": 0.6
+			          }
+			        },
+			        {
+			          "period año": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "OfficeThesaurus"
+			            },
+			            "Weight": 0.582
+			          }
+			        }
+			      ]
+			    },
+			    "calendario.date.variación.jerarquía_de_fecha.trimestre": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Calendario",
+			          "VariationSource": "Date",
+			          "VariationSet": "Variación",
+			          "Hierarchy": "Jerarquía de fechas",
+			          "HierarchyLevel": "Trimestre"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "trimestre": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "date trimestre": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "moment trimestre": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "OfficeThesaurus"
+			            },
+			            "Weight": 0.6
+			          }
+			        },
+			        {
+			          "period trimestre": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "OfficeThesaurus"
+			            },
+			            "Weight": 0.582
+			          }
+			        }
+			      ]
+			    },
+			    "calendario.date.variación.jerarquía_de_fecha.me": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Calendario",
+			          "VariationSource": "Date",
+			          "VariationSet": "Variación",
+			          "Hierarchy": "Jerarquía de fechas",
+			          "HierarchyLevel": "Mes"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "me": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "date me": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "moment me": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "OfficeThesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "period me": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "OfficeThesaurus"
+			            },
+			            "Weight": 0.727
+			          }
+			        }
+			      ]
+			    },
+			    "calendario.date.variación.jerarquía_de_fecha.día": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Calendario",
+			          "VariationSource": "Date",
+			          "VariationSet": "Variación",
+			          "Hierarchy": "Jerarquía de fechas",
+			          "HierarchyLevel": "Día"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "día": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "date día": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "moment día": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "OfficeThesaurus"
+			            },
+			            "Weight": 0.6
+			          }
+			        },
+			        {
+			          "period día": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "OfficeThesaurus"
+			            },
+			            "Weight": 0.582
+			          }
+			        }
+			      ]
+			    },
+			    "calendario.día": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Calendario",
+			          "ConceptualProperty": "Día"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "día": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "calendario.mes_numero": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Calendario",
+			          "ConceptualProperty": "Mes Numero"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "mes numero": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "me numero": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.78
+			          }
+			        }
+			      ]
+			    },
+			    "calendario.mes_nombre": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Calendario",
+			          "ConceptualProperty": "Mes nombre"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "mes nombre": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "me nombre": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.78
+			          }
+			        }
+			      ]
+			    },
+			    "calendario.año": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Calendario",
+			          "ConceptualProperty": "Año"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "año": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "calendario.trimestre": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Calendario",
+			          "ConceptualProperty": "Trimestre"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "trimestre": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "medida": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Medidas"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "medida": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "medida.asegurados": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Medidas",
+			          "ConceptualProperty": "Asegurados"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "asegurado": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "medida.siniestro": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Medidas",
+			          "ConceptualProperty": "Siniestros"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "siniestros": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "Cantidad de siniestros": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "medida.formas_de_stros": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Medidas",
+			          "ConceptualProperty": "# Formas de stros"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "# formas de stros": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "no forma de stro": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "OfficeThesaurus"
+			            },
+			            "Weight": 0.599
+			          }
+			        },
+			        {
+			          "num forma de stro": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "OfficeThesaurus"
+			            },
+			            "Weight": 0.599
+			          }
+			        },
+			        {
+			          "number forma de stro": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "OfficeThesaurus"
+			            },
+			            "Weight": 0.599
+			          }
+			        }
+			      ]
+			    },
+			    "medida.costos_totales": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Medidas",
+			          "ConceptualProperty": "Costos totales"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "costos totales": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "medida.prom_de__de_incapacidad": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Medidas",
+			          "ConceptualProperty": "Prom % inc."
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "prom % inc.": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "prom percentage inc.": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "OfficeThesaurus"
+			            },
+			            "Weight": 0.617
+			          }
+			        },
+			        {
+			          "promedio de percentage incapacidad": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "OfficeThesaurus"
+			            },
+			            "Weight": 0.617
+			          }
+			        },
+			        {
+			          "prom pct inc.": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "OfficeThesaurus"
+			            },
+			            "Weight": 0.599
+			          }
+			        },
+			        {
+			          "promedio de pct incapacidad": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "OfficeThesaurus"
+			            },
+			            "Weight": 0.599
+			          }
+			        },
+			        {
+			          "Promedio % inc.": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "medida.siniestros_asegurados": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Medidas",
+			          "ConceptualProperty": "Índice Siniestralidad"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "índice siniestralidad": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "medida.objetivo": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Medidas",
+			          "ConceptualProperty": "Objetivo"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "objetivo": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "medida.promedio_de__de_incapacidad": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Medidas",
+			          "ConceptualProperty": "Promedio de % de Incapacidad"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "promedio de % de incapacidad": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "promedio de percentage de incapacidad": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "OfficeThesaurus"
+			            },
+			            "Weight": 0.624
+			          }
+			        },
+			        {
+			          "promedio de pct de incapacidad": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "OfficeThesaurus"
+			            },
+			            "Weight": 0.605
+			          }
+			        }
+			      ]
+			    },
+			    "accidente.agencia": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Accidentes",
+			          "ConceptualProperty": "Agencia"
+			        }
+			      },
+			      "State": "Generated",
+			      "Visibility": {
+			        "Value": "Hidden"
+			      },
+			      "Terms": [
+			        {
+			          "agencia": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "medida.año_anterior": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Medidas",
+			          "ConceptualProperty": "Año anterior"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "año anterior": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "medida.variación_interanual": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Medidas",
+			          "ConceptualProperty": "Variación interanual"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "variación interanual": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "medida.siniestros_proyectados": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Medidas",
+			          "ConceptualProperty": "Siniestros proyectados"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "siniestros proyectados": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "Siniestros anuales proyectados": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "medida.índice_siniestralidad_proyectado": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Medidas",
+			          "ConceptualProperty": "Índice Siniestralidad proyectado"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "índice siniestralidad proyectado": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "agencia": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Agencias"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "agencia": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "agencia.provincia": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Agencias",
+			          "ConceptualProperty": "Provincia"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "provincia": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "agencia.agencia": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Agencias",
+			          "ConceptualProperty": "Agencia"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "agencia": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "agencia name": {
+			            "State": "Generated"
+			          }
+			        }
+			      ],
+			      "NameType": "Name"
+			    },
+			    "parámetro_": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Parámetro Stros"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "parámetro stro": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "parámetro_.parámetro": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Parámetro Stros",
+			          "ConceptualProperty": "Parámetro"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "parámetro": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "parámetro_.valor_parámetro": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Parámetro Stros",
+			          "ConceptualProperty": "Valor Parámetro"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "valor parámetro": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "medida.asegurados_proyectados": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Medidas",
+			          "ConceptualProperty": "Asegurados proyectados"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "asegurados proyectados": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "medida.tooltip_diag": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Medidas",
+			          "ConceptualProperty": "Tooltip Diag"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "tooltip diag": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "siniestralidad_anual": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Siniestralidad anual"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "siniestralidad anual": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "siniestralidad_anual.siniestralidad": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Siniestralidad anual",
+			          "ConceptualProperty": "Siniestralidad"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "siniestralidad": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "siniestralidad_anual.año": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Siniestralidad anual",
+			          "ConceptualProperty": "Año"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "año": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "siniestralidad_anual.P_D__totale": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Siniestralidad anual",
+			          "ConceptualProperty": "P.D. totales"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "P.D. totale": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "siniestralidad_anual.P_M__totale": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Siniestralidad anual",
+			          "ConceptualProperty": "P.M. totales"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "P.M. totale": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "siniestralidad_anual.índice_de_siniestralidad_anual": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Siniestralidad anual",
+			          "ConceptualProperty": "Índice de siniestralidad anual"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "índice de siniestralidad anual": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "siniestralidad_anual.P_D__promedio": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Siniestralidad anual",
+			          "ConceptualProperty": "P.D. promedio"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "P.D. promedio": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "siniestralidad_anual.P_M__promedio": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Siniestralidad anual",
+			          "ConceptualProperty": "P.M. promedio"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "P.M. promedio": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "parámetro_asegurado": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Parámetro Asegurados"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "parámetro asegurado": {
+			            "State": "Generated",
+			            "Weight": 0.87
+			          }
+			        }
+			      ]
+			    },
+			    "parámetro_asegurado.parámetro_asegurado": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Parámetro Asegurados",
+			          "ConceptualProperty": "Parámetro Asegurados"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "parámetro asegurado": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "parámetro_asegurado.valor_parámetro_asegurados": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Parámetro Asegurados",
+			          "ConceptualProperty": "Valor Parámetro Asegurados"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "valor parámetro asegurados": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    }
+			  },
+			  "Relationships": {
+			    "accidente_alta_medica_has_variación_jerarquía_de_fecha": {
+			      "Binding": {
+			        "ConceptualEntity": "Accidentes"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "accidente.alta_medica": {
+			          "Target": {
+			            "Entity": "accidente.alta_medica"
+			          }
+			        },
+			        "accidente.alta_medica.variación.jerarquía_de_fecha": {
+			          "Target": {
+			            "Entity": "accidente.alta_medica.variación.jerarquía_de_fecha"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "accidente.alta_medica"
+			            },
+			            "Object": {
+			              "Role": "accidente.alta_medica.variación.jerarquía_de_fecha"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99
+			        }
+			      ]
+			    },
+			    "accidente_fec_denun_variación_jerarquía_de_fecha_me_has_accidente_fec_denun_variación_jerarquía_de_fecha_día": {
+			      "Binding": {
+			        "ConceptualEntity": "Accidentes"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "accidente.fec_denun.variación.jerarquía_de_fecha.me": {
+			          "Target": {
+			            "Entity": "accidente.fec_denun.variación.jerarquía_de_fecha.me"
+			          }
+			        },
+			        "accidente.fec_denun.variación.jerarquía_de_fecha.día": {
+			          "Target": {
+			            "Entity": "accidente.fec_denun.variación.jerarquía_de_fecha.día"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "accidente.fec_denun.variación.jerarquía_de_fecha.me"
+			            },
+			            "Object": {
+			              "Role": "accidente.fec_denun.variación.jerarquía_de_fecha.día"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99
+			        },
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "accidente.fec_denun.variación.jerarquía_de_fecha.día"
+			            },
+			            "Object": {
+			              "Role": "accidente.fec_denun.variación.jerarquía_de_fecha.me"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99
+			        },
+			        {
+			          "Preposition": {
+			            "Subject": {
+			              "Role": "accidente.fec_denun.variación.jerarquía_de_fecha.día"
+			            },
+			            "Prepositions": [
+			              {
+			                "in": {
+			                  "State": "Generated"
+			                }
+			              }
+			            ],
+			            "Object": {
+			              "Role": "accidente.fec_denun.variación.jerarquía_de_fecha.me"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99
+			        }
+			      ]
+			    },
+			    "accidente_fec_denun_variación_jerarquía_de_fecha_trimestre_has_accidente_fec_denun_variación_jerarquía_de_fecha_me": {
+			      "Binding": {
+			        "ConceptualEntity": "Accidentes"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "accidente.fec_denun.variación.jerarquía_de_fecha.trimestre": {
+			          "Target": {
+			            "Entity": "accidente.fec_denun.variación.jerarquía_de_fecha.trimestre"
+			          }
+			        },
+			        "accidente.fec_denun.variación.jerarquía_de_fecha.me": {
+			          "Target": {
+			            "Entity": "accidente.fec_denun.variación.jerarquía_de_fecha.me"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "accidente.fec_denun.variación.jerarquía_de_fecha.trimestre"
+			            },
+			            "Object": {
+			              "Role": "accidente.fec_denun.variación.jerarquía_de_fecha.me"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99
+			        },
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "accidente.fec_denun.variación.jerarquía_de_fecha.me"
+			            },
+			            "Object": {
+			              "Role": "accidente.fec_denun.variación.jerarquía_de_fecha.trimestre"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99
+			        },
+			        {
+			          "Preposition": {
+			            "Subject": {
+			              "Role": "accidente.fec_denun.variación.jerarquía_de_fecha.me"
+			            },
+			            "Prepositions": [
+			              {
+			                "in": {
+			                  "State": "Generated"
+			                }
+			              }
+			            ],
+			            "Object": {
+			              "Role": "accidente.fec_denun.variación.jerarquía_de_fecha.trimestre"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99
+			        }
+			      ]
+			    },
+			    "accidente_fec_denun_variación_jerarquía_de_fecha_año_has_accidente_fec_denun_variación_jerarquía_de_fecha_trimestre": {
+			      "Binding": {
+			        "ConceptualEntity": "Accidentes"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "accidente.fec_denun.variación.jerarquía_de_fecha.año": {
+			          "Target": {
+			            "Entity": "accidente.fec_denun.variación.jerarquía_de_fecha.año"
+			          }
+			        },
+			        "accidente.fec_denun.variación.jerarquía_de_fecha.trimestre": {
+			          "Target": {
+			            "Entity": "accidente.fec_denun.variación.jerarquía_de_fecha.trimestre"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "accidente.fec_denun.variación.jerarquía_de_fecha.año"
+			            },
+			            "Object": {
+			              "Role": "accidente.fec_denun.variación.jerarquía_de_fecha.trimestre"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99
+			        },
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "accidente.fec_denun.variación.jerarquía_de_fecha.trimestre"
+			            },
+			            "Object": {
+			              "Role": "accidente.fec_denun.variación.jerarquía_de_fecha.año"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99
+			        },
+			        {
+			          "Preposition": {
+			            "Subject": {
+			              "Role": "accidente.fec_denun.variación.jerarquía_de_fecha.trimestre"
+			            },
+			            "Prepositions": [
+			              {
+			                "in": {
+			                  "State": "Generated"
+			                }
+			              }
+			            ],
+			            "Object": {
+			              "Role": "accidente.fec_denun.variación.jerarquía_de_fecha.año"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99
+			        }
+			      ]
+			    },
+			    "accidente_fec_denun_variación_jerarquía_de_fecha_has_día": {
+			      "Binding": {
+			        "ConceptualEntity": "Accidentes"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "accidente.fec_denun.variación.jerarquía_de_fecha": {
+			          "Target": {
+			            "Entity": "accidente.fec_denun.variación.jerarquía_de_fecha"
+			          }
+			        },
+			        "accidente.fec_denun.variación.jerarquía_de_fecha.día": {
+			          "Target": {
+			            "Entity": "accidente.fec_denun.variación.jerarquía_de_fecha.día"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "accidente.fec_denun.variación.jerarquía_de_fecha"
+			            },
+			            "Object": {
+			              "Role": "accidente.fec_denun.variación.jerarquía_de_fecha.día"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99
+			        }
+			      ]
+			    },
+			    "accidente_fec_denun_variación_jerarquía_de_fecha_has_me": {
+			      "Binding": {
+			        "ConceptualEntity": "Accidentes"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "accidente.fec_denun.variación.jerarquía_de_fecha": {
+			          "Target": {
+			            "Entity": "accidente.fec_denun.variación.jerarquía_de_fecha"
+			          }
+			        },
+			        "accidente.fec_denun.variación.jerarquía_de_fecha.me": {
+			          "Target": {
+			            "Entity": "accidente.fec_denun.variación.jerarquía_de_fecha.me"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "accidente.fec_denun.variación.jerarquía_de_fecha"
+			            },
+			            "Object": {
+			              "Role": "accidente.fec_denun.variación.jerarquía_de_fecha.me"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99
+			        }
+			      ]
+			    },
+			    "accidente_fec_denun_variación_jerarquía_de_fecha_has_trimestre": {
+			      "Binding": {
+			        "ConceptualEntity": "Accidentes"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "accidente.fec_denun.variación.jerarquía_de_fecha": {
+			          "Target": {
+			            "Entity": "accidente.fec_denun.variación.jerarquía_de_fecha"
+			          }
+			        },
+			        "accidente.fec_denun.variación.jerarquía_de_fecha.trimestre": {
+			          "Target": {
+			            "Entity": "accidente.fec_denun.variación.jerarquía_de_fecha.trimestre"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "accidente.fec_denun.variación.jerarquía_de_fecha"
+			            },
+			            "Object": {
+			              "Role": "accidente.fec_denun.variación.jerarquía_de_fecha.trimestre"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99
+			        }
+			      ]
+			    },
+			    "accidente_fec_denun_variación_jerarquía_de_fecha_has_año": {
+			      "Binding": {
+			        "ConceptualEntity": "Accidentes"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "accidente.fec_denun.variación.jerarquía_de_fecha": {
+			          "Target": {
+			            "Entity": "accidente.fec_denun.variación.jerarquía_de_fecha"
+			          }
+			        },
+			        "accidente.fec_denun.variación.jerarquía_de_fecha.año": {
+			          "Target": {
+			            "Entity": "accidente.fec_denun.variación.jerarquía_de_fecha.año"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "accidente.fec_denun.variación.jerarquía_de_fecha"
+			            },
+			            "Object": {
+			              "Role": "accidente.fec_denun.variación.jerarquía_de_fecha.año"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99
+			        }
+			      ]
+			    },
+			    "accidente_fec_denun_has_variación_jerarquía_de_fecha": {
+			      "Binding": {
+			        "ConceptualEntity": "Accidentes"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "accidente.fec_denun": {
+			          "Target": {
+			            "Entity": "accidente.fec_denun"
+			          }
+			        },
+			        "accidente.fec_denun.variación.jerarquía_de_fecha": {
+			          "Target": {
+			            "Entity": "accidente.fec_denun.variación.jerarquía_de_fecha"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "accidente.fec_denun"
+			            },
+			            "Object": {
+			              "Role": "accidente.fec_denun.variación.jerarquía_de_fecha"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99
+			        }
+			      ]
+			    },
+			    "costo_de_accidente_has_accidente": {
+			      "Binding": {
+			        "ConceptualEntity": "Costo_de_Accidentes"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "costo_de_accidente": {
+			          "Target": {
+			            "Entity": "costo_de_accidente"
+			          }
+			        },
+			        "accidente": {
+			          "Target": {
+			            "Entity": "accidente"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "costo_de_accidente"
+			            },
+			            "Object": {
+			              "Role": "accidente"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99
+			        },
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "accidente"
+			            },
+			            "Object": {
+			              "Role": "costo_de_accidente"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99
+			        }
+			      ]
+			    },
+			    "accidente_has_calendario": {
+			      "Binding": {
+			        "ConceptualEntity": "Accidentes"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "accidente": {
+			          "Target": {
+			            "Entity": "accidente"
+			          }
+			        },
+			        "calendario": {
+			          "Target": {
+			            "Entity": "calendario"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "accidente"
+			            },
+			            "Object": {
+			              "Role": "calendario"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99
+			        },
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "calendario"
+			            },
+			            "Object": {
+			              "Role": "accidente"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99
+			        }
+			      ]
+			    },
+			    "accidente_has_agencia": {
+			      "Binding": {
+			        "ConceptualEntity": "Accidentes"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "accidente": {
+			          "Target": {
+			            "Entity": "accidente"
+			          }
+			        },
+			        "agencia": {
+			          "Target": {
+			            "Entity": "agencia"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "accidente"
+			            },
+			            "Object": {
+			              "Role": "agencia"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99
+			        },
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "agencia"
+			            },
+			            "Object": {
+			              "Role": "accidente"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99
+			        }
+			      ]
+			    },
+			    "accidente_has_cod_diagnostico": {
+			      "Binding": {
+			        "ConceptualEntity": "Accidentes"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "accidente": {
+			          "Target": {
+			            "Entity": "accidente"
+			          }
+			        },
+			        "cod_diagnostico": {
+			          "Target": {
+			            "Entity": "cod_diagnostico"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "accidente"
+			            },
+			            "Object": {
+			              "Role": "cod_diagnostico"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99
+			        },
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "cod_diagnostico"
+			            },
+			            "Object": {
+			              "Role": "accidente"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99
+			        }
+			      ]
+			    },
+			    "accidente_has_ciiu_f150": {
+			      "Binding": {
+			        "ConceptualEntity": "Accidentes"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "accidente": {
+			          "Target": {
+			            "Entity": "accidente"
+			          }
+			        },
+			        "ciiu_f150": {
+			          "Target": {
+			            "Entity": "ciiu_f150"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "accidente"
+			            },
+			            "Object": {
+			              "Role": "ciiu_f150"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99
+			        },
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "ciiu_f150"
+			            },
+			            "Object": {
+			              "Role": "accidente"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99
+			        }
+			      ]
+			    },
+			    "accidente_has_asegurado": {
+			      "Binding": {
+			        "ConceptualEntity": "Accidentes"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "accidente": {
+			          "Target": {
+			            "Entity": "accidente"
+			          }
+			        },
+			        "asegurado": {
+			          "Target": {
+			            "Entity": "asegurado"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "accidente"
+			            },
+			            "Object": {
+			              "Role": "asegurado"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99
+			        },
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "asegurado"
+			            },
+			            "Object": {
+			              "Role": "accidente"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99
+			        }
+			      ]
+			    },
+			    "parámetro_asegurado_has_valor_parámetro_asegurados": {
+			      "Binding": {
+			        "ConceptualEntity": "Parámetro Asegurados"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "parámetro_asegurado": {
+			          "Target": {
+			            "Entity": "parámetro_asegurado"
+			          }
+			        },
+			        "parámetro_asegurado.valor_parámetro_asegurados": {
+			          "Target": {
+			            "Entity": "parámetro_asegurado.valor_parámetro_asegurados"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "parámetro_asegurado"
+			            },
+			            "Object": {
+			              "Role": "parámetro_asegurado.valor_parámetro_asegurados"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99
+			        }
+			      ]
+			    },
+			    "parámetro_asegurado_has_parámetro_asegurado": {
+			      "Binding": {
+			        "ConceptualEntity": "Parámetro Asegurados"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "parámetro_asegurado": {
+			          "Target": {
+			            "Entity": "parámetro_asegurado"
+			          }
+			        },
+			        "parámetro_asegurado.parámetro_asegurado": {
+			          "Target": {
+			            "Entity": "parámetro_asegurado.parámetro_asegurado"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "parámetro_asegurado"
+			            },
+			            "Object": {
+			              "Role": "parámetro_asegurado.parámetro_asegurado"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99
+			        }
+			      ]
+			    },
+			    "siniestralidad_anual_has_P_M__promedio": {
+			      "Binding": {
+			        "ConceptualEntity": "Siniestralidad anual"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "siniestralidad_anual": {
+			          "Target": {
+			            "Entity": "siniestralidad_anual"
+			          }
+			        },
+			        "siniestralidad_anual.P_M__promedio": {
+			          "Target": {
+			            "Entity": "siniestralidad_anual.P_M__promedio"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "siniestralidad_anual"
+			            },
+			            "Object": {
+			              "Role": "siniestralidad_anual.P_M__promedio"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99
+			        }
+			      ]
+			    },
+			    "siniestralidad_anual_has_P_D__promedio": {
+			      "Binding": {
+			        "ConceptualEntity": "Siniestralidad anual"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "siniestralidad_anual": {
+			          "Target": {
+			            "Entity": "siniestralidad_anual"
+			          }
+			        },
+			        "siniestralidad_anual.P_D__promedio": {
+			          "Target": {
+			            "Entity": "siniestralidad_anual.P_D__promedio"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "siniestralidad_anual"
+			            },
+			            "Object": {
+			              "Role": "siniestralidad_anual.P_D__promedio"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99
+			        }
+			      ]
+			    },
+			    "siniestralidad_anual_has_índice_de_siniestralidad_anual": {
+			      "Binding": {
+			        "ConceptualEntity": "Siniestralidad anual"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "siniestralidad_anual": {
+			          "Target": {
+			            "Entity": "siniestralidad_anual"
+			          }
+			        },
+			        "siniestralidad_anual.índice_de_siniestralidad_anual": {
+			          "Target": {
+			            "Entity": "siniestralidad_anual.índice_de_siniestralidad_anual"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "siniestralidad_anual"
+			            },
+			            "Object": {
+			              "Role": "siniestralidad_anual.índice_de_siniestralidad_anual"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99
+			        }
+			      ]
+			    },
+			    "siniestralidad_anual_has_P_M__totale": {
+			      "Binding": {
+			        "ConceptualEntity": "Siniestralidad anual"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "siniestralidad_anual": {
+			          "Target": {
+			            "Entity": "siniestralidad_anual"
+			          }
+			        },
+			        "siniestralidad_anual.P_M__totale": {
+			          "Target": {
+			            "Entity": "siniestralidad_anual.P_M__totale"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "siniestralidad_anual"
+			            },
+			            "Object": {
+			              "Role": "siniestralidad_anual.P_M__totale"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99
+			        }
+			      ]
+			    },
+			    "siniestralidad_anual_has_P_D__totale": {
+			      "Binding": {
+			        "ConceptualEntity": "Siniestralidad anual"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "siniestralidad_anual": {
+			          "Target": {
+			            "Entity": "siniestralidad_anual"
+			          }
+			        },
+			        "siniestralidad_anual.P_D__totale": {
+			          "Target": {
+			            "Entity": "siniestralidad_anual.P_D__totale"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "siniestralidad_anual"
+			            },
+			            "Object": {
+			              "Role": "siniestralidad_anual.P_D__totale"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99
+			        }
+			      ]
+			    },
+			    "siniestralidad_anual_has_año": {
+			      "Binding": {
+			        "ConceptualEntity": "Siniestralidad anual"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "siniestralidad_anual": {
+			          "Target": {
+			            "Entity": "siniestralidad_anual"
+			          }
+			        },
+			        "siniestralidad_anual.año": {
+			          "Target": {
+			            "Entity": "siniestralidad_anual.año"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "siniestralidad_anual"
+			            },
+			            "Object": {
+			              "Role": "siniestralidad_anual.año"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99
+			        }
+			      ]
+			    },
+			    "siniestralidad_anual_has_siniestralidad": {
+			      "Binding": {
+			        "ConceptualEntity": "Siniestralidad anual"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "siniestralidad_anual": {
+			          "Target": {
+			            "Entity": "siniestralidad_anual"
+			          }
+			        },
+			        "siniestralidad_anual.siniestralidad": {
+			          "Target": {
+			            "Entity": "siniestralidad_anual.siniestralidad"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "siniestralidad_anual"
+			            },
+			            "Object": {
+			              "Role": "siniestralidad_anual.siniestralidad"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99
+			        }
+			      ]
+			    },
+			    "medida_has_tooltip_diag": {
+			      "Binding": {
+			        "ConceptualEntity": "Medidas"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "medida": {
+			          "Target": {
+			            "Entity": "medida"
+			          }
+			        },
+			        "medida.tooltip_diag": {
+			          "Target": {
+			            "Entity": "medida.tooltip_diag"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "medida"
+			            },
+			            "Object": {
+			              "Role": "medida.tooltip_diag"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99
+			        }
+			      ]
+			    },
+			    "parámetro_asegurado_has_medida_asegurados_proyectados": {
+			      "Binding": {
+			        "ConceptualEntity": "Parámetro Asegurados"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "parámetro_asegurado": {
+			          "Target": {
+			            "Entity": "parámetro_asegurado"
+			          }
+			        },
+			        "medida.asegurados_proyectados": {
+			          "Target": {
+			            "Entity": "medida.asegurados_proyectados"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "parámetro_asegurado"
+			            },
+			            "Object": {
+			              "Role": "medida.asegurados_proyectados"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99
+			        }
+			      ]
+			    },
+			    "asegurado_has_medida_asegurados_proyectados": {
+			      "Binding": {
+			        "ConceptualEntity": "Asegurados"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "asegurado": {
+			          "Target": {
+			            "Entity": "asegurado"
+			          }
+			        },
+			        "medida.asegurados_proyectados": {
+			          "Target": {
+			            "Entity": "medida.asegurados_proyectados"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "asegurado"
+			            },
+			            "Object": {
+			              "Role": "medida.asegurados_proyectados"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99
+			        }
+			      ]
+			    },
+			    "parámetro__has_valor_parámetro": {
+			      "Binding": {
+			        "ConceptualEntity": "Parámetro Stros"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "parámetro_": {
+			          "Target": {
+			            "Entity": "parámetro_"
+			          }
+			        },
+			        "parámetro_.valor_parámetro": {
+			          "Target": {
+			            "Entity": "parámetro_.valor_parámetro"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "parámetro_"
+			            },
+			            "Object": {
+			              "Role": "parámetro_.valor_parámetro"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99
+			        }
+			      ]
+			    },
+			    "parámetro__has_parámetro": {
+			      "Binding": {
+			        "ConceptualEntity": "Parámetro Stros"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "parámetro_": {
+			          "Target": {
+			            "Entity": "parámetro_"
+			          }
+			        },
+			        "parámetro_.parámetro": {
+			          "Target": {
+			            "Entity": "parámetro_.parámetro"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "parámetro_"
+			            },
+			            "Object": {
+			              "Role": "parámetro_.parámetro"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99
+			        }
+			      ]
+			    },
+			    "agencia_has_agencia": {
+			      "Binding": {
+			        "ConceptualEntity": "Agencias"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "agencia": {
+			          "Target": {
+			            "Entity": "agencia"
+			          }
+			        },
+			        "agencia.agencia": {
+			          "Target": {
+			            "Entity": "agencia.agencia"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "agencia"
+			            },
+			            "Object": {
+			              "Role": "agencia.agencia"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99
+			        },
+			        {
+			          "Name": {
+			            "Subject": {
+			              "Role": "agencia"
+			            },
+			            "Name": {
+			              "Role": "agencia.agencia"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99
+			        }
+			      ]
+			    },
+			    "agencia_has_provincia": {
+			      "Binding": {
+			        "ConceptualEntity": "Agencias"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "agencia": {
+			          "Target": {
+			            "Entity": "agencia"
+			          }
+			        },
+			        "agencia.provincia": {
+			          "Target": {
+			            "Entity": "agencia.provincia"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "agencia"
+			            },
+			            "Object": {
+			              "Role": "agencia.provincia"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99
+			        }
+			      ]
+			    },
+			    "siniestralidad_anual_has_medida_índice_siniestralidad_proyectado": {
+			      "Binding": {
+			        "ConceptualEntity": "Siniestralidad anual"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "siniestralidad_anual": {
+			          "Target": {
+			            "Entity": "siniestralidad_anual"
+			          }
+			        },
+			        "medida.índice_siniestralidad_proyectado": {
+			          "Target": {
+			            "Entity": "medida.índice_siniestralidad_proyectado"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "siniestralidad_anual"
+			            },
+			            "Object": {
+			              "Role": "medida.índice_siniestralidad_proyectado"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99
+			        }
+			      ]
+			    },
+			    "parámetro__has_medida_índice_siniestralidad_proyectado": {
+			      "Binding": {
+			        "ConceptualEntity": "Parámetro Stros"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "parámetro_": {
+			          "Target": {
+			            "Entity": "parámetro_"
+			          }
+			        },
+			        "medida.índice_siniestralidad_proyectado": {
+			          "Target": {
+			            "Entity": "medida.índice_siniestralidad_proyectado"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "parámetro_"
+			            },
+			            "Object": {
+			              "Role": "medida.índice_siniestralidad_proyectado"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99
+			        }
+			      ]
+			    },
+			    "siniestralidad_anual_has_medida_siniestros_proyectados": {
+			      "Binding": {
+			        "ConceptualEntity": "Siniestralidad anual"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "siniestralidad_anual": {
+			          "Target": {
+			            "Entity": "siniestralidad_anual"
+			          }
+			        },
+			        "medida.siniestros_proyectados": {
+			          "Target": {
+			            "Entity": "medida.siniestros_proyectados"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "siniestralidad_anual"
+			            },
+			            "Object": {
+			              "Role": "medida.siniestros_proyectados"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99
+			        }
+			      ]
+			    },
+			    "parámetro__has_medida_siniestros_proyectados": {
+			      "Binding": {
+			        "ConceptualEntity": "Parámetro Stros"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "parámetro_": {
+			          "Target": {
+			            "Entity": "parámetro_"
+			          }
+			        },
+			        "medida.siniestros_proyectados": {
+			          "Target": {
+			            "Entity": "medida.siniestros_proyectados"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "parámetro_"
+			            },
+			            "Object": {
+			              "Role": "medida.siniestros_proyectados"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99
+			        }
+			      ]
+			    },
+			    "medida_has_variación_interanual": {
+			      "Binding": {
+			        "ConceptualEntity": "Medidas"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "medida": {
+			          "Target": {
+			            "Entity": "medida"
+			          }
+			        },
+			        "medida.variación_interanual": {
+			          "Target": {
+			            "Entity": "medida.variación_interanual"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "medida"
+			            },
+			            "Object": {
+			              "Role": "medida.variación_interanual"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99
+			        }
+			      ]
+			    },
+			    "medida_has_año_anterior": {
+			      "Binding": {
+			        "ConceptualEntity": "Medidas"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "medida": {
+			          "Target": {
+			            "Entity": "medida"
+			          }
+			        },
+			        "medida.año_anterior": {
+			          "Target": {
+			            "Entity": "medida.año_anterior"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "medida"
+			            },
+			            "Object": {
+			              "Role": "medida.año_anterior"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99
+			        }
+			      ]
+			    },
+			    "medida_has_promedio_de__de_incapacidad": {
+			      "Binding": {
+			        "ConceptualEntity": "Medidas"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "medida": {
+			          "Target": {
+			            "Entity": "medida"
+			          }
+			        },
+			        "medida.promedio_de__de_incapacidad": {
+			          "Target": {
+			            "Entity": "medida.promedio_de__de_incapacidad"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "medida"
+			            },
+			            "Object": {
+			              "Role": "medida.promedio_de__de_incapacidad"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99
+			        }
+			      ]
+			    },
+			    "medida_has_objetivo": {
+			      "Binding": {
+			        "ConceptualEntity": "Medidas"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "medida": {
+			          "Target": {
+			            "Entity": "medida"
+			          }
+			        },
+			        "medida.objetivo": {
+			          "Target": {
+			            "Entity": "medida.objetivo"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "medida"
+			            },
+			            "Object": {
+			              "Role": "medida.objetivo"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99
+			        }
+			      ]
+			    },
+			    "accidente_has_medida_siniestros_asegurados": {
+			      "Binding": {
+			        "ConceptualEntity": "Accidentes"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "accidente": {
+			          "Target": {
+			            "Entity": "accidente"
+			          }
+			        },
+			        "medida.siniestros_asegurados": {
+			          "Target": {
+			            "Entity": "medida.siniestros_asegurados"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "accidente"
+			            },
+			            "Object": {
+			              "Role": "medida.siniestros_asegurados"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99
+			        }
+			      ]
+			    },
+			    "accidente_has_medida_prom_de__de_incapacidad": {
+			      "Binding": {
+			        "ConceptualEntity": "Accidentes"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "accidente": {
+			          "Target": {
+			            "Entity": "accidente"
+			          }
+			        },
+			        "medida.prom_de__de_incapacidad": {
+			          "Target": {
+			            "Entity": "medida.prom_de__de_incapacidad"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "accidente"
+			            },
+			            "Object": {
+			              "Role": "medida.prom_de__de_incapacidad"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99
+			        }
+			      ]
+			    },
+			    "costo_de_accidente_has_medida_costos_totales": {
+			      "Binding": {
+			        "ConceptualEntity": "Costo_de_Accidentes"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "costo_de_accidente": {
+			          "Target": {
+			            "Entity": "costo_de_accidente"
+			          }
+			        },
+			        "medida.costos_totales": {
+			          "Target": {
+			            "Entity": "medida.costos_totales"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "costo_de_accidente"
+			            },
+			            "Object": {
+			              "Role": "medida.costos_totales"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99
+			        }
+			      ]
+			    },
+			    "accidente_has_medida_formas_de_stros": {
+			      "Binding": {
+			        "ConceptualEntity": "Accidentes"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "accidente": {
+			          "Target": {
+			            "Entity": "accidente"
+			          }
+			        },
+			        "medida.formas_de_stros": {
+			          "Target": {
+			            "Entity": "medida.formas_de_stros"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "accidente"
+			            },
+			            "Object": {
+			              "Role": "medida.formas_de_stros"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99
+			        }
+			      ]
+			    },
+			    "accidente_has_medida_siniestro": {
+			      "Binding": {
+			        "ConceptualEntity": "Accidentes"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "accidente": {
+			          "Target": {
+			            "Entity": "accidente"
+			          }
+			        },
+			        "medida.siniestro": {
+			          "Target": {
+			            "Entity": "medida.siniestro"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "accidente"
+			            },
+			            "Object": {
+			              "Role": "medida.siniestro"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99
+			        }
+			      ]
+			    },
+			    "asegurado_has_medida_asegurados": {
+			      "Binding": {
+			        "ConceptualEntity": "Asegurados"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "asegurado": {
+			          "Target": {
+			            "Entity": "asegurado"
+			          }
+			        },
+			        "medida.asegurados": {
+			          "Target": {
+			            "Entity": "medida.asegurados"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "asegurado"
+			            },
+			            "Object": {
+			              "Role": "medida.asegurados"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99
+			        }
+			      ]
+			    },
+			    "calendario_has_trimestre": {
+			      "Binding": {
+			        "ConceptualEntity": "Calendario"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "calendario": {
+			          "Target": {
+			            "Entity": "calendario"
+			          }
+			        },
+			        "calendario.trimestre": {
+			          "Target": {
+			            "Entity": "calendario.trimestre"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "calendario"
+			            },
+			            "Object": {
+			              "Role": "calendario.trimestre"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99
+			        }
+			      ]
+			    },
+			    "calendario_has_año": {
+			      "Binding": {
+			        "ConceptualEntity": "Calendario"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "calendario": {
+			          "Target": {
+			            "Entity": "calendario"
+			          }
+			        },
+			        "calendario.año": {
+			          "Target": {
+			            "Entity": "calendario.año"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "calendario"
+			            },
+			            "Object": {
+			              "Role": "calendario.año"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99
+			        }
+			      ]
+			    },
+			    "calendario_has_mes_nombre": {
+			      "Binding": {
+			        "ConceptualEntity": "Calendario"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "calendario": {
+			          "Target": {
+			            "Entity": "calendario"
+			          }
+			        },
+			        "calendario.mes_nombre": {
+			          "Target": {
+			            "Entity": "calendario.mes_nombre"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "calendario"
+			            },
+			            "Object": {
+			              "Role": "calendario.mes_nombre"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99
+			        }
+			      ]
+			    },
+			    "calendario_has_mes_numero": {
+			      "Binding": {
+			        "ConceptualEntity": "Calendario"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "calendario": {
+			          "Target": {
+			            "Entity": "calendario"
+			          }
+			        },
+			        "calendario.mes_numero": {
+			          "Target": {
+			            "Entity": "calendario.mes_numero"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "calendario"
+			            },
+			            "Object": {
+			              "Role": "calendario.mes_numero"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99
+			        }
+			      ]
+			    },
+			    "calendario_has_día": {
+			      "Binding": {
+			        "ConceptualEntity": "Calendario"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "calendario": {
+			          "Target": {
+			            "Entity": "calendario"
+			          }
+			        },
+			        "calendario.día": {
+			          "Target": {
+			            "Entity": "calendario.día"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "calendario"
+			            },
+			            "Object": {
+			              "Role": "calendario.día"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99
+			        }
+			      ]
+			    },
+			    "calendario_has_date": {
+			      "Binding": {
+			        "ConceptualEntity": "Calendario"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "calendario": {
+			          "Target": {
+			            "Entity": "calendario"
+			          }
+			        },
+			        "calendario.date": {
+			          "Target": {
+			            "Entity": "calendario.date"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "calendario"
+			            },
+			            "Object": {
+			              "Role": "calendario.date"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99
+			        }
+			      ]
+			    },
+			    "costo_de_accidente_has_prestaciones_totale": {
+			      "Binding": {
+			        "ConceptualEntity": "Costo_de_Accidentes"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "costo_de_accidente": {
+			          "Target": {
+			            "Entity": "costo_de_accidente"
+			          }
+			        },
+			        "costo_de_accidente.prestaciones_totale": {
+			          "Target": {
+			            "Entity": "costo_de_accidente.prestaciones_totale"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "costo_de_accidente"
+			            },
+			            "Object": {
+			              "Role": "costo_de_accidente.prestaciones_totale"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99
+			        },
+			        {
+			          "Adjective": {
+			            "Subject": {
+			              "Role": "costo_de_accidente"
+			            },
+			            "Adjectives": [
+			              {
+			                "expensive": {
+			                  "State": "Generated"
+			                }
+			              }
+			            ],
+			            "Antonyms": [
+			              {
+			                "cheap": {
+			                  "State": "Generated"
+			                }
+			              }
+			            ],
+			            "Measurement": {
+			              "Role": "costo_de_accidente.prestaciones_totale"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99
+			        }
+			      ]
+			    },
+			    "costo_de_accidente_has_fecha_de_liquidacion": {
+			      "Binding": {
+			        "ConceptualEntity": "Costo_de_Accidentes"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "costo_de_accidente": {
+			          "Target": {
+			            "Entity": "costo_de_accidente"
+			          }
+			        },
+			        "costo_de_accidente.fecha_de_liquidacion": {
+			          "Target": {
+			            "Entity": "costo_de_accidente.fecha_de_liquidacion"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "costo_de_accidente"
+			            },
+			            "Object": {
+			              "Role": "costo_de_accidente.fecha_de_liquidacion"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99
+			        }
+			      ]
+			    },
+			    "costo_de_accidente_has_prestaciones_dineraria": {
+			      "Binding": {
+			        "ConceptualEntity": "Costo_de_Accidentes"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "costo_de_accidente": {
+			          "Target": {
+			            "Entity": "costo_de_accidente"
+			          }
+			        },
+			        "costo_de_accidente.prestaciones_dineraria": {
+			          "Target": {
+			            "Entity": "costo_de_accidente.prestaciones_dineraria"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "costo_de_accidente"
+			            },
+			            "Object": {
+			              "Role": "costo_de_accidente.prestaciones_dineraria"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99
+			        },
+			        {
+			          "Adjective": {
+			            "Subject": {
+			              "Role": "costo_de_accidente"
+			            },
+			            "Adjectives": [
+			              {
+			                "expensive": {
+			                  "State": "Generated"
+			                }
+			              }
+			            ],
+			            "Antonyms": [
+			              {
+			                "cheap": {
+			                  "State": "Generated"
+			                }
+			              }
+			            ],
+			            "Measurement": {
+			              "Role": "costo_de_accidente.prestaciones_dineraria"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99
+			        }
+			      ]
+			    },
+			    "costo_de_accidente_has_prestaciones_medica": {
+			      "Binding": {
+			        "ConceptualEntity": "Costo_de_Accidentes"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "costo_de_accidente": {
+			          "Target": {
+			            "Entity": "costo_de_accidente"
+			          }
+			        },
+			        "costo_de_accidente.prestaciones_medica": {
+			          "Target": {
+			            "Entity": "costo_de_accidente.prestaciones_medica"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "costo_de_accidente"
+			            },
+			            "Object": {
+			              "Role": "costo_de_accidente.prestaciones_medica"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99
+			        },
+			        {
+			          "Adjective": {
+			            "Subject": {
+			              "Role": "costo_de_accidente"
+			            },
+			            "Adjectives": [
+			              {
+			                "expensive": {
+			                  "State": "Generated"
+			                }
+			              }
+			            ],
+			            "Antonyms": [
+			              {
+			                "cheap": {
+			                  "State": "Generated"
+			                }
+			              }
+			            ],
+			            "Measurement": {
+			              "Role": "costo_de_accidente.prestaciones_medica"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99
+			        }
+			      ]
+			    },
+			    "cod_diagnostico_has_tipo_de_diagnostico_tipo": {
+			      "Binding": {
+			        "ConceptualEntity": "Cod_Diagnostico"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "cod_diagnostico": {
+			          "Target": {
+			            "Entity": "cod_diagnostico"
+			          }
+			        },
+			        "cod_diagnostico.tipo_de_diagnostico_tipo": {
+			          "Target": {
+			            "Entity": "cod_diagnostico.tipo_de_diagnostico_tipo"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "cod_diagnostico"
+			            },
+			            "Object": {
+			              "Role": "cod_diagnostico.tipo_de_diagnostico_tipo"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99
+			        }
+			      ]
+			    },
+			    "cod_diagnostico_has_diagnostico": {
+			      "Binding": {
+			        "ConceptualEntity": "Cod_Diagnostico"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "cod_diagnostico": {
+			          "Target": {
+			            "Entity": "cod_diagnostico"
+			          }
+			        },
+			        "cod_diagnostico.diagnostico": {
+			          "Target": {
+			            "Entity": "cod_diagnostico.diagnostico"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "cod_diagnostico"
+			            },
+			            "Object": {
+			              "Role": "cod_diagnostico.diagnostico"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99
+			        }
+			      ]
+			    },
+			    "cod_diagnostico_has_cod_diag": {
+			      "Binding": {
+			        "ConceptualEntity": "Cod_Diagnostico"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "cod_diagnostico": {
+			          "Target": {
+			            "Entity": "cod_diagnostico"
+			          }
+			        },
+			        "cod_diagnostico.cod_diag": {
+			          "Target": {
+			            "Entity": "cod_diagnostico.cod_diag"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "cod_diagnostico"
+			            },
+			            "Object": {
+			              "Role": "cod_diagnostico.cod_diag"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99
+			        }
+			      ]
+			    },
+			    "ciiu_f150_has_descripcion_CIIU_F150": {
+			      "Binding": {
+			        "ConceptualEntity": "CIIU F150"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "ciiu_f150": {
+			          "Target": {
+			            "Entity": "ciiu_f150"
+			          }
+			        },
+			        "ciiu_f150.descripcion_CIIU_F150": {
+			          "Target": {
+			            "Entity": "ciiu_f150.descripcion_CIIU_F150"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "ciiu_f150"
+			            },
+			            "Object": {
+			              "Role": "ciiu_f150.descripcion_CIIU_F150"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99
+			        }
+			      ]
+			    },
+			    "ciiu_f150_has_codigo_CIIU_F150": {
+			      "Binding": {
+			        "ConceptualEntity": "CIIU F150"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "ciiu_f150": {
+			          "Target": {
+			            "Entity": "ciiu_f150"
+			          }
+			        },
+			        "ciiu_f150.codigo_CIIU_F150": {
+			          "Target": {
+			            "Entity": "ciiu_f150.codigo_CIIU_F150"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "ciiu_f150"
+			            },
+			            "Object": {
+			              "Role": "ciiu_f150.codigo_CIIU_F150"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99
+			        }
+			      ]
+			    },
+			    "asegurado_has_siniestro": {
+			      "Binding": {
+			        "ConceptualEntity": "Asegurados"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "asegurado": {
+			          "Target": {
+			            "Entity": "asegurado"
+			          }
+			        },
+			        "asegurado.siniestro": {
+			          "Target": {
+			            "Entity": "asegurado.siniestro"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "asegurado"
+			            },
+			            "Object": {
+			              "Role": "asegurado.siniestro"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99
+			        }
+			      ]
+			    },
+			    "asegurado_has_nombre": {
+			      "Binding": {
+			        "ConceptualEntity": "Asegurados"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "asegurado": {
+			          "Target": {
+			            "Entity": "asegurado"
+			          }
+			        },
+			        "asegurado.nombre": {
+			          "Target": {
+			            "Entity": "asegurado.nombre"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "asegurado"
+			            },
+			            "Object": {
+			              "Role": "asegurado.nombre"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99
+			        }
+			      ]
+			    },
+			    "asegurado_has_cuil": {
+			      "Binding": {
+			        "ConceptualEntity": "Asegurados"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "asegurado": {
+			          "Target": {
+			            "Entity": "asegurado"
+			          }
+			        },
+			        "asegurado.cuil": {
+			          "Target": {
+			            "Entity": "asegurado.cuil"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "asegurado"
+			            },
+			            "Object": {
+			              "Role": "asegurado.cuil"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99
+			        }
+			      ]
+			    },
+			    "accidente_has_dias_transcurrido_entre_ocurrencia_y_denuncia": {
+			      "Binding": {
+			        "ConceptualEntity": "Accidentes"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "accidente": {
+			          "Target": {
+			            "Entity": "accidente"
+			          }
+			        },
+			        "accidente.dias_transcurrido_entre_ocurrencia_y_denuncia": {
+			          "Target": {
+			            "Entity": "accidente.dias_transcurrido_entre_ocurrencia_y_denuncia"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "accidente"
+			            },
+			            "Object": {
+			              "Role": "accidente.dias_transcurrido_entre_ocurrencia_y_denuncia"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99
+			        }
+			      ]
+			    },
+			    "accidente_has_estado_de_alta_medica": {
+			      "Binding": {
+			        "ConceptualEntity": "Accidentes"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "accidente": {
+			          "Target": {
+			            "Entity": "accidente"
+			          }
+			        },
+			        "accidente.estado_de_alta_medica": {
+			          "Target": {
+			            "Entity": "accidente.estado_de_alta_medica"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "accidente"
+			            },
+			            "Object": {
+			              "Role": "accidente.estado_de_alta_medica"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99
+			        }
+			      ]
+			    },
+			    "accidente_has_edad": {
+			      "Binding": {
+			        "ConceptualEntity": "Accidentes"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "accidente": {
+			          "Target": {
+			            "Entity": "accidente"
+			          }
+			        },
+			        "accidente.edad": {
+			          "Target": {
+			            "Entity": "accidente.edad"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "accidente"
+			            },
+			            "Object": {
+			              "Role": "accidente.edad"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99
+			        }
+			      ]
+			    },
+			    "accidente_has_v___Inc_inc": {
+			      "Binding": {
+			        "ConceptualEntity": "Accidentes"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "accidente": {
+			          "Target": {
+			            "Entity": "accidente"
+			          }
+			        },
+			        "accidente.v___Inc_inc": {
+			          "Target": {
+			            "Entity": "accidente.v___Inc_inc"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "accidente"
+			            },
+			            "Object": {
+			              "Role": "accidente.v___Inc_inc"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99
+			        }
+			      ]
+			    },
+			    "accidente_has_tipo_sin": {
+			      "Binding": {
+			        "ConceptualEntity": "Accidentes"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "accidente": {
+			          "Target": {
+			            "Entity": "accidente"
+			          }
+			        },
+			        "accidente.tipo_sin": {
+			          "Target": {
+			            "Entity": "accidente.tipo_sin"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "accidente"
+			            },
+			            "Object": {
+			              "Role": "accidente.tipo_sin"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99
+			        }
+			      ]
+			    },
+			    "accidente_has_gravedad": {
+			      "Binding": {
+			        "ConceptualEntity": "Accidentes"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "accidente": {
+			          "Target": {
+			            "Entity": "accidente"
+			          }
+			        },
+			        "accidente.gravedad": {
+			          "Target": {
+			            "Entity": "accidente.gravedad"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "accidente"
+			            },
+			            "Object": {
+			              "Role": "accidente.gravedad"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99
+			        }
+			      ]
+			    },
+			    "accidente_has_agente": {
+			      "Binding": {
+			        "ConceptualEntity": "Accidentes"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "accidente": {
+			          "Target": {
+			            "Entity": "accidente"
+			          }
+			        },
+			        "accidente.agente": {
+			          "Target": {
+			            "Entity": "accidente.agente"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "accidente"
+			            },
+			            "Object": {
+			              "Role": "accidente.agente"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99
+			        }
+			      ]
+			    },
+			    "accidente_has_naturaleza": {
+			      "Binding": {
+			        "ConceptualEntity": "Accidentes"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "accidente": {
+			          "Target": {
+			            "Entity": "accidente"
+			          }
+			        },
+			        "accidente.naturaleza": {
+			          "Target": {
+			            "Entity": "accidente.naturaleza"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "accidente"
+			            },
+			            "Object": {
+			              "Role": "accidente.naturaleza"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99
+			        }
+			      ]
+			    },
+			    "accidente_has_lugar": {
+			      "Binding": {
+			        "ConceptualEntity": "Accidentes"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "accidente": {
+			          "Target": {
+			            "Entity": "accidente"
+			          }
+			        },
+			        "accidente.lugar": {
+			          "Target": {
+			            "Entity": "accidente.lugar"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "accidente"
+			            },
+			            "Object": {
+			              "Role": "accidente.lugar"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99
+			        }
+			      ]
+			    },
+			    "accidente_has_forma": {
+			      "Binding": {
+			        "ConceptualEntity": "Accidentes"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "accidente": {
+			          "Target": {
+			            "Entity": "accidente"
+			          }
+			        },
+			        "accidente.forma": {
+			          "Target": {
+			            "Entity": "accidente.forma"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "accidente"
+			            },
+			            "Object": {
+			              "Role": "accidente.forma"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99
+			        }
+			      ]
+			    },
+			    "accidente_has_alta_medica": {
+			      "Binding": {
+			        "ConceptualEntity": "Accidentes"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "accidente": {
+			          "Target": {
+			            "Entity": "accidente"
+			          }
+			        },
+			        "accidente.alta_medica": {
+			          "Target": {
+			            "Entity": "accidente.alta_medica"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "accidente"
+			            },
+			            "Object": {
+			              "Role": "accidente.alta_medica"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99
+			        }
+			      ]
+			    },
+			    "accidente_has_ocurrencia": {
+			      "Binding": {
+			        "ConceptualEntity": "Accidentes"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "accidente": {
+			          "Target": {
+			            "Entity": "accidente"
+			          }
+			        },
+			        "accidente.ocurrencia": {
+			          "Target": {
+			            "Entity": "accidente.ocurrencia"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "accidente"
+			            },
+			            "Object": {
+			              "Role": "accidente.ocurrencia"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99
+			        }
+			      ]
+			    },
+			    "accidente_has_fec_denun": {
+			      "Binding": {
+			        "ConceptualEntity": "Accidentes"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "accidente": {
+			          "Target": {
+			            "Entity": "accidente"
+			          }
+			        },
+			        "accidente.fec_denun": {
+			          "Target": {
+			            "Entity": "accidente.fec_denun"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "accidente"
+			            },
+			            "Object": {
+			              "Role": "accidente.fec_denun"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99
+			        }
+			      ]
+			    },
+			    "accidente_has_stro": {
+			      "Binding": {
+			        "ConceptualEntity": "Accidentes"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "accidente": {
+			          "Target": {
+			            "Entity": "accidente"
+			          }
+			        },
+			        "accidente.stro": {
+			          "Target": {
+			            "Entity": "accidente.stro"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "accidente"
+			            },
+			            "Object": {
+			              "Role": "accidente.stro"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99
+			        }
+			      ]
+			    },
+			    "accidente_has_cuit": {
+			      "Binding": {
+			        "ConceptualEntity": "Accidentes"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "accidente": {
+			          "Target": {
+			            "Entity": "accidente"
+			          }
+			        },
+			        "accidente.cuit": {
+			          "Target": {
+			            "Entity": "accidente.cuit"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "accidente"
+			            },
+			            "Object": {
+			              "Role": "accidente.cuit"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99
+			        }
+			      ]
+			    },
+			    "accidente_alta_medica_variación_jerarquía_de_fecha_has_año": {
+			      "Binding": {
+			        "ConceptualEntity": "Accidentes"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "accidente.alta_medica.variación.jerarquía_de_fecha": {
+			          "Target": {
+			            "Entity": "accidente.alta_medica.variación.jerarquía_de_fecha"
+			          }
+			        },
+			        "accidente.alta_medica.variación.jerarquía_de_fecha.año": {
+			          "Target": {
+			            "Entity": "accidente.alta_medica.variación.jerarquía_de_fecha.año"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "accidente.alta_medica.variación.jerarquía_de_fecha"
+			            },
+			            "Object": {
+			              "Role": "accidente.alta_medica.variación.jerarquía_de_fecha.año"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99
+			        }
+			      ]
+			    },
+			    "accidente_alta_medica_variación_jerarquía_de_fecha_has_trimestre": {
+			      "Binding": {
+			        "ConceptualEntity": "Accidentes"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "accidente.alta_medica.variación.jerarquía_de_fecha": {
+			          "Target": {
+			            "Entity": "accidente.alta_medica.variación.jerarquía_de_fecha"
+			          }
+			        },
+			        "accidente.alta_medica.variación.jerarquía_de_fecha.trimestre": {
+			          "Target": {
+			            "Entity": "accidente.alta_medica.variación.jerarquía_de_fecha.trimestre"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "accidente.alta_medica.variación.jerarquía_de_fecha"
+			            },
+			            "Object": {
+			              "Role": "accidente.alta_medica.variación.jerarquía_de_fecha.trimestre"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99
+			        }
+			      ]
+			    },
+			    "accidente_alta_medica_variación_jerarquía_de_fecha_has_me": {
+			      "Binding": {
+			        "ConceptualEntity": "Accidentes"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "accidente.alta_medica.variación.jerarquía_de_fecha": {
+			          "Target": {
+			            "Entity": "accidente.alta_medica.variación.jerarquía_de_fecha"
+			          }
+			        },
+			        "accidente.alta_medica.variación.jerarquía_de_fecha.me": {
+			          "Target": {
+			            "Entity": "accidente.alta_medica.variación.jerarquía_de_fecha.me"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "accidente.alta_medica.variación.jerarquía_de_fecha"
+			            },
+			            "Object": {
+			              "Role": "accidente.alta_medica.variación.jerarquía_de_fecha.me"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99
+			        }
+			      ]
+			    },
+			    "accidente_alta_medica_variación_jerarquía_de_fecha_has_día": {
+			      "Binding": {
+			        "ConceptualEntity": "Accidentes"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "accidente.alta_medica.variación.jerarquía_de_fecha": {
+			          "Target": {
+			            "Entity": "accidente.alta_medica.variación.jerarquía_de_fecha"
+			          }
+			        },
+			        "accidente.alta_medica.variación.jerarquía_de_fecha.día": {
+			          "Target": {
+			            "Entity": "accidente.alta_medica.variación.jerarquía_de_fecha.día"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "accidente.alta_medica.variación.jerarquía_de_fecha"
+			            },
+			            "Object": {
+			              "Role": "accidente.alta_medica.variación.jerarquía_de_fecha.día"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99
+			        }
+			      ]
+			    },
+			    "accidente_alta_medica_variación_jerarquía_de_fecha_año_has_accidente_alta_medica_variación_jerarquía_de_fecha_trimestre": {
+			      "Binding": {
+			        "ConceptualEntity": "Accidentes"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "accidente.alta_medica.variación.jerarquía_de_fecha.año": {
+			          "Target": {
+			            "Entity": "accidente.alta_medica.variación.jerarquía_de_fecha.año"
+			          }
+			        },
+			        "accidente.alta_medica.variación.jerarquía_de_fecha.trimestre": {
+			          "Target": {
+			            "Entity": "accidente.alta_medica.variación.jerarquía_de_fecha.trimestre"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "accidente.alta_medica.variación.jerarquía_de_fecha.año"
+			            },
+			            "Object": {
+			              "Role": "accidente.alta_medica.variación.jerarquía_de_fecha.trimestre"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99
+			        },
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "accidente.alta_medica.variación.jerarquía_de_fecha.trimestre"
+			            },
+			            "Object": {
+			              "Role": "accidente.alta_medica.variación.jerarquía_de_fecha.año"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99
+			        },
+			        {
+			          "Preposition": {
+			            "Subject": {
+			              "Role": "accidente.alta_medica.variación.jerarquía_de_fecha.trimestre"
+			            },
+			            "Prepositions": [
+			              {
+			                "in": {
+			                  "State": "Generated"
+			                }
+			              }
+			            ],
+			            "Object": {
+			              "Role": "accidente.alta_medica.variación.jerarquía_de_fecha.año"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99
+			        }
+			      ]
+			    },
+			    "accidente_alta_medica_variación_jerarquía_de_fecha_trimestre_has_accidente_alta_medica_variación_jerarquía_de_fecha_me": {
+			      "Binding": {
+			        "ConceptualEntity": "Accidentes"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "accidente.alta_medica.variación.jerarquía_de_fecha.trimestre": {
+			          "Target": {
+			            "Entity": "accidente.alta_medica.variación.jerarquía_de_fecha.trimestre"
+			          }
+			        },
+			        "accidente.alta_medica.variación.jerarquía_de_fecha.me": {
+			          "Target": {
+			            "Entity": "accidente.alta_medica.variación.jerarquía_de_fecha.me"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "accidente.alta_medica.variación.jerarquía_de_fecha.trimestre"
+			            },
+			            "Object": {
+			              "Role": "accidente.alta_medica.variación.jerarquía_de_fecha.me"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99
+			        },
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "accidente.alta_medica.variación.jerarquía_de_fecha.me"
+			            },
+			            "Object": {
+			              "Role": "accidente.alta_medica.variación.jerarquía_de_fecha.trimestre"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99
+			        },
+			        {
+			          "Preposition": {
+			            "Subject": {
+			              "Role": "accidente.alta_medica.variación.jerarquía_de_fecha.me"
+			            },
+			            "Prepositions": [
+			              {
+			                "in": {
+			                  "State": "Generated"
+			                }
+			              }
+			            ],
+			            "Object": {
+			              "Role": "accidente.alta_medica.variación.jerarquía_de_fecha.trimestre"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99
+			        }
+			      ]
+			    },
+			    "accidente_alta_medica_variación_jerarquía_de_fecha_me_has_accidente_alta_medica_variación_jerarquía_de_fecha_día": {
+			      "Binding": {
+			        "ConceptualEntity": "Accidentes"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "accidente.alta_medica.variación.jerarquía_de_fecha.me": {
+			          "Target": {
+			            "Entity": "accidente.alta_medica.variación.jerarquía_de_fecha.me"
+			          }
+			        },
+			        "accidente.alta_medica.variación.jerarquía_de_fecha.día": {
+			          "Target": {
+			            "Entity": "accidente.alta_medica.variación.jerarquía_de_fecha.día"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "accidente.alta_medica.variación.jerarquía_de_fecha.me"
+			            },
+			            "Object": {
+			              "Role": "accidente.alta_medica.variación.jerarquía_de_fecha.día"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99
+			        },
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "accidente.alta_medica.variación.jerarquía_de_fecha.día"
+			            },
+			            "Object": {
+			              "Role": "accidente.alta_medica.variación.jerarquía_de_fecha.me"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99
+			        },
+			        {
+			          "Preposition": {
+			            "Subject": {
+			              "Role": "accidente.alta_medica.variación.jerarquía_de_fecha.día"
+			            },
+			            "Prepositions": [
+			              {
+			                "in": {
+			                  "State": "Generated"
+			                }
+			              }
+			            ],
+			            "Object": {
+			              "Role": "accidente.alta_medica.variación.jerarquía_de_fecha.me"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99
+			        }
+			      ]
+			    },
+			    "calendario_date_has_variación_jerarquía_de_fecha": {
+			      "Binding": {
+			        "ConceptualEntity": "Calendario"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "calendario.date": {
+			          "Target": {
+			            "Entity": "calendario.date"
+			          }
+			        },
+			        "calendario.date.variación.jerarquía_de_fecha": {
+			          "Target": {
+			            "Entity": "calendario.date.variación.jerarquía_de_fecha"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "calendario.date"
+			            },
+			            "Object": {
+			              "Role": "calendario.date.variación.jerarquía_de_fecha"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99
+			        }
+			      ]
+			    },
+			    "calendario_date_variación_jerarquía_de_fecha_has_año": {
+			      "Binding": {
+			        "ConceptualEntity": "Calendario"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "calendario.date.variación.jerarquía_de_fecha": {
+			          "Target": {
+			            "Entity": "calendario.date.variación.jerarquía_de_fecha"
+			          }
+			        },
+			        "calendario.date.variación.jerarquía_de_fecha.año": {
+			          "Target": {
+			            "Entity": "calendario.date.variación.jerarquía_de_fecha.año"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "calendario.date.variación.jerarquía_de_fecha"
+			            },
+			            "Object": {
+			              "Role": "calendario.date.variación.jerarquía_de_fecha.año"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99
+			        }
+			      ]
+			    },
+			    "calendario_date_variación_jerarquía_de_fecha_has_trimestre": {
+			      "Binding": {
+			        "ConceptualEntity": "Calendario"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "calendario.date.variación.jerarquía_de_fecha": {
+			          "Target": {
+			            "Entity": "calendario.date.variación.jerarquía_de_fecha"
+			          }
+			        },
+			        "calendario.date.variación.jerarquía_de_fecha.trimestre": {
+			          "Target": {
+			            "Entity": "calendario.date.variación.jerarquía_de_fecha.trimestre"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "calendario.date.variación.jerarquía_de_fecha"
+			            },
+			            "Object": {
+			              "Role": "calendario.date.variación.jerarquía_de_fecha.trimestre"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99
+			        }
+			      ]
+			    },
+			    "calendario_date_variación_jerarquía_de_fecha_has_me": {
+			      "Binding": {
+			        "ConceptualEntity": "Calendario"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "calendario.date.variación.jerarquía_de_fecha": {
+			          "Target": {
+			            "Entity": "calendario.date.variación.jerarquía_de_fecha"
+			          }
+			        },
+			        "calendario.date.variación.jerarquía_de_fecha.me": {
+			          "Target": {
+			            "Entity": "calendario.date.variación.jerarquía_de_fecha.me"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "calendario.date.variación.jerarquía_de_fecha"
+			            },
+			            "Object": {
+			              "Role": "calendario.date.variación.jerarquía_de_fecha.me"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99
+			        }
+			      ]
+			    },
+			    "calendario_date_variación_jerarquía_de_fecha_has_día": {
+			      "Binding": {
+			        "ConceptualEntity": "Calendario"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "calendario.date.variación.jerarquía_de_fecha": {
+			          "Target": {
+			            "Entity": "calendario.date.variación.jerarquía_de_fecha"
+			          }
+			        },
+			        "calendario.date.variación.jerarquía_de_fecha.día": {
+			          "Target": {
+			            "Entity": "calendario.date.variación.jerarquía_de_fecha.día"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "calendario.date.variación.jerarquía_de_fecha"
+			            },
+			            "Object": {
+			              "Role": "calendario.date.variación.jerarquía_de_fecha.día"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99
+			        }
+			      ]
+			    },
+			    "calendario_date_variación_jerarquía_de_fecha_año_has_calendario_date_variación_jerarquía_de_fecha_trimestre": {
+			      "Binding": {
+			        "ConceptualEntity": "Calendario"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "calendario.date.variación.jerarquía_de_fecha.año": {
+			          "Target": {
+			            "Entity": "calendario.date.variación.jerarquía_de_fecha.año"
+			          }
+			        },
+			        "calendario.date.variación.jerarquía_de_fecha.trimestre": {
+			          "Target": {
+			            "Entity": "calendario.date.variación.jerarquía_de_fecha.trimestre"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "calendario.date.variación.jerarquía_de_fecha.año"
+			            },
+			            "Object": {
+			              "Role": "calendario.date.variación.jerarquía_de_fecha.trimestre"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99
+			        },
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "calendario.date.variación.jerarquía_de_fecha.trimestre"
+			            },
+			            "Object": {
+			              "Role": "calendario.date.variación.jerarquía_de_fecha.año"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99
+			        },
+			        {
+			          "Preposition": {
+			            "Subject": {
+			              "Role": "calendario.date.variación.jerarquía_de_fecha.trimestre"
+			            },
+			            "Prepositions": [
+			              {
+			                "in": {
+			                  "State": "Generated"
+			                }
+			              }
+			            ],
+			            "Object": {
+			              "Role": "calendario.date.variación.jerarquía_de_fecha.año"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99
+			        }
+			      ]
+			    },
+			    "calendario_date_variación_jerarquía_de_fecha_trimestre_has_calendario_date_variación_jerarquía_de_fecha_me": {
+			      "Binding": {
+			        "ConceptualEntity": "Calendario"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "calendario.date.variación.jerarquía_de_fecha.trimestre": {
+			          "Target": {
+			            "Entity": "calendario.date.variación.jerarquía_de_fecha.trimestre"
+			          }
+			        },
+			        "calendario.date.variación.jerarquía_de_fecha.me": {
+			          "Target": {
+			            "Entity": "calendario.date.variación.jerarquía_de_fecha.me"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "calendario.date.variación.jerarquía_de_fecha.trimestre"
+			            },
+			            "Object": {
+			              "Role": "calendario.date.variación.jerarquía_de_fecha.me"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99
+			        },
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "calendario.date.variación.jerarquía_de_fecha.me"
+			            },
+			            "Object": {
+			              "Role": "calendario.date.variación.jerarquía_de_fecha.trimestre"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99
+			        },
+			        {
+			          "Preposition": {
+			            "Subject": {
+			              "Role": "calendario.date.variación.jerarquía_de_fecha.me"
+			            },
+			            "Prepositions": [
+			              {
+			                "in": {
+			                  "State": "Generated"
+			                }
+			              }
+			            ],
+			            "Object": {
+			              "Role": "calendario.date.variación.jerarquía_de_fecha.trimestre"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99
+			        }
+			      ]
+			    },
+			    "calendario_date_variación_jerarquía_de_fecha_me_has_calendario_date_variación_jerarquía_de_fecha_día": {
+			      "Binding": {
+			        "ConceptualEntity": "Calendario"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "calendario.date.variación.jerarquía_de_fecha.me": {
+			          "Target": {
+			            "Entity": "calendario.date.variación.jerarquía_de_fecha.me"
+			          }
+			        },
+			        "calendario.date.variación.jerarquía_de_fecha.día": {
+			          "Target": {
+			            "Entity": "calendario.date.variación.jerarquía_de_fecha.día"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "calendario.date.variación.jerarquía_de_fecha.me"
+			            },
+			            "Object": {
+			              "Role": "calendario.date.variación.jerarquía_de_fecha.día"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99
+			        },
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "calendario.date.variación.jerarquía_de_fecha.día"
+			            },
+			            "Object": {
+			              "Role": "calendario.date.variación.jerarquía_de_fecha.me"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99
+			        },
+			        {
+			          "Preposition": {
+			            "Subject": {
+			              "Role": "calendario.date.variación.jerarquía_de_fecha.día"
+			            },
+			            "Prepositions": [
+			              {
+			                "in": {
+			                  "State": "Generated"
+			                }
+			              }
+			            ],
+			            "Object": {
+			              "Role": "calendario.date.variación.jerarquía_de_fecha.me"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99
+			        }
+			      ]
+			    }
+			  }
+			}
+		contentType: json
+

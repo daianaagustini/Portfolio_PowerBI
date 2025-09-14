@@ -1,0 +1,103 @@
+table 'Siniestralidad anual'
+	lineageTag: 9333e80c-010f-4c3a-b56b-9d3707f2408f
+
+	column Siniestralidad =
+			
+			CALCULATE (
+			    [Siniestros],
+			    YEAR ( Accidentes[Ocurrencia] ) = EARLIER ( 'Siniestralidad anual'[Año] )
+			)
+			
+			
+			// Cantidad de siniestros ocurridos por año
+		formatString: 0
+		lineageTag: e8b6bb3f-afd4-44eb-b077-2705d578f033
+		summarizeBy: sum
+
+		annotation SummarizationSetBy = Automatic
+
+	column Año
+		formatString: 0
+		lineageTag: 3e6b8249-591b-4fc9-a137-41c8c814bf0a
+		summarizeBy: sum
+		isNameInferred
+		sourceColumn: LocalDateTable_c4de84f7-4f92-4ffc-9f2d-0f39053a27f3[Año]
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'P.D. totales' =
+			
+			CALCULATE (
+			    SUM ( Costo_de_Accidentes[Prestaciones_Dinerarias] ),
+			    YEAR ( Calendario[Date] ) = EARLIER ( 'Siniestralidad anual'[Año] )
+			)
+			
+			
+			// Suma total de prestaciones dinerarias liquidadas por año
+		formatString: 0.00
+		lineageTag: 02a0b073-bffa-4618-b813-608b7864c655
+		summarizeBy: sum
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'P.M. totales' =
+			
+			CALCULATE (
+			    SUM ( Costo_de_Accidentes[Prestaciones_Medicas] ),
+			    YEAR ( Calendario[Date] ) = EARLIER ( 'Siniestralidad anual'[Año] )
+			)
+			
+			
+			// Suma total de prestaciones Medicas liquidadas por año
+		formatString: 0.00
+		lineageTag: 86b68052-a189-4188-9d1b-e0525693fa0a
+		summarizeBy: sum
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Índice de siniestralidad anual' =
+			
+			'Siniestralidad anual'[Siniestralidad] / Medidas[Asegurados]
+			
+			// Cálculo del índice de siniestralidad anual
+		formatString: 0.00\ %;-0.00\ %;0.00\ %
+		lineageTag: 2eb717c8-a16e-4ca8-be22-960b61267d6f
+		summarizeBy: sum
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'P.D. promedio' =
+			
+			'Siniestralidad anual'[P.D. totales] / 'Siniestralidad anual'[Siniestralidad]
+			
+			// Prestación dineraria promedio por siniestro
+		formatString: #,0.0
+		lineageTag: 05d45987-b3b3-4a82-8ca3-2c5905ecc793
+		summarizeBy: sum
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'P.M. promedio' =
+			
+			'Siniestralidad anual'[P.M. totales] / 'Siniestralidad anual'[Siniestralidad]
+			
+			// Prestación medica promedio por siniestro
+		formatString: #,0
+		lineageTag: 1d93cc8a-289d-4fd2-a579-fba11e06cd59
+		summarizeBy: sum
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isDecimal":true}
+
+	partition 'Siniestralidad anual-defa793d-50e4-4b9e-9bcd-dcac7bae7359' = calculated
+		mode: import
+		source =
+				
+				VALUES ( Calendario[Date].[Año] )
+				
+				
+				// resumen de las variables más importantes del negocio: Las que componen al Índice de siniestralidad anual (Cantidad de asegurados y Cantidad de siniestros anuales) y las prestaciones totales y promedio anual.
+
+	annotation PBI_Id = d759baa797114c03a68cea902ab4924b
+

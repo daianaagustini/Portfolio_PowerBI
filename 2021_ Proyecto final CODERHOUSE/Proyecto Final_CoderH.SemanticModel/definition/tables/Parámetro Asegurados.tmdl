@@ -1,0 +1,27 @@
+table 'Parámetro Asegurados'
+	lineageTag: 9e8a5a7a-e082-4cfb-aaa1-1bf6fa926c02
+
+	measure 'Valor Parámetro Asegurados' = SELECTEDVALUE('Parámetro Asegurados'[Parámetro Asegurados])
+		lineageTag: ddaeb865-3699-4d9c-a65b-69725ee8eb11
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column 'Parámetro Asegurados'
+		formatString: 0\ %;-0\ %;0\ %
+		lineageTag: 83745dfe-8cab-4202-9881-3b445333bec8
+		summarizeBy: none
+		sourceColumn: [Value]
+
+		extendedProperty ParameterMetadata =
+				{
+				  "version": 0
+				}
+
+		annotation SummarizationSetBy = User
+
+	partition 'Parámetro Asegurados-d20b32dd-1749-438c-9c23-755765abc164' = calculated
+		mode: import
+		source = GENERATESERIES(-1, 1, 0.1)
+
+	annotation PBI_Id = 153c32d7cfe3479db1ac65578ffb22cc
+

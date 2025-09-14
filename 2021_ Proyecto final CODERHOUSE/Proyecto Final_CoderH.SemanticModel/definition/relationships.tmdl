@@ -1,0 +1,46 @@
+relationship 896de41d-c1eb-400f-8cca-07d7b4f0a886
+	joinOnDateBehavior: datePartOnly
+	fromColumn: Accidentes.Fec_Denun
+	toColumn: LocalDateTable_62ec3fc3-d6c6-428a-bd99-4b87da08091d.Date
+
+relationship 7b7d6eb7-1dff-4ff2-b7eb-5840c7f8739a
+	joinOnDateBehavior: datePartOnly
+	fromColumn: Accidentes.Alta_Medica
+	toColumn: LocalDateTable_f339ba02-67c9-449c-8abe-1b022eee668e.Date
+
+relationship da6b2d7b-b32f-4049-afa6-6f5f3d60ad34
+	crossFilteringBehavior: bothDirections
+	fromColumn: Accidentes.CIIU_F150
+	toColumn: 'CIIU F150'.Codigo_CIIU_F150
+
+relationship 6a0e3705-532c-47b5-aa3a-684ca00ce709
+	fromColumn: Costo_de_Accidentes.Stro
+	toColumn: Accidentes.Stro
+
+relationship 7fa07575-4ee6-499c-95f0-f290d4477828
+	crossFilteringBehavior: bothDirections
+	fromColumn: Accidentes.Cod_Diag
+	toColumn: Cod_Diagnostico.Cod_Diag
+
+relationship 89bbf0d4-f9f4-4740-9f5a-621d4f176a9e
+	fromColumn: Accidentes.Agencia
+	toColumn: Agencias.Agencia
+
+relationship 0a6b0e69-7a0a-477b-ba71-d977c3489f85
+	joinOnDateBehavior: datePartOnly
+	fromColumn: Calendario.Date
+	toColumn: LocalDateTable_c4de84f7-4f92-4ffc-9f2d-0f39053a27f3.Date
+
+relationship 392021d2-0cca-452a-8892-748a09abd9fb
+	fromColumn: Accidentes.Ocurrencia
+	toColumn: Calendario.Date
+
+relationship ff2b54dd-3ca9-42cf-a3e1-fec155628859
+	isActive: false
+	fromColumn: Costo_de_Accidentes.'Fecha de Liquidacion'
+	toColumn: Calendario.Date
+
+relationship b6e6fa65-6de7-4a52-bfce-db376b84a996
+	fromColumn: Accidentes.Cuil
+	toColumn: Asegurados.Cuil
+

@@ -1,0 +1,27 @@
+table 'Parámetro Stros'
+	lineageTag: e71cb620-89ac-4f31-8041-41d48091de36
+
+	measure 'Valor Parámetro' = SELECTEDVALUE('Parámetro Stros'[Parámetro])
+		lineageTag: 6a990b6f-a2aa-420e-a0d2-047d84a21415
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column Parámetro
+		formatString: 0\ %;-0\ %;0\ %
+		lineageTag: e61b073b-5dd2-49b7-a129-4a9382581edb
+		summarizeBy: none
+		sourceColumn: [Value]
+
+		extendedProperty ParameterMetadata =
+				{
+				  "version": 0
+				}
+
+		annotation SummarizationSetBy = User
+
+	partition 'Parámetro Stros-79e308d8-a812-4e3f-9a5a-549588708e3f' = calculated
+		mode: import
+		source = GENERATESERIES(-1, 1, 0.1)
+
+	annotation PBI_Id = db1952cc6dfe4d749a0164de35953714
+

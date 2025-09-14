@@ -1,0 +1,67 @@
+table Costo_de_Accidentes
+	lineageTag: ebb35cf0-244a-4818-b282-b51b67fc492c
+
+	column Stro
+		dataType: int64
+		formatString: 0
+		lineageTag: ba1fafc1-cee4-4ff6-bea6-c6b6d19810b5
+		summarizeBy: none
+		sourceColumn: Stro
+
+		annotation SummarizationSetBy = Automatic
+
+	column Prestaciones_Medicas
+		dataType: double
+		formatString: \$#,0.###############;(\$#,0.###############);\$#,0.###############
+		lineageTag: f5979bd4-4dd0-418a-8f25-b934fdcda282
+		summarizeBy: none
+		sourceColumn: Prestaciones_Medicas
+
+		annotation SummarizationSetBy = User
+
+	column Prestaciones_Dinerarias
+		dataType: double
+		formatString: \$#,0.###############;(\$#,0.###############);\$#,0.###############
+		lineageTag: 07937866-e344-401b-920f-07001ae27d66
+		summarizeBy: none
+		sourceColumn: Prestaciones_Dinerarias
+
+		annotation SummarizationSetBy = User
+
+	column 'Fecha de Liquidacion'
+		dataType: dateTime
+		formatString: d/m/yy
+		lineageTag: e81babe2-291c-4255-baa1-bab268c58a31
+		summarizeBy: none
+		sourceColumn: Fecha de Liquidacion
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+		annotation PBI_FormatHint = {"isDateTimeCustom":true}
+
+	column 'Prestaciones totales' =
+			
+			Costo_de_Accidentes[Prestaciones_Medicas] + Costo_de_Accidentes[Prestaciones_Medicas]
+			
+			// Cálculo de los costos totales (Prestaciones médicas + Prestaciones dinerarias)
+		formatString: \$#,0.###############;(\$#,0.###############);\$#,0.###############
+		lineageTag: 6d812d92-ecc0-4258-a25c-4157bfaefda3
+		summarizeBy: sum
+
+		annotation SummarizationSetBy = Automatic
+
+	partition Costo_de_Accidentes-468f3615-1736-439a-8c1c-2d7289ab4741 = m
+		mode: import
+		source =
+				let
+				    Origen = Excel.Workbook(File.Contents("C:\Users\agust\OneDrive\Data Analytics\Proyecto Final\Base de datos proyecto final - Oviedo Ardusso Agustini.xlsx"), null, true),
+				    Costo_de_Accidentes_Sheet = Origen{[Item="Costo_de_Accidentes",Kind="Sheet"]}[Data],
+				    #"Encabezados promovidos" = Table.PromoteHeaders(Costo_de_Accidentes_Sheet, [PromoteAllScalars=true]),
+				    #"Tipo cambiado" = Table.TransformColumnTypes(#"Encabezados promovidos",{{"Stro", Int64.Type}, {"Prestaciones_Medicas", type number}, {"Prestaciones_Dinerarias", type number}, {"Fecha de Liquidacion", type date}})
+				in
+				    #"Tipo cambiado"
+
+	annotation PBI_ResultType = Table
+

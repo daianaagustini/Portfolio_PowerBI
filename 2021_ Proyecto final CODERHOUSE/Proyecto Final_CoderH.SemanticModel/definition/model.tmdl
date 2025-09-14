@@ -1,0 +1,34 @@
+model Model
+	culture: es-ES
+	defaultPowerBIDataSourceVersion: powerBI_V3
+	sourceQueryCulture: es-AR
+	dataAccessOptions
+		legacyRedirects
+		returnErrorValuesAsNull
+
+annotation PBIDesktopVersion = 2.146.1454.0 (25.08)+901d6c338d1dea81ac3e53073ffb10469f0f37b8
+
+annotation PBI_QueryOrder = ["Accidentes","Asegurados","CIIU F150","Cod_Diagnostico","Costo_de_Accidentes","Medidas","Tipo de diagnostico","Agencias"]
+
+annotation __PBI_TimeIntelligenceEnabled = 1
+
+annotation PBI_ProTooling = ["DevMode"]
+
+ref table Accidentes
+ref table DateTableTemplate_9fc51060-826d-4864-8996-6c87d118c7c4
+ref table LocalDateTable_62ec3fc3-d6c6-428a-bd99-4b87da08091d
+ref table LocalDateTable_f339ba02-67c9-449c-8abe-1b022eee668e
+ref table Asegurados
+ref table 'CIIU F150'
+ref table Cod_Diagnostico
+ref table Costo_de_Accidentes
+ref table Calendario
+ref table Medidas
+ref table Agencias
+ref table 'Parámetro Stros'
+ref table 'Siniestralidad anual'
+ref table LocalDateTable_c4de84f7-4f92-4ffc-9f2d-0f39053a27f3
+ref table 'Parámetro Asegurados'
+
+ref cultureInfo es-ES
+

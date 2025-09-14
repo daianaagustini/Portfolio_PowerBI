@@ -1,0 +1,226 @@
+table Accidentes
+	lineageTag: 9d03c7be-8e12-4c74-8d3e-844af735a9a8
+
+	column CIIU_F150
+		dataType: int64
+		formatString: 0
+		lineageTag: 520db084-dd33-4fc1-a7e5-7c327f188dc1
+		summarizeBy: none
+		sourceColumn: CIIU_F150
+
+		annotation SummarizationSetBy = Automatic
+
+	column Stro
+		dataType: int64
+		formatString: 0
+		lineageTag: aa7509d0-fb89-4802-ab27-4350ea4bec55
+		summarizeBy: none
+		sourceColumn: Stro
+
+		annotation SummarizationSetBy = Automatic
+
+	column Fec_Denun
+		dataType: dateTime
+		formatString: d/m/yyyy
+		lineageTag: 32841339-f43e-4d20-b88a-d2a847b88eab
+		summarizeBy: none
+		sourceColumn: Fec_Denun
+
+		variation Variación
+			isDefault
+			relationship: 896de41d-c1eb-400f-8cca-07d7b4f0a886
+			defaultHierarchy: LocalDateTable_62ec3fc3-d6c6-428a-bd99-4b87da08091d.'Jerarquía de fechas'
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+		annotation PBI_FormatHint = {"isDateTimeCustom":true}
+
+	column Ocurrencia
+		dataType: dateTime
+		formatString: d/m/yyyy
+		lineageTag: c1488856-cb0a-4c43-8983-27bb044d1f49
+		summarizeBy: none
+		sourceColumn: Ocurrencia
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+		annotation PBI_FormatHint = {"isDateTimeCustom":true}
+
+	column Alta_Medica
+		dataType: dateTime
+		formatString: d/m/yyyy
+		lineageTag: c527a64c-23ac-4eaa-8b10-cfa8bce633be
+		summarizeBy: none
+		sourceColumn: Alta_Medica
+
+		variation Variación
+			isDefault
+			relationship: 7b7d6eb7-1dff-4ff2-b7eb-5840c7f8739a
+			defaultHierarchy: LocalDateTable_f339ba02-67c9-449c-8abe-1b022eee668e.'Jerarquía de fechas'
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+		annotation PBI_FormatHint = {"isDateTimeCustom":true}
+
+	column Forma
+		dataType: string
+		lineageTag: 81d2b920-e615-415b-b9d0-e8f43e857740
+		summarizeBy: none
+		sourceColumn: Forma
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isText":true}
+
+	column Lugar
+		dataType: string
+		lineageTag: 88933058-8441-43f1-b632-8a269bfd6846
+		summarizeBy: none
+		sourceColumn: Lugar
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isText":true}
+
+	column Naturaleza
+		dataType: string
+		lineageTag: 6cfb2be1-6a3d-4aae-90af-3b023ec59778
+		summarizeBy: none
+		sourceColumn: Naturaleza
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isText":true}
+
+	column Agente
+		dataType: string
+		lineageTag: 7f146ad6-3b94-41f3-be2d-aafeceac340a
+		summarizeBy: none
+		sourceColumn: Agente
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isText":true}
+
+	column Gravedad
+		dataType: string
+		lineageTag: f134b24f-e0b4-4ed0-9281-984386732ac2
+		summarizeBy: none
+		sourceColumn: Gravedad
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isText":true}
+
+	column Tipo_Sin
+		dataType: string
+		lineageTag: 81a14d3f-0de1-4b99-a663-4ed04ebe6491
+		summarizeBy: none
+		sourceColumn: Tipo_Sin
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isText":true}
+
+	column '% _Inc'
+		dataType: double
+		lineageTag: b648b24e-9abd-4424-bb12-d758020ed69d
+		summarizeBy: none
+		sourceColumn: % _Inc
+
+		annotation SummarizationSetBy = User
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column Edad
+		dataType: int64
+		formatString: 0
+		lineageTag: 00243895-22e5-4d53-9eb2-2bcd9e8edfbb
+		summarizeBy: none
+		sourceColumn: Edad
+
+		annotation SummarizationSetBy = User
+
+	column Cod_Diag
+		dataType: string
+		lineageTag: 1a99b587-bcc5-40e6-b57b-b29b2440e9b1
+		summarizeBy: none
+		sourceColumn: Cod_Diag
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isText":true}
+
+	column 'Estado de alta medica'
+		dataType: string
+		lineageTag: 1c5e4bdf-9f71-4e49-8e68-f72db3b243d0
+		summarizeBy: none
+		sourceColumn: Estado de alta medica
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isText":true}
+
+	column 'Dias transcurrido entre ocurrencia y denuncia' = ```
+			
+			Accidentes[Fec_Denun] - Accidentes[Ocurrencia]
+			
+			// 	Se calcula la demora en la denuncia del siniestro ocurrido 
+			```
+		dataType: int64
+		formatString: 0
+		lineageTag: 9babe514-eb6d-4882-b339-da1841d657a1
+		summarizeBy: none
+
+		annotation SummarizationSetBy = User
+
+	column Agencia
+		dataType: string
+		lineageTag: d01d4ae7-381a-4d8c-8f08-fa9b80558aef
+		summarizeBy: none
+		sourceColumn: Agencia
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isText":true}
+
+	column Cuil
+		dataType: int64
+		formatString: 0
+		lineageTag: 0e4cd813-b98c-4dfe-8965-c5d854449e55
+		summarizeBy: none
+		sourceColumn: Cuil
+
+		annotation SummarizationSetBy = Automatic
+
+	partition Accidentes-911e8864-7d88-4975-b4a7-f7ba07ef4ba0 = m
+		mode: import
+		source = ```
+				let
+				    Origen = Excel.Workbook(File.Contents("C:\Users\agust\OneDrive\Data Analytics\Proyecto Final\Base de datos proyecto final - Oviedo Ardusso Agustini.xlsx"), null, true),
+				    Accidentes_Sheet = Origen{[Item="Accidentes",Kind="Sheet"]}[Data],
+				    #"Encabezados promovidos" = Table.PromoteHeaders(Accidentes_Sheet, [PromoteAllScalars=true]),
+				    #"Tipo cambiado" = Table.TransformColumnTypes(#"Encabezados promovidos",{{"Cuit", Int64.Type}, {"CIIU_F150", Int64.Type}, {"Stro", Int64.Type}, {"Fec_Denun", type date}, {"Ocurrencia", type date}, {"Alta_Medica", type date}, {"Cuil", Int64.Type}, {"Forma", type text}, {"Lugar", type text}, {"Naturaleza", type text}, {"Agente", type text}, {"Gravedad", type text}, {"Tipo_Sin", type text}, {"% _Inc", type number}, {"Edad", Int64.Type}, {"Cod_Diag", type text}}),
+				    #"Filas en blanco eliminadas" = Table.SelectRows(#"Tipo cambiado", each not List.IsEmpty(List.RemoveMatchingItems(Record.FieldValues(_), {"", null}))),
+				    // Quitar duplicados de la columna [Stro] porque es PK
+				    #"Duplicados quitados" = Table.Distinct(#"Filas en blanco eliminadas", {"Stro"}),
+				    // Se quitan las filas con numero de Stro=null
+				    #"Filas filtradas" = Table.SelectRows(#"Duplicados quitados", each [Stro] <> null and [Stro] <> ""),
+				    // Se agrega una columna personalizada con el objetivo de completar los valores ‘null’ en la columna [Alta_medica]
+				    // 
+				    #"Personalizada agregada" = Table.AddColumn(#"Filas filtradas", "Estado de alta medica", each if[Alta_Medica] is null then "Pendiente" else "Alta"),
+				    #"Columnas quitadas" = Table.RemoveColumns(#"Personalizada agregada",{"Provincia", "Cuit"})
+				in
+				    #"Columnas quitadas"
+				```
+
+	annotation PBI_ResultType = Table
+
+	annotation PBI_NavigationStepName = Navegación
+

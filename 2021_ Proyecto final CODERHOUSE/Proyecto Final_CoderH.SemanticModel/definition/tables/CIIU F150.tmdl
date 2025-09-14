@@ -1,0 +1,38 @@
+table 'CIIU F150'
+	lineageTag: c7096165-f8ed-444e-b916-5d4d9b954ca4
+
+	column Codigo_CIIU_F150
+		dataType: string
+		lineageTag: bf88310e-ab3a-47b3-b382-50a75d2410d1
+		summarizeBy: none
+		sourceColumn: Codigo_CIIU_F150
+
+		changedProperty = DataType
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isText":true}
+
+	column Descripcion_CIIU_F150
+		dataType: string
+		lineageTag: 0f16c208-d20b-47ac-b809-2824c7c960a0
+		summarizeBy: none
+		sourceColumn: Descripcion_CIIU_F150
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isText":true}
+
+	partition 'CIIU F150-3b0a4026-8420-4ee7-ab7a-3cc59c91a9d6' = m
+		mode: import
+		source =
+				let
+				    Origen = Excel.Workbook(File.Contents("C:\Users\agust\OneDrive\Data Analytics\Proyecto Final\Base de datos proyecto final - Oviedo Ardusso Agustini.xlsx"), null, true),
+				    #"CIIU F150_Sheet" = Origen{[Item="CIIU F150",Kind="Sheet"]}[Data],
+				    #"Encabezados promovidos" = Table.PromoteHeaders(#"CIIU F150_Sheet", [PromoteAllScalars=true]),
+				    #"Tipo cambiado" = Table.TransformColumnTypes(#"Encabezados promovidos",{{"Codigo_CIIU_F150", Int64.Type}, {"Descripcion_CIIU_F150", type text}})
+				in
+				    #"Tipo cambiado"
+
+	annotation PBI_ResultType = Table
+

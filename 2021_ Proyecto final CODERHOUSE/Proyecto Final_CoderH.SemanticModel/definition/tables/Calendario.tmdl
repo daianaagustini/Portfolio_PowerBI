@@ -1,0 +1,75 @@
+table Calendario
+	lineageTag: 1d91a6e6-5152-42ef-a107-10992b821af9
+
+	column Date
+		formatString: d/m/yyyy
+		lineageTag: 7f1f856a-5251-47de-b65e-2e27b65e2e0c
+		summarizeBy: none
+		isNameInferred
+		sourceColumn: [Date]
+
+		variation Variación
+			isDefault
+			relationship: 0a6b0e69-7a0a-477b-ba71-d977c3489f85
+			defaultHierarchy: LocalDateTable_c4de84f7-4f92-4ffc-9f2d-0f39053a27f3.'Jerarquía de fechas'
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+		annotation PBI_FormatHint = {"isDateTimeCustom":true}
+
+	column Día =
+			
+			DAY(Calendario[Date])
+		formatString: 0
+		lineageTag: 2356378e-3860-4aa7-aec5-c97f81a6a136
+		summarizeBy: sum
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Mes Numero' =
+			
+			MONTH(Calendario[Date])
+		formatString: 0
+		lineageTag: a5594a56-0ccc-493d-bad3-a25151449709
+		summarizeBy: sum
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Mes nombre' =
+			
+			FORMAT(Calendario[Date].[Mes],"")
+		lineageTag: 24ebcfd2-d6ad-4050-8a13-99a277be5c4a
+		summarizeBy: none
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isText":true}
+
+	column Año =
+			
+			YEAR(Calendario[Date])
+		formatString: 0
+		lineageTag: 7ed7e531-9c73-4f1b-bab0-04edf70af035
+		summarizeBy: sum
+
+		annotation SummarizationSetBy = Automatic
+
+	column Trimestre =
+			
+			QUARTER(Calendario[Date])
+		formatString: 0
+		lineageTag: 56eef2b5-af28-461c-9e22-ec0695c3d91c
+		summarizeBy: sum
+
+		annotation SummarizationSetBy = Automatic
+
+	partition Calendario-e7fdcdff-5dea-4f1c-bdc0-745eaee71e25 = calculated
+		mode: import
+		source =
+				
+				CALENDAR(FIRSTDATE(Accidentes[Ocurrencia]),DATE(2019,12,31))
+
+	annotation PBI_Id = 698f3da18c2249a39c20b340b6ea2df5
+

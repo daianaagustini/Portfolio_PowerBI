@@ -1,0 +1,49 @@
+table Cod_Diagnostico
+	lineageTag: 62d8190a-338d-492f-8fc5-237ce8ed73e5
+
+	column Cod_Diag
+		dataType: string
+		lineageTag: 28f186ad-804d-4a98-8abd-73c5703cb072
+		summarizeBy: none
+		sourceColumn: Cod_Diag
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isText":true}
+
+	column Diagnostico
+		dataType: string
+		lineageTag: f86dd6ce-f9e3-464d-833e-7fd00d622625
+		summarizeBy: none
+		sourceColumn: Diagnostico
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isText":true}
+
+	column 'Tipo de diagnostico.Tipo'
+		dataType: string
+		lineageTag: 95a2cf5d-c92f-42aa-a52c-86242443011d
+		summarizeBy: none
+		sourceColumn: Tipo de diagnostico.Tipo
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isText":true}
+
+	partition Cod_Diagnostico-97cea4b6-f7f5-4159-a552-084faa1cc699 = m
+		mode: import
+		source =
+				let
+				    Origen = Excel.Workbook(File.Contents("C:\Users\agust\OneDrive\Data Analytics\Proyecto Final\Base de datos proyecto final - Oviedo Ardusso Agustini.xlsx"), null, true),
+				    Cod_Diagnostico_Sheet = Origen{[Item="Cod_Diagnostico",Kind="Sheet"]}[Data],
+				    #"Tipo cambiado" = Table.TransformColumnTypes(Cod_Diagnostico_Sheet,{{"Column1", type text}, {"Column2", type text}}),
+				    #"Encabezados promovidos" = Table.PromoteHeaders(#"Tipo cambiado", [PromoteAllScalars=true]),
+				    #"Tipo cambiado1" = Table.TransformColumnTypes(#"Encabezados promovidos",{{"Cod_Diag", type text}, {"Diagnostico", type text}}),
+				    #"Consultas combinadas" = Table.NestedJoin(#"Tipo cambiado1", {"Cod_Diag"}, #"Tipo de diagnostico", {"Codgio "}, "Tipo de diagnostico", JoinKind.LeftOuter),
+				    #"Se expandió Tipo de diagnostico" = Table.ExpandTableColumn(#"Consultas combinadas", "Tipo de diagnostico", {"Tipo"}, {"Tipo de diagnostico.Tipo"})
+				in
+				    #"Se expandió Tipo de diagnostico"
+
+	annotation PBI_ResultType = Table
+

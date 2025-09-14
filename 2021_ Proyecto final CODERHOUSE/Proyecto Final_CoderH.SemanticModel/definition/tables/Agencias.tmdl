@@ -1,0 +1,44 @@
+table Agencias
+	lineageTag: ce02ef38-201a-47e9-a9a8-889cddedce6e
+
+	column Provincia
+		dataType: string
+		lineageTag: 6654fe04-c828-422e-975d-139c016c8a52
+		summarizeBy: none
+		sourceColumn: Provincia
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isText":true}
+
+	column Agencia
+		dataType: string
+		lineageTag: a8afee00-b0e5-4bc7-bd4b-5496e2e1721e
+		summarizeBy: none
+		sourceColumn: Agencia
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isText":true}
+
+	partition Agencias-e8bfa1c9-554b-4a4d-b354-19ce3da09776 = m
+		mode: import
+		source =
+				let
+				    Origen = Excel.Workbook(File.Contents("C:\Users\agust\OneDrive\Data Analytics\Proyecto Final\Base de datos proyecto final - Oviedo Ardusso Agustini.xlsx"), null, true),
+				    Accidentes_Sheet = Origen{[Item="Accidentes",Kind="Sheet"]}[Data],
+				    #"Encabezados promovidos" = Table.PromoteHeaders(Accidentes_Sheet, [PromoteAllScalars=true]),
+				    #"Filas en blanco eliminadas" = Table.SelectRows(#"Encabezados promovidos", each not List.IsEmpty(List.RemoveMatchingItems(Record.FieldValues(_), {"", null}))),
+				    // Se quitan las filas con numero de Stro=null
+				    #"Filas filtradas" = Table.SelectRows(#"Filas en blanco eliminadas", each [Stro] <> null and [Stro] <> ""),
+				    // Se quitan lascolumnas que no se van a utilizar en la tabla
+				    #"Otras columnas quitadas" = Table.SelectColumns(#"Filas filtradas",{"Provincia", "Agencia"}),
+				    // Se conforma la tabla de 'unicos' de agencias
+				    #"Duplicados quitados1" = Table.Distinct(#"Otras columnas quitadas", {"Agencia"}),
+				    // Se le da formato texto a las dos columnas
+				    #"Tipo cambiado" = Table.TransformColumnTypes(#"Duplicados quitados1",{{"Provincia", type text}, {"Agencia", type text}})
+				in
+				    #"Tipo cambiado"
+
+	annotation PBI_ResultType = Table
+

@@ -1,0 +1,137 @@
+table Medidas
+	lineageTag: 558702fe-b3f6-4a03-bdef-04bdf8c6dca8
+
+	measure Asegurados = ```
+			
+			    COUNT(Asegurados[Cuil])
+			
+			 // 	Cuenta la cantidad de asegurados
+			```
+		formatString: #,0
+		lineageTag: 297f72bc-9009-43e3-927e-0bacc6cabc81
+
+	measure Siniestros = ```
+			
+			    COUNT(Accidentes[Stro])
+			
+			// 	Cuenta la cantidad de siniestros totales
+			```
+		formatString: #,0
+		lineageTag: 9eda1c25-e6c0-4240-a3cf-41a2c22847fa
+
+	measure '# Formas de stros' = ```
+			
+			    DISTINCTCOUNT(Accidentes[Forma])
+			
+			// 	Cuenta la cantidad de tipos de formas de accidentes
+			```
+		formatString: 0
+		lineageTag: 63963071-7a5b-4289-8523-04c3ca12a9d5
+
+	measure 'Costos totales' = ```
+			
+			    SUM(Costo_de_Accidentes[Prestaciones totales])
+			
+			// 	Calcula el total de costos (Prestaciones totales)
+			```
+		lineageTag: a6b69513-160e-4c6c-8c10-738c37be9b9f
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	measure 'Prom % inc.' = ```
+			
+			    AVERAGE(Accidentes[% _Inc])
+			
+			// 
+			```
+		lineageTag: 7aa7bb7c-3b4b-455b-a82f-29244f3dc426
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	measure 'Índice Siniestralidad' = ```
+			
+			 DIVIDE([Siniestros],[Asegurados])
+			
+			 //Cálculo del indice
+			```
+		formatString: 0.0\ %;-0.0\ %;0.0\ %
+		lineageTag: ffa6317c-0995-4f9a-b497-25a6c865bb7d
+
+	measure Objetivo =
+			20
+			
+			//Objetivo del índice
+		formatString: 0
+		lineageTag: d074ef0f-375e-4fd1-b029-7a8a31743b50
+
+	measure 'Promedio de % de Incapacidad' =
+			
+			AVERAGEX(FILTEr(Accidentes, Accidentes[% _Inc] > 0.01), Accidentes[% _Inc])
+			
+			//o	Promedio de % de Incapacidad de los casos con Incapacidad > 0
+		formatString: 0.00
+		lineageTag: 99d632bb-b248-4f87-ace6-3dcc25b6745e
+
+	measure 'Año anterior' =
+			
+			CALCULATE([Siniestros],SAMEPERIODLASTYEAR(Calendario[Date]))
+			
+			//Siniestros ocurridos el año anterior
+		formatString: 0
+		lineageTag: 16e15f6c-fbcb-4dc9-98a0-e74e5e8a2cd6
+
+	measure 'Variación interanual' =
+			
+			VAR P=CALCULATE([Siniestros],SAMEPERIODLASTYEAR(Calendario[Date]))
+			
+			VAR T= ([Siniestros]-P)/P
+			
+			Return
+			IF(P=BLANK(),"-",T)
+		formatString: 0.0\ %;-0.0\ %;0.0\ %
+		lineageTag: 82e7e956-1d61-4718-8b83-869101c8b875
+
+	measure 'Siniestros proyectados' = AVERAGE('Siniestralidad anual'[Siniestralidad])*(1+'Parámetro Stros'[Valor Parámetro])
+		lineageTag: b5d43da0-1178-43ae-9d62-163aa811336f
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	measure 'Índice Siniestralidad proyectado' = ```
+			
+			 DIVIDE([Siniestros proyectados],[Asegurados proyectados])
+			
+			 //Calculo del índice proyectado, segun variaciones en cantidad de siniestros anuales y asegurados
+			```
+		formatString: 0\ %;-0\ %;0\ %
+		lineageTag: 242c9133-417b-4456-9b66-99f711fc4b2e
+
+	measure 'Asegurados proyectados' =
+			
+			[Asegurados]*(1+'Parámetro Asegurados'[Valor Parámetro Asegurados])
+			
+			// Proyección de asegurados, variando según el parámetro
+		lineageTag: a33a610e-e60f-48b4-abdb-68ea062a1a96
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	measure 'Tooltip Diag' = "En el periodo seleccionado han ocurrido " & [Siniestros] & " accidentes con diagnóstico de " &MAX(Cod_Diagnostico[Diagnostico]) & ", con un máximo de incapacidad del " & MAX(Accidentes[% _Inc]) & "% y un promedio de " & FORMAT([Promedio de % de Incapacidad], 0.0) & "%."
+		lineageTag: 22a24b23-6984-44b2-b8c3-3f8a0163d467
+
+		annotation PBI_FormatHint = {"isText":true}
+
+	measure 'Última hora de actualización' = UTCNOW() -time(3,0,0)
+		formatString: General Date
+		lineageTag: e038d59c-30f7-4ed7-95c4-b4327a39f079
+
+	partition Medidas-9c9769c5-b4eb-4ff9-b174-2c87a040ef3a = m
+		mode: import
+		source =
+				let
+				    Origen = Table.FromRows(Json.Document(Binary.Decompress(Binary.FromText("i44FAA==", BinaryEncoding.Base64), Compression.Deflate)), let _t = ((type nullable text) meta [Serialized.Text = true]) in type table [Columna1 = _t]),
+				    #"Tipo cambiado" = Table.TransformColumnTypes(Origen,{{"Columna1", type text}}),
+				    #"Columnas quitadas" = Table.RemoveColumns(#"Tipo cambiado",{"Columna1"})
+				in
+				    #"Columnas quitadas"
+
+	annotation PBI_ResultType = Table
+
