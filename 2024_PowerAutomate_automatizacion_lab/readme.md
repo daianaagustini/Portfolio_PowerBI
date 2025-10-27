@@ -20,7 +20,7 @@ flowchart TB
 
 ```
 
-# Decisiones técnicas
+## Decisiones técnicas
 - HTML→PDF en OneDrive permite crear PDFs sin licencias premium.
 - Imágenes base64 para portabilidad.
 - SharePoint como repositorio oficial documental (trazabilidad - sistema de gestión de calidad)
@@ -110,7 +110,7 @@ Este flujo garantiza
 una trazabilidad completa del rechazo, desde la captura en el formulario hasta
 la distribución del reporte, todo de forma automatizada y estandarizada.
 
-**Paso a paso del flujo**
+### **Paso a paso del flujo**
 
 **1. 🟢 Disparador: "Cuando se envía
 una respuesta nueva"**
@@ -225,8 +225,8 @@ archivo mediante una ruta de acceso"**
 **14. 📧 Acción: "Enviar un correo
 electrónico desde un buzón compartido (V2)"**
 
-- Envía un correo desde el buzón compartido: YBG4134@grupo.ypf.com.
-- Destinatarios: múltiples correos de AESA, YPF y SENPER, incluyendo áreas como logística, supervisión y residuos.
+- Envía un correo desde un buzón compartido.
+- Destinatarios: múltiples correos de AESA, YPF y SENPER (control de ingresos), incluyendo áreas como logística, supervisión, jefatura y analistas de ambiente, ingenieros de proceso, gestión de calidad y trazabilidad.
 - Asunto: “Rechazo de unidad [Unidad]”, donde la unidad se extrae del formulario.
 - Cuerpo del mensaje:
     - Incluye detalles como unidad, pozo, equipo, manifiesto, transportista, motivo de rechazo y volumen rechazado.
