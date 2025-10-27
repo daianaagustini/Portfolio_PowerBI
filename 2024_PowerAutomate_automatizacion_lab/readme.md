@@ -12,20 +12,31 @@ B --> C[Filtrar links de imágenes]
 C --> D[SharePoint - Obtener imágenes]
 D --> E[Iniciar variable HTML]
 E --> F[Insertar imágenes base64 en HTML]
-G --> H[Finalizar variable HTML]
-H --> I[OneDrive - Crear archivo HTML]
-I --> J[OneDrive - Convertir a PDF]
-J --> K[SharePoint - Guardar PDF oficial]
-K --> L[Email - Enviar desde buzón compartido]
+F --> G[Finalizar variable HTML]
+G --> H[OneDrive - Crear archivo HTML]
+H --> I[OneDrive - Convertir a PDF]
+I --> J[SharePoint - Guardar PDF oficial]
+J --> K[Email - Enviar desde buzón compartido]
 
 ```
+
+```md
+# Decisiones técnicas
+- Export como Solution para ALM (alternativa: JSON).
+- HTML→PDF en OneDrive por simplicidad.
+- Imágenes base64 para portabilidad.
+- SharePoint como repositorio oficial documental.
+- Buzón compartido para ownership del envío.
+
+```
+
 ## Desarrollo
 
 **Integración de reportes de laboratorio**
 
 Mediante una sencilla página web de sharepoint se centralizó la disponibilidad de todos los enlaces relevantes, mejorando el acceso y la navegación.
 
-IMG Shp
+![alt text](image.png)
 
 Los cuatro links
 superiores de la web de laboratorio corresponden a reportes que se hacen desde
