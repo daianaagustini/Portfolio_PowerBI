@@ -22,11 +22,10 @@ J --> K[Email - Enviar desde buzón compartido]
 
 ```md
 # Decisiones técnicas
-- Export como Solution para ALM (alternativa: JSON).
-- HTML→PDF en OneDrive por simplicidad.
+- HTML→PDF en OneDrive permite crear PDFs sin licencias premium.
 - Imágenes base64 para portabilidad.
-- SharePoint como repositorio oficial documental.
-- Buzón compartido para ownership del envío.
+- SharePoint como repositorio oficial documental (trazabilidad - sistema de gestión de calidad)
+- Buzón compartido para ownership del envío y estandarización de e-mails.
 
 ```
 

@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Reporte de Laboratorio</title>
+<style>
+@page {
+size: A4;
+margin: 20mm;
+}
+body {
+font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+margin: 0;
+padding: 0;
+background-color: #ffffff;
+color: #333333;
+}
+.container {
+width: 170mm;
+height: 257mm;
+margin: auto;
+padding: 10mm;
+box-sizing: border-box;
+display: flex;
+flex-direction: column;
+justify-content: space-between;
+}
+header {
+text-align: center;
+margin-bottom: 20px;
+}
+header h1 {
+font-size: 24pt;
+margin: 0;
+color: #66A1DA;
+}
+header h2 {
+font-size: 14pt;
+margin: 5px 0 0 0;
+color: #666666;
+}
+.section {
+margin-bottom: 15px;
+}
+.section h3 {
+font-size: 12pt;
+border-bottom: 1px solid #cccccc;
+padding-bottom: 5px;
+margin-bottom: 10px;
+color: #003366;
+}
+.section p {
+font-size: 11pt;
+margin: 5px 0;
+}
+.highlight {
+font-weight: bold;
+color: #e74c3c;
+}
+.flex-container {
+display: flex;
+flex-wrap: wrap;
+gap: 20px;
+}
+.box {
+flex: 1;
+min-width: 250px;
+border: 1px solid #cccccc;
+border-radius: 5px;
+padding: 10px;
+box-sizing: border-box;
+}
+.image-container {
+text-align: center;
+max-height: 100mm;
+object-fit: contain;
+}
+.image-container img {
+max-width: 100%;
+height: auto;
+border: 1px solid #cccccc;
+border-radius: 5px;
+}
+footer {
+text-align: center;
+font-size: 10pt;
+color: #999999;
+margin-top: 30px;
+padding-top: 10px;
+border-top: 1px solid #cccccc;
+}
+@media print {
+body {
+background-color: #ffffff;
+color: #000000;
+}
+.container {
+width: auto;
+padding: 0;
+margin: 0;
+}
+.box {
+page-break-inside: avoid;
+}
+footer {
+position: fixed;
+bottom: 0;
+left: 0;
+right: 0;
+padding: 10px;
+font-size: 10pt;
+border-top: 1px solid #ccc;
+background: white;
+}
+}
+</style>
+</head>
+<body>
+<div class="container">
+<div>
+<header>
+<h1>REPORTE DE LABORATORIO TRON</h1>
+<h2>AESA Servicios Ambientales</h2>
+</header>
+<div class="section">
+<h3>Ticket de rechazo</h3>
+</div>
+<div class="flex-container">
+<div class="box">
+<p><strong>Ticket:</strong> @{outputs('Obtener_los_detalles_de_la_respuesta')?['body/000']}</p>
+<p><strong>Fecha:</strong> @{formatDateTime(outputs('Obtener_los_detalles_de_la_respuesta')?['body/000')} @{outputs('Obtener_los_detalles_de_la_respuesta')?['body/000']} hs. </p>
+<p><strong>MERE:</strong> @{outputs('Obtener_los_detalles_de_la_respuesta')?['body/000']}</p>
+<p><strong>Reporte:</strong> @{outputs('Obtener_los_detalles_de_la_respuesta')?['body/000']} </p>
+<p><strong>Motivo de rechazo:</strong> @{outputs('Obtener_los_detalles_de_la_respuesta')?['body/000']}</p>
+</div>
+<div class="box">
+<p><strong>Tipo de corriente:</strong> @{outputs('Obtener_los_detalles_de_la_respuesta')?['body/000']} - @{outputs('Obtener_los_detalles_de_la_respuesta')?['body/000']}</p>
+<p><strong>Transportista:</strong >@{outputs('Obtener_los_detalles_de_la_respuesta')?['body/000']}</p>
+<p><strong>Equipo:</strong> @{outputs('Obtener_los_detalles_de_la_respuesta')?['body/000']}</p>
+<p><strong>Unidad:</strong> @{outputs('Obtener_los_detalles_de_la_respuesta')?['body/000']}</p>
+<p><strong>Pozo:</strong> @{outputs('Obtener_los_detalles_de_la_respuesta')?['body/000']}</p>
+</div>
+</div>
+<div class="section">
+<h3>PROCEDIMIENTO</h3>
+<p>Las propiedades medidas se realizaron tomando en consideración las prácticas recomendadas por la Norma API-13B-2, Quinta Edición.</p>
+</div>
+<div class="flex-container">
+<div class="box">
+<h3>RESULTADOS</h3>
+<p><strong>Densidad (gr/cm<sup>3</sup>):</strong> @{outputs('Obtener_los_detalles_de_la_respuesta')?['body/000']}</p>
+<p><strong>% Oil: </strong> @{outputs('Obtener_los_detalles_de_la_respuesta')?['body/000']} </p>
+<p><strong>% Agua: </strong>  @{outputs('Obtener_los_detalles_de_la_respuesta')?['body/000']}</p>
+<p><strong>% Sólidos: </strong> @{outputs('Obtener_los_detalles_de_la_respuesta')?['body/000']}</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<footer> Confidencialidad - Privada </footer>
+</div>
+</body>
+</html>
