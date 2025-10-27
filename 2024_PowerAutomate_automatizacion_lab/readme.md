@@ -33,7 +33,7 @@ flowchart TB
 
 Mediante una sencilla página web de sharepoint se centralizó la disponibilidad de todos los enlaces relevantes, mejorando el acceso y la navegación.
 
-![Home sharepoint](screenshots/01_sharepoint_page.png)
+![Home sharepoint](https://github.com/daianaagustini/Portfolio_PowerBI/blob/main/2024_PowerAutomate_automatizacion_lab/screenshots/01_sharepoint_page.png?raw=true)
 
 Los cuatro links
 superiores de la web de laboratorio corresponden a reportes que se hacen desde
