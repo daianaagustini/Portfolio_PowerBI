@@ -6,17 +6,17 @@ Este repo documenta el flujo **“Reporte de rechazo de unidad”** (PDF + notif
 
 ## Arquitectura (Mermaid)
 ```mermaid
-flowchart LR
-A[Forms - Nueva respuesta] --> B[Power Automate - Obtener detalles]
-B --> C[Filtrar links de imágenes]
-C --> D[SharePoint - Obtener imágenes]
-D --> E[Iniciar variable HTML]
-E --> F[Insertar imágenes base64 en HTML]
-F --> G[Finalizar variable HTML]
-G --> H[OneDrive - Crear archivo HTML]
-H --> I[OneDrive - Convertir a PDF]
-I --> J[SharePoint - Guardar PDF oficial]
-J --> K[Email - Enviar desde buzón compartido]
+flowchart TB
+  A["📥 <b>Forms</b><br>Nueva respuesta"] --> B["⚙️ <b>Power Automate</b><br>Obtener detalles"]
+  B --> C["🧮 Filtrar<br>links de imágenes"]
+  C --> D["💾 <b>SharePoint</b><br>Obtener imágenes"]
+  D --> E["🧩 Iniciar variable<br>HTML"]
+  E --> F["🖼️ Insertar<br>imágenes base64"]
+  F --> G["📄 Finalizar<br>HTML"]
+  G --> H["💠 <b>OneDrive</b><br>Crear archivo HTML"]
+  H --> I["🔁 Convertir<br>a PDF"]
+  I --> J["📂 <b>SharePoint</b><br>Guardar PDF oficial"]
+  J --> K["✉️ <b>Email</b><br>Enviar desde<br>buzón compartido"]
 
 ```
 
