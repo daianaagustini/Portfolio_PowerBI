@@ -18,6 +18,7 @@ I --> J[OneDrive - Convertir a PDF]
 J --> K[SharePoint - Guardar PDF oficial]
 K --> L[Email - Enviar desde buzón compartido]
 
+```
 ## Desarrollo
 
 **Integración de reportes de laboratorio**
