@@ -8,26 +8,24 @@ Este repo documenta el flujo **“Reporte de rechazo de unidad”** (PDF + notif
 ```mermaid
 flowchart TB
   A["📥 <b>Forms</b><br>Nueva respuesta"] --> B["⚙️ <b>Power Automate</b><br>Obtener detalles"]
-  B --> C["🧮 Filtrar<br>links de imágenes"]
+  B --> C["🧮 Filtrar links de imágenes"]
   C --> D["💾 <b>SharePoint</b><br>Obtener imágenes"]
-  D --> E["🧩 Iniciar variable<br>HTML"]
-  E --> F["🖼️ Insertar<br>imágenes base64"]
-  F --> G["📄 Finalizar<br>HTML"]
+  D --> E["🧩 Iniciar variable HTML"]
+  E --> F["🖼️ Insertar imágenes base64"]
+  F --> G["📄 Finalizar HTML"]
   G --> H["💠 <b>OneDrive</b><br>Crear archivo HTML"]
-  H --> I["🔁 Convertir<br>a PDF"]
+  H --> I["🔁 Convertir a PDF"]
   I --> J["📂 <b>SharePoint</b><br>Guardar PDF oficial"]
-  J --> K["✉️ <b>Email</b><br>Enviar desde<br>buzón compartido"]
+  J --> K["✉️ <b>Email</b><br>Enviar desde buzón compartido"]
 
 ```
 
-```md
 # Decisiones técnicas
 - HTML→PDF en OneDrive permite crear PDFs sin licencias premium.
 - Imágenes base64 para portabilidad.
 - SharePoint como repositorio oficial documental (trazabilidad - sistema de gestión de calidad)
 - Buzón compartido para ownership del envío y estandarización de e-mails.
 
-```
 
 ## Desarrollo
 
@@ -35,7 +33,7 @@ flowchart TB
 
 Mediante una sencilla página web de sharepoint se centralizó la disponibilidad de todos los enlaces relevantes, mejorando el acceso y la navegación.
 
-![alt text](image.png)
+![Home sharepoint](screenshots/01_sharepoint_page.png)
 
 Los cuatro links
 superiores de la web de laboratorio corresponden a reportes que se hacen desde
