@@ -234,3 +234,21 @@ electrónico desde un buzón compartido (V2)"**
 - Adjunta el archivo PDF generado previamente con el reporte.
 - El objetivo de este correo electrónico es notificar la unidad rechazada al área de logística para su gestión y otros stakeholders
 
+## Conclusión
+La implementación de estos flujos automatizados en Power Automate para la generación y gestión de reportes de laboratorio representó un avance significativo en la eficiencia operativa, trazabilidad y estandarización de procesos dentro del sistema de gestión ambiental de la planta.
+
+La digitalización completa del ciclo —desde la captura de datos en Microsoft Forms hasta la distribución automatizada de reportes en PDF mediante SharePoint y correo corporativo— permitió eliminar tareas manuales repetitivas, reducir errores humanos y garantizar la disponibilidad inmediata de la información para todas las áreas involucradas.
+
+Entre los principales beneficios alcanzados se destacan:
+
+- Reducción del tiempo (en al menos 40%) de confección y distribución de reportes, pasando de procesos manuales a flujos automáticos que operan en segundos.
+
+- Trazabilidad total de cada registro, desde el formulario de entrada hasta el almacenamiento y notificación final. Permitiendo
+
+-  Estandarización y control documental, al centralizar los archivos oficiales en SharePoint con nomenclaturas y ubicaciones consistentes.
+
+-  Mayor calidad y disponibilidad de los datos, facilitando su análisis posterior y la toma de decisiones. Se desarrolló un tablero en Power BI para la evaluación y mejora de la eficiencia y confiabilidad del laboratorio.
+
+-  Integración transparente entre herramientas corporativas de Microsoft (Forms, SharePoint, OneDrive, Outlook), sin necesidad de desarrollos externos.
+
+Estas soluciones no solo mejoran la productividad del laboratorio, sino que sientan las bases para una cultura de automatización y mejora continua, alineada con los principios de excelencia operacional y sostenibilidad tecnológica de la organización.
