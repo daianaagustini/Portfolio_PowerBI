@@ -1,30 +1,16 @@
 # Integración de reportes de laboratorio (Power Automate)
 
-Automatización para generar, convertir, almacenar y distribuir reportes de laboratorio, y centralizar la recolección de datos desde Microsoft Forms hacia SharePoint/OneDrive/Email.
+## Descripción del proyecto
 
-Este repo documenta el flujo **“Reporte de rechazo de unidad”** (PDF + notificación) y referencia los demás.
+**Problema:**
+El laboratorio de la planta necesitaba optimizar la generación y distribución de reportes de análisis, que se realizaban de forma manual, generando demoras, errores y falta de trazabilidad en la información compartida entre áreas.
 
-## Arquitectura (Mermaid)
-```mermaid
-flowchart TB
-  A["📥 <b>Forms</b><br>Nueva respuesta"] --> B["⚙️ <b>Power Automate</b><br>Obtener detalles"]
-  B --> C["🧮 Filtrar links de imágenes"]
-  C --> D["💾 <b>SharePoint</b><br>Obtener imágenes"]
-  D --> E["🧩 Iniciar variable HTML"]
-  E --> F["🖼️ Insertar imágenes base64"]
-  F --> G["📄 Finalizar HTML"]
-  G --> H["💠 <b>OneDrive</b><br>Crear archivo HTML"]
-  H --> I["🔁 Convertir a PDF"]
-  I --> J["📂 <b>SharePoint</b><br>Guardar PDF oficial"]
-  J --> K["✉️ <b>Email</b><br>Enviar desde buzón compartido"]
+**Rol y aporte personal:**
+Diseñé y desarrollé flujos automatizados en Power Automate que integran Microsoft Forms, SharePoint, OneDrive y correo corporativo, para estandarizar la creación de reportes, convertirlos automáticamente a PDF y distribuirlos a los responsables.
 
-```
+**Impacto logrado:**
+La automatización permitió reducir un 40 % el tiempo de generación y envío de reportes, mejorar la trazabilidad y control documental, y asegurar la disponibilidad inmediata de la información para todas las áreas operativas y de gestión.
 
-## Decisiones técnicas
-- HTML→PDF en OneDrive permite crear PDFs sin licencias premium.
-- Imágenes base64 para portabilidad.
-- SharePoint como repositorio oficial documental (trazabilidad - sistema de gestión de calidad)
-- Buzón compartido para ownership del envío y estandarización de e-mails.
 
 
 ## Desarrollo
@@ -110,21 +96,37 @@ Este flujo garantiza
 una trazabilidad completa del rechazo, desde la captura en el formulario hasta
 la distribución del reporte, todo de forma automatizada y estandarizada.
 
+## Arquitectura (Mermaid)
+```mermaid
+flowchart TB
+  A["📥 <b>Forms</b><br>Nueva respuesta"] --> B["⚙️ <b>Power Automate</b><br>Obtener detalles"]
+  B --> C["🧮 Filtrar links de imágenes"]
+  C --> D["💾 <b>SharePoint</b><br>Obtener imágenes"]
+  D --> E["🧩 Iniciar variable HTML"]
+  E --> F["🖼️ Insertar imágenes base64"]
+  F --> G["📄 Finalizar HTML"]
+  G --> H["💠 <b>OneDrive</b><br>Crear archivo HTML"]
+  H --> I["🔁 Convertir a PDF"]
+  I --> J["📂 <b>SharePoint</b><br>Guardar PDF oficial"]
+  J --> K["✉️ <b>Email</b><br>Enviar desde buzón compartido"]
+
+```
+
+## Decisiones técnicas
+- HTML→PDF en OneDrive permite crear PDFs sin licencias premium.
+- Imágenes base64 para portabilidad.
+- SharePoint como repositorio oficial documental (trazabilidad - sistema de gestión de calidad)
+- Buzón compartido para ownership del envío y estandarización de e-mails.
+
 ### **Paso a paso del flujo**
 
-**1. 🟢 Disparador: "Cuando se envía
-una respuesta nueva"**
+**1. 🟢 Disparador: "Cuando se envía una respuesta nueva"**
 
 - Se activa cuando se recibe una nueva respuesta en un formulario de Microsoft Forms.
 - El formulario está identificado por un ID
 - Usa un webhook para escuchar respuestas en tiempo real.
 
-📌
-**Nota**: Aquí podrías agregar el nombre del formulario y
-qué tipo de información recopila.
-
-**2. 📥 Acción: "Obtener los
-detalles de la respuesta"**
+**2. 📥 Acción: "Obtener los detalles de la respuesta"**
 
 - Recupera los datos completos de la respuesta enviada.
 - Utiliza el response_id generado por el disparador para acceder a los campos específicos del formulario.
@@ -134,85 +136,69 @@ detalles de la respuesta"**
 - Extrae un campo específico de la respuesta.
 - Este campo contiene una lista separada por comas. Corresponde a los links de las imágenes que se adjuntan en el formulario.
 
-**4. 🧮 Acción: "Inicializar
-variable - IdList"**
+**4. 🧮 Acción: "Inicializar variable - IdList"**
 
 - Crea una variable tipo array llamada IdList.
 - Divide el contenido del campo redactado en elementos individuales usando split(). Para extraer las URLs de las imágenes
 
-**5. 🔍 Acción: "Filtrar
-matriz"**
+**5. 🔍 Acción: "Filtrar matriz"**
 
-- Filtra los elementos del array IdList para quedarse solo con aquellos que contienen la palabra "link".
+- Filtra los elementos del array IdList para quedarse solo con aquellos que contienen la palabra "link". Correspondientes a los enlaces de las imágenes.
 
-**6. 🧪 Acción: "Inicializar
-variable - fileContent"**
+**6. 🧪 Acción: "Inicializar variable - fileContent"**
 
 - Crea una variable vacía tipo array llamada fileContent.
 - Se usará más adelante para almacenar contenido (imágenes o archivos).
 
-**7. 🧾 Acción: "Inicializar
-variable - html_doc"**
+**7. 🧾 Acción: "Inicializar variable - html_doc"**
 
 - Crea una variable tipo string llamada html_doc.
-- Contiene una plantilla HTML completa para generar un reporte visual.
+- Contiene una plantilla HTML completa para generar un reporte visual. 
 - Incluye estilos CSS para formato A4, encabezados, secciones, contenedores flexibles, y soporte para impresión.
 
-**8. 📂 Acción: "Obtener archivos
-(solo propiedades)"**
+[2024_PowerAutomate_automatizacion_lab/templates/doc_html_informe.html](https://github.com/daianaagustini/Portfolio_PowerBI/blob/main/2024_PowerAutomate_automatizacion_lab/templates/doc_html_informe.html)
+
+**8. 📂 Acción: "Obtener archivos (solo propiedades)"**
 
 - Accede a una carpeta específica en SharePoint para obtener los archivos disponibles.
-- Ruta: /Documentos compartidos/Aplicaciones/Microsoft Forms/Analisis/FotoImagen a adjuntar al mail. Esta carpeta contiene las imágenes cargadas mediante el Forms.
+- Esta carpeta contiene las imágenes cargadas mediante el Forms.
 
-**9. 🔁 Acción: "Aplicar a cada
-uno"**
+**9. 🔁 Acción: "Aplicar a cada uno"**
 
 - Itera sobre los elementos filtrados previamente (los que contienen "link").
 - Dentro del bucle realiza varias acciones:
 
-**a. 🧪 "Redactar_1" y
-"Redactar_2"**
+**a. 🧪 "Redactar_1" y "Redactar_2"**
 
 - Decodifica y limpia la URL del archivo.
 
-**b. 📥 "Obtener contenido de
-archivo mediante ruta de acceso"**
+**b. 📥 "Obtener contenido de archivo mediante ruta de acceso"**
 
 - Descarga el contenido del archivo desde SharePoint.
 
-**c. 📄 "Obtener metadatos de
-archivo mediante ruta de acceso"**
+**c. 📄 "Obtener metadatos de archivo mediante ruta de acceso"**
 
 - Recupera el nombre y otros metadatos del archivo.
 
-**d. 📦 "Anexar a la variable de
-matriz"**
+**d. 📦 "Anexar a la variable de matriz"**
 
 - Agrega el contenido del archivo a la variable fileContent.
 
-**e. 🖼️ "Anexar a la variable de
-cadena 2"**
+**e. 🖼️ "Anexar a la variable de cadena 2"**
 
 - Inserta la imagen en el HTML como un bloque <img> codificado en base64.
+- El bucle está creado para recibir y almacenar varios archivos. Sin embargo, se limita el formulario a la carga de 1 solo archivo con un máximo de 1.4Mb.
 
-📌
-**Nota**: El bucle está creado para recibir y almacenar
-varios archivos. Sin embargo, se limita el formulario a la carga de 1 solo
-archivo con un máximo de 1.4Mb.
-
-**10. 🧩 Acción: "Anexar a la
-variable de cadena 2-copy"**
+**10. 🧩 Acción: "Anexar a la variable de cadena 2-copy"**
 
 - Finaliza el documento HTML agregando el cierre de etiquetas y el pie de página.
 
-**11. 🗂️ Acción: "Crear archivo
-2"**
+**11. 🗂️ Acción: "Crear archivo 2"**
 
 - Guarda el documento HTML en OneDrive.
-- El nombre del archivo incluye el Manifiesto y la fecha de envío del formulario.
+- El nombre del archivo incluye el Manifiesto y la fecha de envío del ormulario de modo que sea un nombre único.
 
-**12. 🔄 Acción: "Convertir un
-archivo mediante una ruta de acceso"**
+**12. 🔄 Acción: "Convertir un archivo mediante una ruta de acceso"**
 
 - Convierte el archivo HTML en formato PDF usando OneDrive.
 
@@ -220,13 +206,11 @@ archivo mediante una ruta de acceso"**
 
 - Guarda el archivo PDF final en una carpeta específica de SharePoint.
 - En esta carpeta se guardan las evidencias e informes realizados por el laboratorio para el control documental y el sistema de gestión de excelencia operacional.
-- Ruta: /Documentos compartidos/General/LABORATORIO/1. Reportes/Reportes/Reportes Lab 2025.
 
-**14. 📧 Acción: "Enviar un correo
-electrónico desde un buzón compartido (V2)"**
+**14. 📧 Acción: "Enviar un correo electrónico desde un buzón compartido (V2)"**
 
 - Envía un correo desde un buzón compartido.
-- Destinatarios: múltiples correos de AESA, YPF y SENPER (control de ingresos), incluyendo áreas como logística, supervisión, jefatura y analistas de ambiente, ingenieros de proceso, gestión de calidad y trazabilidad.
+- Destinatarios: múltiples correos de stakeholders (internos, del cliente y terceros), incluyendo áreas como logística, supervisión, jefatura y analistas de ambiente, ingenieros de proceso, gestión de calidad y trazabilidad.
 - Asunto: “Rechazo de unidad [Unidad]”, donde la unidad se extrae del formulario.
 - Cuerpo del mensaje:
     - Incluye detalles como unidad, pozo, equipo, manifiesto, transportista, motivo de rechazo y volumen rechazado.
@@ -249,6 +233,6 @@ Entre los principales beneficios alcanzados se destacan:
 
 -  Mayor calidad y disponibilidad de los datos, facilitando su análisis posterior y la toma de decisiones. Se desarrolló un tablero en Power BI para la evaluación y mejora de la eficiencia y confiabilidad del laboratorio.
 
--  Integración transparente entre herramientas corporativas de Microsoft (Forms, SharePoint, OneDrive, Outlook), sin necesidad de desarrollos externos.
+-  Integración transparente entre herramientas corporativas disponibles de Microsoft (Forms, SharePoint, OneDrive, Outlook), sin necesidad de desarrollos externos o costos extras.
 
 Estas soluciones no solo mejoran la productividad del laboratorio, sino que sientan las bases para una cultura de automatización y mejora continua, alineada con los principios de excelencia operacional y sostenibilidad tecnológica de la organización.

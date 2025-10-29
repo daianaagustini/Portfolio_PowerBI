@@ -1,2 +1,7 @@
 # Portfolio_PowerBI
-A curated collection of dynamic dashboards and data-driven insights, showcasing my expertise in transforming raw data into compelling visual stories. Each project reflects a strong command of DAX, data modeling, and interactive design—built to inform, engage, and empower decision-making.
+✍️ Data Scientist & Environmental Engineer focused on turning operational and environmental data into business insights.
+
+🎯 This portfolio showcases Power BI dashboards and automated reporting solutions that improve decision-making in industrial, environmental and business contexts.
+
+Daiana
+https://www.linkedin.com/in/dmagustini/
