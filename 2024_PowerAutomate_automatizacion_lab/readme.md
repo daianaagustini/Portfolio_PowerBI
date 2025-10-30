@@ -20,35 +20,43 @@ Mediante una sencilla página web de sharepoint se centralizó la disponibilidad
 
 ![Home sharepoint](https://github.com/daianaagustini/Portfolio_PowerBI/blob/main/2024_PowerAutomate_automatizacion_lab/screenshots/01_sharepoint_page.png?raw=true)
 
-Los cuatro links
-superiores de la web de laboratorio corresponden a reportes que se hacen desde
-el laboratorio:
+Los links superiores de la web de laboratorio corresponden a formularios que desencadenan distintos flujos automatizados:
 
 1. Reportar un análisis de hidrocarburo recuperado
 2. Reportar un rechazo (con análisis de laboratorio)
 3. Reportar un rechazo (sin análisis de laboratorio)
 4. Análisis de sólidos
+5. Análisis de fluidos
 
-Para cada uno de los
-reportes se crearon flujos automatizados de power automate que automatizan la
-generación, conversión, almacenamiento y distribución de reportes y recolección
-de datos. Los 3 primeros reportes contienen 2 flujos automatizados, uno para la
+Los 2 primeros reportes contienen 2 flujos automatizados cada uno, uno para la
 generación, conversión, almacenamiento y distribución de reportes y uno
-adicional que colecta la información en una única lista de sharepoint, en el
-caso del Analisis de sólido, solo se colectan los datos ya que no requiere
-reporte.
+adicional que colecta la información en una única lista de sharepoint. El formulario 3 solo contiene un flujo que notifica a los stakeholders y en el
+caso de los formularios de Analisis de sólido y fluidos, solo se colectan los datos ya que no requiere notificación.
 
-Cada flujo
-automatizado de reporte funciona de forma similar variando la información del
-informe y los destinatarios del correo electrónico. A continuacion se muestra
-el detalle de uno de ellos:
+### Flujo de trabajo
+```mermaid
+flowchart TD
+    
+    B[Formulario fluidos] --> |Flujo 7|I
+    C[Formulario solidos] --> |Flujo 6|I
+    D[Excel registro de ingresos] -->E 
+    H[Formulario hc recuperado] -->|Flujo 1|I
+    A[Formulario rechazos] --> |Flujo 3| I
+    J[Formulario rechazos ticket] --> |Flujo 5| G
+    E{Dataflow} --> F[Dashboard - Power BI]
+    A -->|Flujo 4| G[Stakeholders]
+    H -->|Flujo 2| G[Stakeholders]
+    I[Sharepoint]-->E
+```
+
+Los flujos 2, 4 y 5 se ocupan de la generación, conversión, almacenamiento y distribución de reportes. El flujo 5 está simplificado porque recolecta menos información que los numero 2 y 4.
+Los flujos 1, 3, 6, y 7 solamente se ocupan de recolectar los registros en una lista de sharepoint.
+La decisión de utilizar utilizar varios formularios es con el objetivo de hacerlos específicos a la información a cargar y que la misma sea obligatoria, para forzar la completitud de los datos y agilizar la carga.
 
 **Nombre del flujo: Reporte de rechazo de unidad**
 
-Este flujo
-automatiza la generación, conversión, almacenamiento y distribución de reportes
-de rechazo de unidades en el laboratorio de la planta de tratamiento de
-residuos oleosos. A continuación se detalla su funcionamiento completo:
+Este flujo representa la estructura de los flujos 2, 4 y 5 y su función es automatizar la generación, conversión, almacenamiento y distribución de reportes
+de rechazo de unidades en el laboratorio de la planta de tratamiento y recuperación de residuos oleosos. A continuación se detalla su funcionamiento completo:
 
 **🔹 Disparador**
 
