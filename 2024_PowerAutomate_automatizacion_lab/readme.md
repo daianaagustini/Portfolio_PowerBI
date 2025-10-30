@@ -37,12 +37,12 @@ caso de los formularios de Analisis de sólido y fluidos, solo se colectan los d
 ```mermaid
 flowchart TD
     
-    B[Formulario fluidos] --> |Flujo 7|I
-    C[Formulario solidos] --> |Flujo 6|I
+    B[ 5.Formulario fluidos] --> |Flujo 7|I
+    C[4.Formulario solidos] --> |Flujo 6|I
     D[Excel registro de ingresos] -->E 
-    H[Formulario hc recuperado] -->|Flujo 1|I
-    A[Formulario rechazos] --> |Flujo 3| I
-    J[Formulario rechazos ticket] --> |Flujo 5| G
+    H[1.Formulario hc recuperado] -->|Flujo 1|I
+    A[2.Formulario rechazos] --> |Flujo 3| I
+    J[3.Formulario rechazos ticket] --> |Flujo 5| G
     E{Dataflow} --> F[Dashboard - Power BI]
     A -->|Flujo 4| G[Stakeholders]
     H -->|Flujo 2| G[Stakeholders]
@@ -60,7 +60,8 @@ de rechazo de unidades en el laboratorio de la planta de tratamiento y recuperac
 
 **🔹 Disparador**
 
-- Se activa al recibir una nueva respuesta en el formulario TRON de Microsoft Forms.
+- Se activa al recibir una nueva respuesta en el formulario 2: Reportar un rechazo (con análisis de laboratorio) o Formulario de rechazos. 
+- Herramienta: Microsoft Forms.
 
 **🔹 Extracción de datos**
 
@@ -120,6 +121,7 @@ flowchart TB
 ```
 
 ## Decisiones técnicas
+- Formularios específicos para cada acción, priorizando la calidad de los datos y la agilidad en la carga.
 - HTML→PDF en OneDrive permite crear PDFs sin licencias premium.
 - Imágenes base64 para portabilidad.
 - SharePoint como repositorio oficial documental (trazabilidad - sistema de gestión de calidad)
