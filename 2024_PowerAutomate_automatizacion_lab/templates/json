@@ -1,0 +1,44 @@
+{
+"name": "AESA Theme",
+"dataColors": [
+"#0063C2",
+"#5AB7B2",
+"#009EE0",
+"#969799",
+"#006BA1",
+"#2A98A5",
+"#E85910",
+"#A60A65",
+"#0ACFC5",
+"#128EC2"
+],
+"good": "#1AAB40",
+"neutral": "#D9B300",
+"bad": "#D64554",
+"maximum": "#0063C2",
+"center": "#D9B300",
+"minimum": "#DEEFFF",
+"null": "#FF7F48",
+"textClasses": {
+"callout": {
+"fontSize": 45,
+"fontFace": "Segoe UI Semibold",
+"color": "#252423"
+},
+"title": {
+"fontSize": 11,
+"fontFace": "Segoe UI",
+"color": "#252423"
+},
+"header": {
+"fontSize": 10,
+"fontFace": "Segoe UI Semibold",
+"color": "#252423"
+},
+"label": {
+"fontSize": 9,
+"fontFace": "Segoe UI",
+"color": "#252423"
+}
+}
+}
